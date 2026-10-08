@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.venv/
+.env
+.env.*
+code/
+scenes/
+bench/.cache/
+outputs/
+new_runs/
+Thumbs.db
+Desktop.ini

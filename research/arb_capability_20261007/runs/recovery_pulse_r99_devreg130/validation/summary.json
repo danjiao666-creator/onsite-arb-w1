@@ -1,0 +1,18 @@
+{
+  "baseline_id": "ARB-CAPABILITY-recovery_pulse_r99_devreg130",
+  "count": 130,
+  "complete_dev_reg": true,
+  "outcomes": {
+    "到达": 107,
+    "碰撞": 7,
+    "超时": 16
+  },
+  "runtime_identity_unchanged": true,
+  "measured_latency_pass_count": 130,
+  "no_competing_python_observed_at_boundaries": true,
+  "limitations": [
+    "Local replay, not official VTS scores.",
+    "Process observations do not prove exclusive host load.",
+    "Baseline retains known driving failures; not a safety certification."
+  ]
+}

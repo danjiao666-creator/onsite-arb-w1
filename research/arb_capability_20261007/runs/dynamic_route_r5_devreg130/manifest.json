@@ -1,0 +1,26 @@
+{
+  "baseline_id": "ARB-CAPABILITY-dynamic_route_r5_devreg130",
+  "parent_baseline": "ARB-W1-BASE-v1",
+  "parent_archive_sha256": "19a45e901e2074b163beba94bf296ed1b8f4864bab3a135613506e8413ade5d5",
+  "planner": "stack.adapters.onsite_dynamic_route:DynamicRouteCapabilityPlanner",
+  "archive_sha256": "ad7ce3ef030d69799491a494432537bc35eaa5365949c06b7264266138ce1399",
+  "sources": {
+    "stack/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/adapters/onsite_capability.py": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73",
+    "stack/adapters/onsite_coverage.py": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f",
+    "stack/adapters/onsite_dynamic_route.py": "deb722be6ea477125655db0ca36f9c033e9bee35f1bf963b96e142a7992ea9d7",
+    "stack/adapters/onsite_replay.py": "aaf5302f55512ff9ad9147dba2a707f65bc4b0aab454c25e455506b997c17397",
+    "stack/adapters/onsite_route_capability.py": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426",
+    "stack/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/core/arbiter.py": "2811ddfd6400a38451f4622d39af0a9836c30765dce29874079b6d326fead359",
+    "stack/core/capability_arbiter.py": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7",
+    "stack/core/control.py": "dd43311b9c7477bd59f852b0626fea8f05f1935887e56fa4250bdae5f945a160",
+    "stack/core/coverage_world.py": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476",
+    "stack/core/current_world.py": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5",
+    "stack/core/geometry.py": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0",
+    "stack/core/route.py": "341e8e8b55aec8ac589b1dba7131c2b6851819681e7cb6e87819eacd3d14ecdd",
+    "stack/core/world.py": "22ddc7cc93a87259e2b932da5ad241b3ef90c03fdde0b253d416a1ce5988e80e"
+  },
+  "sets_sha256": "1d1be871aa290d6f9567c636140c9c2dfffd2ebc125bb96e5c6a15fdf5be04a9"
+}
