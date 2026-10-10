@@ -1,0 +1,6 @@
+# Preserve the exact bytes used by frozen source and evidence manifests.
+* -text
+# Windows line endings and the inherited EOF blanks are frozen evidence bytes.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+candidates/r43/source/stack/core/current_world.py whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+candidates/r43/runs/*/source/stack/core/current_world.py whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

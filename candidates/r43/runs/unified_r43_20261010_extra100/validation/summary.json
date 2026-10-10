@@ -1,0 +1,21 @@
+{
+  "baseline_id": "ARB-CAPABILITY-unified_r43_20261010_extra100",
+  "count": 100,
+  "complete_dev_reg": false,
+  "outcomes": {
+    "到达": 84,
+    "超时": 11,
+    "碰撞": 5
+  },
+  "runtime_identity_unchanged": true,
+  "measured_latency_pass_count": 56,
+  "no_competing_python_observed_at_boundaries": true,
+  "limitations": [
+    "Local replay, not official VTS scores.",
+    "Process observations do not prove exclusive host load.",
+    "Baseline retains known driving failures; not a safety certification."
+  ],
+  "set_scope": "additional_development_not_holdout",
+  "complete_original_devreg130": false,
+  "complete_extension_set": true
+}

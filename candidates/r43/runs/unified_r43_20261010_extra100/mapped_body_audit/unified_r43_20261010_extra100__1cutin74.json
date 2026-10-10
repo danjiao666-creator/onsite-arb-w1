@@ -1,0 +1,42 @@
+{
+  "run": "unified_r43_20261010_extra100",
+  "scene": "1cutin74",
+  "official_outcome": "超时",
+  "trace_sha256": "dfed0abd900a7f3bbbc4afec4c4f4dd407145c77fb293d82c17fcc29a9a4faec",
+  "map_sha256": "3e86affa6ac5bd4b4b433cda6fb7f4646bc58fbc387d2397fc0b5f33a98dfd91",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": 0.0,
+    "first_exterior_growth_t": null,
+    "initial_exterior_area": 4.158139136828736,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 1.0,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 4.158139136828736,
+    "max_exterior_t": 0.0,
+    "max_exterior_state": {
+      "x": 1.43,
+      "y": -17.57,
+      "yaw": 0.172,
+      "v": 27.301,
+      "a": 0,
+      "rot": 0
+    },
+    "outside_frame_count": 10,
+    "total_frames": 149,
+    "episodes": [
+      {
+        "start_t": 0.0,
+        "end_t": 0.9,
+        "frames": 10,
+        "max_exterior_area": 4.158139136828736,
+        "initial_overhang": true
+      }
+    ],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": null,
+  "attribution": null,
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}

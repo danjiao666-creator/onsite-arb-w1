@@ -1,0 +1,769 @@
+{
+  "id": "dev_extension100_20261010",
+  "scope": "additional_development_not_holdout",
+  "seed_rule": "sha256 onsite-dev-extension-20261010 plus scene name; subgroup round robin",
+  "quotas": {
+    "高速公路基本段": 25,
+    "汇入汇出": 35,
+    "交叉口": 40
+  },
+  "available_non_hold_extracted": {
+    "高速公路基本段": 125,
+    "汇入汇出": 227,
+    "交叉口": 144
+  },
+  "scenes": [
+    "2196cutin148",
+    "1253lanechanging40",
+    "2092follow1887",
+    "1686cutin98",
+    "1026lanechanging33",
+    "1358follow1243",
+    "1270cutin63",
+    "0923lanechanging30",
+    "0914follow851",
+    "2062cutin134",
+    "1481lanechanging47",
+    "1423follow1305",
+    "1356cutin72",
+    "1296lanechanging42",
+    "0066follow65",
+    "2422cutin168",
+    "1796lanechanging55",
+    "1432follow1313",
+    "1095cutin44",
+    "1344lanechanging44",
+    "1256follow1157",
+    "1571cutin91",
+    "1687lanechanging51",
+    "1028follow956",
+    "1434cutin77",
+    "cutin58",
+    "1lanechange42",
+    "highway_merge_2_1_113",
+    "highway_merge_3_1_223",
+    "highway_merge_2_2_28",
+    "8_300_merge_311",
+    "1following199",
+    "highway_merge_3_2_121",
+    "1cutin74",
+    "2lanechange60",
+    "highway_merge_2_1_183",
+    "highway_merge_3_1_432",
+    "highway_merge_2_2_108",
+    "10_428_merge_436",
+    "highway_merge_3_2_248",
+    "highway_merge_2_1_293",
+    "highway_merge_3_1_495",
+    "highway_merge_2_2_446",
+    "7_804_merge_808",
+    "highway_merge_3_2_493",
+    "highway_merge_2_1_142",
+    "highway_merge_3_1_18",
+    "highway_merge_2_2_396",
+    "7_617_merge_622",
+    "highway_merge_3_2_164",
+    "highway_merge_2_1_0",
+    "highway_merge_3_1_192",
+    "highway_merge_2_2_484",
+    "7_661_merge_664",
+    "highway_merge_3_2_468",
+    "highway_merge_2_1_482",
+    "highway_merge_3_1_26",
+    "highway_merge_2_2_118",
+    "7_277_merge_292",
+    "highway_merge_3_2_411",
+    "21_105_straight_straight_107",
+    "14_65_straight_turn_round_77",
+    "8_5_1_330",
+    "1cutin31",
+    "21_41_straight_in_opposite_left_43",
+    "20_76_left_straight_in_opposite_83",
+    "16_90_left_straight_in_adjacent_96",
+    "2following406",
+    "opp24",
+    "13_57_straight_in_adjacent_left_58",
+    "20_120_left_left_129",
+    "1rush27",
+    "12_93_straight_straight_95",
+    "8_6_1_93",
+    "13_91_straight_in_opposite_left_96",
+    "12_27_left_straight_in_opposite_30",
+    "13_69_left_straight_in_adjacent_71",
+    "13_50_straight_in_adjacent_left_53",
+    "16_107_left_left_119",
+    "1rush10",
+    "18_29_straight_straight_30",
+    "12_125_straight_in_opposite_left_127",
+    "11_84_left_straight_in_opposite_89",
+    "11_107_left_straight_in_adjacent_112",
+    "12_32_straight_in_adjacent_left_33",
+    "14_58_left_left_59",
+    "1rush2",
+    "11_57_straight_straight_61",
+    "12_18_straight_in_opposite_left_24",
+    "19_9_left_straight_in_opposite_11",
+    "13_103_left_straight_in_adjacent_114",
+    "10_60_straight_in_adjacent_left_61",
+    "12_43_left_left_44",
+    "15_69_straight_straight_70",
+    "15_14_straight_in_opposite_left_19",
+    "14_124_left_straight_in_opposite_130",
+    "21_104_left_straight_in_adjacent_106",
+    "20_46_straight_in_adjacent_left_47",
+    "14_28_left_left_32",
+    "21_73_straight_straight_75"
+  ],
+  "strata": {
+    "2196cutin148": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1253lanechanging40": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "2092follow1887": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1686cutin98": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1026lanechanging33": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "1358follow1243": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1270cutin63": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "0923lanechanging30": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "0914follow851": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "2062cutin134": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1481lanechanging47": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "1423follow1305": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1356cutin72": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1296lanechanging42": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "0066follow65": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "2422cutin168": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1796lanechanging55": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "1432follow1313": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1095cutin44": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1344lanechanging44": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "1256follow1157": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1571cutin91": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "1687lanechanging51": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "lanechanging"
+    },
+    "1028follow956": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "follow"
+    },
+    "1434cutin77": {
+      "roadtype": "高速公路基本段",
+      "subgroup": "cutin"
+    },
+    "cutin58": {
+      "roadtype": "汇入汇出",
+      "subgroup": "cutin"
+    },
+    "1lanechange42": {
+      "roadtype": "汇入汇出",
+      "subgroup": "lanechanging"
+    },
+    "highway_merge_2_1_113": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_223": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_28": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "8_300_merge_311": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "1following199": {
+      "roadtype": "汇入汇出",
+      "subgroup": "follow"
+    },
+    "highway_merge_3_2_121": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "1cutin74": {
+      "roadtype": "汇入汇出",
+      "subgroup": "cutin"
+    },
+    "2lanechange60": {
+      "roadtype": "汇入汇出",
+      "subgroup": "lanechanging"
+    },
+    "highway_merge_2_1_183": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_432": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_108": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "10_428_merge_436": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "highway_merge_3_2_248": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "highway_merge_2_1_293": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_495": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_446": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "7_804_merge_808": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "highway_merge_3_2_493": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "highway_merge_2_1_142": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_18": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_396": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "7_617_merge_622": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "highway_merge_3_2_164": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "highway_merge_2_1_0": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_192": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_484": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "7_661_merge_664": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "highway_merge_3_2_468": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "highway_merge_2_1_482": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_1"
+    },
+    "highway_merge_3_1_26": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_1"
+    },
+    "highway_merge_2_2_118": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_2_2"
+    },
+    "7_277_merge_292": {
+      "roadtype": "汇入汇出",
+      "subgroup": "#_#_merge_#"
+    },
+    "highway_merge_3_2_411": {
+      "roadtype": "汇入汇出",
+      "subgroup": "highway_merge_3_2"
+    },
+    "21_105_straight_straight_107": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    },
+    "14_65_straight_turn_round_77": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_turn_round_#"
+    },
+    "8_5_1_330": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_#_#"
+    },
+    "1cutin31": {
+      "roadtype": "交叉口",
+      "subgroup": "cutin"
+    },
+    "21_41_straight_in_opposite_left_43": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_opposite_left_#"
+    },
+    "20_76_left_straight_in_opposite_83": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_opposite_#"
+    },
+    "16_90_left_straight_in_adjacent_96": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_adjacent_#"
+    },
+    "2following406": {
+      "roadtype": "交叉口",
+      "subgroup": "follow"
+    },
+    "opp24": {
+      "roadtype": "交叉口",
+      "subgroup": "opp#"
+    },
+    "13_57_straight_in_adjacent_left_58": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_adjacent_left_#"
+    },
+    "20_120_left_left_129": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_left_#"
+    },
+    "1rush27": {
+      "roadtype": "交叉口",
+      "subgroup": "#rush#"
+    },
+    "12_93_straight_straight_95": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    },
+    "8_6_1_93": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_#_#"
+    },
+    "13_91_straight_in_opposite_left_96": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_opposite_left_#"
+    },
+    "12_27_left_straight_in_opposite_30": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_opposite_#"
+    },
+    "13_69_left_straight_in_adjacent_71": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_adjacent_#"
+    },
+    "13_50_straight_in_adjacent_left_53": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_adjacent_left_#"
+    },
+    "16_107_left_left_119": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_left_#"
+    },
+    "1rush10": {
+      "roadtype": "交叉口",
+      "subgroup": "#rush#"
+    },
+    "18_29_straight_straight_30": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    },
+    "12_125_straight_in_opposite_left_127": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_opposite_left_#"
+    },
+    "11_84_left_straight_in_opposite_89": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_opposite_#"
+    },
+    "11_107_left_straight_in_adjacent_112": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_adjacent_#"
+    },
+    "12_32_straight_in_adjacent_left_33": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_adjacent_left_#"
+    },
+    "14_58_left_left_59": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_left_#"
+    },
+    "1rush2": {
+      "roadtype": "交叉口",
+      "subgroup": "#rush#"
+    },
+    "11_57_straight_straight_61": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    },
+    "12_18_straight_in_opposite_left_24": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_opposite_left_#"
+    },
+    "19_9_left_straight_in_opposite_11": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_opposite_#"
+    },
+    "13_103_left_straight_in_adjacent_114": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_adjacent_#"
+    },
+    "10_60_straight_in_adjacent_left_61": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_adjacent_left_#"
+    },
+    "12_43_left_left_44": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_left_#"
+    },
+    "15_69_straight_straight_70": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    },
+    "15_14_straight_in_opposite_left_19": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_opposite_left_#"
+    },
+    "14_124_left_straight_in_opposite_130": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_opposite_#"
+    },
+    "21_104_left_straight_in_adjacent_106": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_straight_in_adjacent_#"
+    },
+    "20_46_straight_in_adjacent_left_47": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_in_adjacent_left_#"
+    },
+    "14_28_left_left_32": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_left_left_#"
+    },
+    "21_73_straight_straight_75": {
+      "roadtype": "交叉口",
+      "subgroup": "#_#_straight_straight_#"
+    }
+  },
+  "original_devreg_count": 130,
+  "excluded_hold_count": 50,
+  "catalog_sha256": "60d402070389ca83937ed453ee9d86a62c6bcd6d2ac1f85f7d36f28b9ce1b7db",
+  "original_sets_sha256": "1d1be871aa290d6f9567c636140c9c2dfffd2ebc125bb96e5c6a15fdf5be04a9",
+  "sealed_split_sha256": "11adbb14000cc0b3703983ea6ea3554b4806fdc849e2f94d09e9ffc890f423c1",
+  "selected_input_sha256": {
+    "scenes/official_catalog/extracted/2196cutin148/2196cutin148.xodr": "21131b5755870703956594634f03aabee9752cc94f8a1804a570e7a38c480fd5",
+    "scenes/official_catalog/extracted/2196cutin148/2196cutin148_exam.xosc": "a055bf940c8a000dcc5390e130118b781b8f9c6f14c8d11447f24367f5e171b2",
+    "scenes/official_catalog/extracted/1253lanechanging40/1253lanechanging40.xodr": "141918559f2b9598eaeae1baa5a4c2f90a444a4419d1cc1af158fe7050b7a592",
+    "scenes/official_catalog/extracted/1253lanechanging40/1253lanechanging40_exam.xosc": "5ff029d5abce00f8c261f945afeb6c8d10eac75e9debb5f6493d8b6bb8dcd46c",
+    "scenes/official_catalog/extracted/2092follow1887/2092follow1887.xodr": "5573c819f1d6aa73a318dd45eda6176a8904511e9bc128127a224f70dc3b0553",
+    "scenes/official_catalog/extracted/2092follow1887/2092follow1887_exam.xosc": "e7e4c4eabab8e0db4c59b0dc3e99fb25633ff49aaf251c71f6a40812eb5356e1",
+    "scenes/official_catalog/extracted/1686cutin98/1686cutin98.xodr": "eae04e7114f57f083127be55f7bf2dbd7ceb0e530ed7713096c35ac9920ea5fa",
+    "scenes/official_catalog/extracted/1686cutin98/1686cutin98_exam.xosc": "71e13e7b980a2ce5b28c216cf07c6ab538769a0de10d2b824072a1ab6893a935",
+    "scenes/official_catalog/extracted/1026lanechanging33/1026lanechanging33.xodr": "68196b0cc4b5530bd5a289b69421b581d9e7275f7eeb3741481f17b09c9ca185",
+    "scenes/official_catalog/extracted/1026lanechanging33/1026lanechanging33_exam.xosc": "8ff03f9aef32ddd1d475828b488510b716186335fc527422aecffcd1489680cd",
+    "scenes/official_catalog/extracted/1358follow1243/1358follow1243.xodr": "1cfe7dd64bc3f6c3e6384d754cd9b6259805d68687e3f6188b8a50c2307cd188",
+    "scenes/official_catalog/extracted/1358follow1243/1358follow1243_exam.xosc": "4384daef2c5e6c0456c432db8885b853157faa0dc0f6f8d9e7b85a3b40e85e40",
+    "scenes/official_catalog/extracted/1270cutin63/1270cutin63.xodr": "1208c09146a8cf174d5288236c523ba9f2ed06e4a675655fd29718c89d295ad7",
+    "scenes/official_catalog/extracted/1270cutin63/1270cutin63_exam.xosc": "daa4bec69bbcbea7865435aec0bc72ddeac32f70cf56799234d2307466e9aa62",
+    "scenes/official_catalog/extracted/0923lanechanging30/0923lanechanging30.xodr": "8c41987f7ecc056c996f8b5f5a0a4cde20faa74c14f9807492c8a67987068f95",
+    "scenes/official_catalog/extracted/0923lanechanging30/0923lanechanging30_exam.xosc": "f33c926b3b849e9be916801485c935697a727eb850f5dc61f8490a0d2e83d685",
+    "scenes/official_catalog/extracted/0914follow851/0914follow851.xodr": "8c41987f7ecc056c996f8b5f5a0a4cde20faa74c14f9807492c8a67987068f95",
+    "scenes/official_catalog/extracted/0914follow851/0914follow851_exam.xosc": "820d4a3ab9c456e70c44acbe86cda50105c3e33cb49a15be749a9d37a18046e4",
+    "scenes/official_catalog/extracted/2062cutin134/2062cutin134.xodr": "af62029846fe06ee496ef70c429b8cb52c9872846aca9e7f2b0def4dfd657f45",
+    "scenes/official_catalog/extracted/2062cutin134/2062cutin134_exam.xosc": "d0f6b288c34b01b867e1801c0ed368bff13e55f8265c54e1738ae3324d11af9e",
+    "scenes/official_catalog/extracted/1481lanechanging47/1481lanechanging47.xodr": "5155306320286df9a5066a735403b72a482e5e1675834aa7dc8a4ff650e17478",
+    "scenes/official_catalog/extracted/1481lanechanging47/1481lanechanging47_exam.xosc": "a6983b342cfb6c6639601ca04c401bab77c2343682cdf41d32c1547d72975b1a",
+    "scenes/official_catalog/extracted/1423follow1305/1423follow1305.xodr": "e8a7ab8d25a2a9cc662d2e9059d52fdb72e04e1a3be644bfc307c87ecc02dbe3",
+    "scenes/official_catalog/extracted/1423follow1305/1423follow1305_exam.xosc": "70299ecc9887d2deb649af7b5cc545a1366773fa59fbc9f0e535a8c3a26ebefe",
+    "scenes/official_catalog/extracted/1356cutin72/1356cutin72.xodr": "1cfe7dd64bc3f6c3e6384d754cd9b6259805d68687e3f6188b8a50c2307cd188",
+    "scenes/official_catalog/extracted/1356cutin72/1356cutin72_exam.xosc": "61bfe31d5c5d1b8a7f6e7cf12e2226286490c1496d17bcdf305556915f31e662",
+    "scenes/official_catalog/extracted/1296lanechanging42/1296lanechanging42.xodr": "1208c09146a8cf174d5288236c523ba9f2ed06e4a675655fd29718c89d295ad7",
+    "scenes/official_catalog/extracted/1296lanechanging42/1296lanechanging42_exam.xosc": "032fabee0f60dc8ab8281401c91fed60424ce78bd495fd948b377ea71899b478",
+    "scenes/official_catalog/extracted/0066follow65/0066follow65.xodr": "595273ee737ff3867a3e52f5f9fd320b77910142e64861435b2393670431d258",
+    "scenes/official_catalog/extracted/0066follow65/0066follow65_exam.xosc": "59f068d56472579f7226026eba878469a41081d07a38286941a6bbb1561f8cbc",
+    "scenes/official_catalog/extracted/2422cutin168/2422cutin168.xodr": "6ab8915f961ac6b91db2959d87e74b1c9e46b692bd070a73e85c8b46098400bf",
+    "scenes/official_catalog/extracted/2422cutin168/2422cutin168_exam.xosc": "d3bb9f24a368de2b1575d91b8eb30ebfa8c06dffaab9ed7ceb61cb448821ea25",
+    "scenes/official_catalog/extracted/1796lanechanging55/1796lanechanging55.xodr": "1321822986ebe81d66bd2dfbfc5ea827ca4c539686d3267ad4b931be3f9a7ce6",
+    "scenes/official_catalog/extracted/1796lanechanging55/1796lanechanging55_exam.xosc": "38a1958741e3da0516b5779ce96560718966c119b311f7c9483de15c159b3943",
+    "scenes/official_catalog/extracted/1432follow1313/1432follow1313.xodr": "d6534500024935523b9cbb93da08d0f229c9cb89ec1761c542d87f1e9f5062fd",
+    "scenes/official_catalog/extracted/1432follow1313/1432follow1313_exam.xosc": "f8c031a5fc8bae402550b64dfc9cae1b628209ce77b44ad9bcecc1748ac247f7",
+    "scenes/official_catalog/extracted/1095cutin44/1095cutin44.xodr": "68196b0cc4b5530bd5a289b69421b581d9e7275f7eeb3741481f17b09c9ca185",
+    "scenes/official_catalog/extracted/1095cutin44/1095cutin44_exam.xosc": "ff03b72226fd4a80fa15618065deee4b3cc32e712d3517406ac391797ad42a84",
+    "scenes/official_catalog/extracted/1344lanechanging44/1344lanechanging44.xodr": "1cfe7dd64bc3f6c3e6384d754cd9b6259805d68687e3f6188b8a50c2307cd188",
+    "scenes/official_catalog/extracted/1344lanechanging44/1344lanechanging44_exam.xosc": "5462cbd436d140703ea376ad415fc8ee6bdc2e3ba7446de0b03cacdaa465ef4e",
+    "scenes/official_catalog/extracted/1256follow1157/1256follow1157.xodr": "141918559f2b9598eaeae1baa5a4c2f90a444a4419d1cc1af158fe7050b7a592",
+    "scenes/official_catalog/extracted/1256follow1157/1256follow1157_exam.xosc": "124e4491dbb3fc516cca33b6e1a401c969d43a0578d8ecb2ffc6ecdbbbd5abee",
+    "scenes/official_catalog/extracted/1571cutin91/1571cutin91.xodr": "5155306320286df9a5066a735403b72a482e5e1675834aa7dc8a4ff650e17478",
+    "scenes/official_catalog/extracted/1571cutin91/1571cutin91_exam.xosc": "98bc5c8d9dd28a07dd5bb22ba57a239e5070721374463c3e5a89b0df69cc64a0",
+    "scenes/official_catalog/extracted/1687lanechanging51/1687lanechanging51.xodr": "eae04e7114f57f083127be55f7bf2dbd7ceb0e530ed7713096c35ac9920ea5fa",
+    "scenes/official_catalog/extracted/1687lanechanging51/1687lanechanging51_exam.xosc": "af7305eb8a65070eb2ffbaf0358734a551dab29b1928024e0ad345e95c197402",
+    "scenes/official_catalog/extracted/1028follow956/1028follow956.xodr": "68196b0cc4b5530bd5a289b69421b581d9e7275f7eeb3741481f17b09c9ca185",
+    "scenes/official_catalog/extracted/1028follow956/1028follow956_exam.xosc": "96622625339df86d7b2fa8132ba57a09dc816aafa2b7e7923ec7f9faa13d0139",
+    "scenes/official_catalog/extracted/1434cutin77/1434cutin77.xodr": "d6534500024935523b9cbb93da08d0f229c9cb89ec1761c542d87f1e9f5062fd",
+    "scenes/official_catalog/extracted/1434cutin77/1434cutin77_exam.xosc": "372b7e1bd390ca01ea04708aa4e883d25814e54a4471ead9e7592ea0175e0fac",
+    "scenes/official_catalog/extracted/cutin58/cutin58.xodr": "f0e98c38031a2b656107666c52adf49cf70a149f108c445e955d6b18870a6473",
+    "scenes/official_catalog/extracted/cutin58/cutin58_exam.xosc": "27ddd7b9bcc5ebd869fe80288d8ebe42f0cd146498390ab355a057821a0c6201",
+    "scenes/official_catalog/extracted/1lanechange42/1lanechange42.xodr": "169dba547bfe51906ad11d4bd32201b2ef940b896e8125e0ec8cde7403d1e798",
+    "scenes/official_catalog/extracted/1lanechange42/1lanechange42_exam.xosc": "d4462396243d622f24f5845287c97067d766786faaf6feff1c5a7e5df004eae8",
+    "scenes/official_catalog/extracted/highway_merge_2_1_113/highway_merge_2_1_113.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_113/highway_merge_2_1_113_exam.xosc": "ff35b0e201f67f19bbff2ebd20091f0e3c6b7cc495e9d84f7540dda6cc624c36",
+    "scenes/official_catalog/extracted/highway_merge_3_1_223/highway_merge_3_1_223.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_223/highway_merge_3_1_223_exam.xosc": "9666d917cbe89d3d2023938fd54884f58e536f54b27edd8ce5843e8f5419c038",
+    "scenes/official_catalog/extracted/highway_merge_2_2_28/highway_merge_2_2_28.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_28/highway_merge_2_2_28_exam.xosc": "fdc720f7e35a70c302d3d647f585fc9c3a8aaeb1bc6442a68a7c9a63f5b405d0",
+    "scenes/official_catalog/extracted/8_300_merge_311/8_300_merge_311.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/8_300_merge_311/8_300_merge_311_exam.xosc": "9187fee4c485bf9b9234e126d52ec590e156271ab93d91044c95ff6aaf2f9bed",
+    "scenes/official_catalog/extracted/1following199/1following199.xodr": "5618a0c1e345dbf646d5c7346bd633cd1c7ec1aa4d72ee6af99c8af72549de97",
+    "scenes/official_catalog/extracted/1following199/1following199_exam.xosc": "cec9ddb4d3960a36c3dc5aee9fb258712e0d1e0efaee922295e5afb7f3b406a4",
+    "scenes/official_catalog/extracted/highway_merge_3_2_121/highway_merge_3_2_121.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_121/highway_merge_3_2_121_exam.xosc": "059141e055ca6dbd6dc0bed827b0ba5f5b243f50e499c587b72843a6b41fab30",
+    "scenes/official_catalog/extracted/1cutin74/1cutin74.xodr": "3e86affa6ac5bd4b4b433cda6fb7f4646bc58fbc387d2397fc0b5f33a98dfd91",
+    "scenes/official_catalog/extracted/1cutin74/1cutin74_exam.xosc": "1cc2f6c1cd9b15ff33d8598a928df1ace733834a7eb68718792bc286d82ea561",
+    "scenes/official_catalog/extracted/2lanechange60/2lanechange60.xodr": "db1044cbe94f9a4d8dacb66321273679b4a36632c6cd9247dad2ff0fc43526e8",
+    "scenes/official_catalog/extracted/2lanechange60/2lanechange60_exam.xosc": "563c22b132b471cc66749d809b33598385e2dbf74f41cc30dbcce9c7f6a77648",
+    "scenes/official_catalog/extracted/highway_merge_2_1_183/highway_merge_2_1_183.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_183/highway_merge_2_1_183_exam.xosc": "ca032b4d5f5d4361512f9498dcc705a814e81d29a6baf452eea8aea0cbe28344",
+    "scenes/official_catalog/extracted/highway_merge_3_1_432/highway_merge_3_1_432.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_432/highway_merge_3_1_432_exam.xosc": "a9bdcd61799f0c39d118591ce43c94e534bd5161efacb799a775332be55bc8f9",
+    "scenes/official_catalog/extracted/highway_merge_2_2_108/highway_merge_2_2_108.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_108/highway_merge_2_2_108_exam.xosc": "30887ad363a02f696a634e2d0aa961f5eeac967201cdf6f6ef6d4fd8345d766b",
+    "scenes/official_catalog/extracted/10_428_merge_436/10_428_merge_436.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/10_428_merge_436/10_428_merge_436_exam.xosc": "2e7013d4b5307d0c547be497071e889c5dce32f0a68e3da144657e13a5d963fc",
+    "scenes/official_catalog/extracted/highway_merge_3_2_248/highway_merge_3_2_248.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_248/highway_merge_3_2_248_exam.xosc": "20566f5f0518103f7c055cec915ed6f304c100e48998fdb3a3c6ed1f44f4ff99",
+    "scenes/official_catalog/extracted/highway_merge_2_1_293/highway_merge_2_1_293.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_293/highway_merge_2_1_293_exam.xosc": "3a45b13de5f7f20803737e7e148690844d8f5123864d05cbd50f950dbaa6a344",
+    "scenes/official_catalog/extracted/highway_merge_3_1_495/highway_merge_3_1_495.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_495/highway_merge_3_1_495_exam.xosc": "ffec82f9587e1ff951c90d99956a23b50d2166d7dd37f77f67acc6281103f90b",
+    "scenes/official_catalog/extracted/highway_merge_2_2_446/highway_merge_2_2_446.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_446/highway_merge_2_2_446_exam.xosc": "40c8aafa970bee921d761df005a28bef77780ad52f5cc8be309786ef4f2abd5e",
+    "scenes/official_catalog/extracted/7_804_merge_808/7_804_merge_808.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/7_804_merge_808/7_804_merge_808_exam.xosc": "efd926af9a57c308061cd92399660bfc663b792654da1f8e57e83780a2e93793",
+    "scenes/official_catalog/extracted/highway_merge_3_2_493/highway_merge_3_2_493.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_493/highway_merge_3_2_493_exam.xosc": "67890706e1e5edc78ed7a81b4f1aa8e99a9fcd9f0d3fc84e962fc1554b5d249a",
+    "scenes/official_catalog/extracted/highway_merge_2_1_142/highway_merge_2_1_142.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_142/highway_merge_2_1_142_exam.xosc": "4ce5d18dbad21b4ba2eb827338694f9fe5547b3b45bcaf6bd1dbcb7557b4ab4f",
+    "scenes/official_catalog/extracted/highway_merge_3_1_18/highway_merge_3_1_18.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_18/highway_merge_3_1_18_exam.xosc": "1b0c29a59b65f60de50873d5d1735f2d591a39dc3893a7ee78c307ec124ae77c",
+    "scenes/official_catalog/extracted/highway_merge_2_2_396/highway_merge_2_2_396.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_396/highway_merge_2_2_396_exam.xosc": "814bbb38c65c17812c33eb6589d73e277deb810c686dbc306edfe6fde36c5d47",
+    "scenes/official_catalog/extracted/7_617_merge_622/7_617_merge_622.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/7_617_merge_622/7_617_merge_622_exam.xosc": "2bb6cab3385d9dd60ff11e34543e21cf035121115f8d212bc263458145f3d9aa",
+    "scenes/official_catalog/extracted/highway_merge_3_2_164/highway_merge_3_2_164.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_164/highway_merge_3_2_164_exam.xosc": "999cdc35f1380e98c7328a0650db273827df361cda088d1a597715f70d178856",
+    "scenes/official_catalog/extracted/highway_merge_2_1_0/highway_merge_2_1_0.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_0/highway_merge_2_1_0_exam.xosc": "68dce9286d7af0d30e0f412f1323f38b6e256c6c261e9b0a96dcf1764428967e",
+    "scenes/official_catalog/extracted/highway_merge_3_1_192/highway_merge_3_1_192.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_192/highway_merge_3_1_192_exam.xosc": "64aff91bb36ab558a1db758931f4bdb8968814a73a883f4a4b333887f3a3eebc",
+    "scenes/official_catalog/extracted/highway_merge_2_2_484/highway_merge_2_2_484.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_484/highway_merge_2_2_484_exam.xosc": "29ab7c17106e735b6aa7ca0781ed6016c5d0ffd50b984ea19dd49a56088fff0b",
+    "scenes/official_catalog/extracted/7_661_merge_664/7_661_merge_664.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/7_661_merge_664/7_661_merge_664_exam.xosc": "cdf0bc271c7de33b6a39ad1a357a617bc3d86d564433435dee812078d998a074",
+    "scenes/official_catalog/extracted/highway_merge_3_2_468/highway_merge_3_2_468.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_468/highway_merge_3_2_468_exam.xosc": "b72002fdfdb19e31b9f6ec2df788d420ec46d0bb0afcabb8569c41853dcee19a",
+    "scenes/official_catalog/extracted/highway_merge_2_1_482/highway_merge_2_1_482.xodr": "937efd40d48e7eba8898b22e9f6e8b754c2bbd3f72c45ec5627a5b9e8a98eedf",
+    "scenes/official_catalog/extracted/highway_merge_2_1_482/highway_merge_2_1_482_exam.xosc": "ea1479b3a677c42f8d21dde8d3f5289f8d9b16d10598ac41953f3614e7cd826e",
+    "scenes/official_catalog/extracted/highway_merge_3_1_26/highway_merge_3_1_26.xodr": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+    "scenes/official_catalog/extracted/highway_merge_3_1_26/highway_merge_3_1_26_exam.xosc": "33ff59804585e6c465126f25dfa3321342f195c6bfb61de582d654a1d53d16de",
+    "scenes/official_catalog/extracted/highway_merge_2_2_118/highway_merge_2_2_118.xodr": "0268093e187f7ee1f614e3f4e688e0b80dedbf1969fbb8b589212e1cf20baa89",
+    "scenes/official_catalog/extracted/highway_merge_2_2_118/highway_merge_2_2_118_exam.xosc": "cc4570dc99aebf1cb6a1765a3e8b442421b5a4cf0261601d0625e680fa38754a",
+    "scenes/official_catalog/extracted/7_277_merge_292/7_277_merge_292.xodr": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+    "scenes/official_catalog/extracted/7_277_merge_292/7_277_merge_292_exam.xosc": "7dfee91f76ae5fb91ed2009dfd9342f98aad2fa4b452415de03b6ba34c46dd30",
+    "scenes/official_catalog/extracted/highway_merge_3_2_411/highway_merge_3_2_411.xodr": "e6cc2b46ba4b409a7ff314f8dd4060eb75f131b510b0b3ea6f436216e9ea5e50",
+    "scenes/official_catalog/extracted/highway_merge_3_2_411/highway_merge_3_2_411_exam.xosc": "448a4006025b7bad0ad3788f4d5524564f66beb1f13b8235c4c4e76e6ea1c759",
+    "scenes/official_catalog/extracted/21_105_straight_straight_107/21_105_straight_straight_107.json": "0fb9e419f2dc929448a0345093816a5a7ced66f85a27e1a350a7eb64f11a959c",
+    "scenes/official_catalog/extracted/21_105_straight_straight_107/21_105_straight_straight_107.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/21_105_straight_straight_107/21_105_straight_straight_107_exam.xosc": "87320451dcfa09f91b9a85db2caf44d3db46665f7b5f99f361a7455a36e588a3",
+    "scenes/official_catalog/extracted/14_65_straight_turn_round_77/14_65_straight_turn_round_77.json": "0913869d4c8f3af0de43485b016ce01b0451a5c83eaf38435837c5927360a708",
+    "scenes/official_catalog/extracted/14_65_straight_turn_round_77/14_65_straight_turn_round_77.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/14_65_straight_turn_round_77/14_65_straight_turn_round_77_exam.xosc": "fc2b437776ebf2a2c1f68ac716f3349b47a090b3c185543900d44521323125f2",
+    "scenes/official_catalog/extracted/8_5_1_330/8_5_1_330.json": "78fc472d9ae78051b6b266f52631d082fadbc70d3f9df3280b5736b67fae9ff2",
+    "scenes/official_catalog/extracted/8_5_1_330/8_5_1_330.xodr": "bdbb84e76843e0c5e97e9a29dc5dab753401118df390d1d649ca5617a1cdc72a",
+    "scenes/official_catalog/extracted/8_5_1_330/8_5_1_330_exam.xosc": "d1d936cbbdb6075d74d6283e5cd3b0edbeff2d4104c56bcb738163fa8da69ed8",
+    "scenes/official_catalog/extracted/1cutin31/1cutin31.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/1cutin31/1cutin31.xodr": "8128773fa2ccee010a73121e9f79e174898565afdbf6cc2609a4e9319365aab5",
+    "scenes/official_catalog/extracted/1cutin31/1cutin31_exam.xosc": "b9fa7c594c3155bc25ecc6166ee0593cea50ce733f44a9417d82746c06e46fbb",
+    "scenes/official_catalog/extracted/21_41_straight_in_opposite_left_43/21_41_straight_in_opposite_left_43.json": "e8d4c28070cf48938ae1bfdd513a0e34cfd1f32af29d18b02d97dce47732041c",
+    "scenes/official_catalog/extracted/21_41_straight_in_opposite_left_43/21_41_straight_in_opposite_left_43.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/21_41_straight_in_opposite_left_43/21_41_straight_in_opposite_left_43_exam.xosc": "a4b3ea53689db17e331898febc4db4e33ac9c8bb8a8674db9307429c3554982b",
+    "scenes/official_catalog/extracted/20_76_left_straight_in_opposite_83/20_76_left_straight_in_opposite_83.json": "cc00c00ae0f78262ed5488aa28ff2ffd8881143210032dd1ef7eac336dbdb0b4",
+    "scenes/official_catalog/extracted/20_76_left_straight_in_opposite_83/20_76_left_straight_in_opposite_83.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/20_76_left_straight_in_opposite_83/20_76_left_straight_in_opposite_83_exam.xosc": "3ff8186dd02a50c5a7b74be4244a24d6a6040aea64ec9cae4b5c715f108b6d64",
+    "scenes/official_catalog/extracted/16_90_left_straight_in_adjacent_96/16_90_left_straight_in_adjacent_96.json": "7c90d18fe975fd567dae76c5224b5052cae3fca3f4422f490d104ff63249b1f0",
+    "scenes/official_catalog/extracted/16_90_left_straight_in_adjacent_96/16_90_left_straight_in_adjacent_96.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/16_90_left_straight_in_adjacent_96/16_90_left_straight_in_adjacent_96_exam.xosc": "5a86a505028ace3c1719ffc5f43c08c1adc00cb70672f67dcf780f94528183ec",
+    "scenes/official_catalog/extracted/2following406/2following406.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/2following406/2following406.xodr": "7521fa904f77f09572c63591ecfa1ba16e64e0941b990106b5eb1304e2b8752b",
+    "scenes/official_catalog/extracted/2following406/2following406_exam.xosc": "22ab497960d1a1cc53cdb0961abd62e5e0ef0692f52a28c8dff8809b187048ce",
+    "scenes/official_catalog/extracted/opp24/opp24.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/opp24/opp24.xodr": "16b604c8984971e7fa4b81a217382eeab9faec345b62acdc987a62707c801a46",
+    "scenes/official_catalog/extracted/opp24/opp24_exam.xosc": "b84b59974a0660cc70d718eebe64f7e3daac238bc4d0444c4355b9e9784bfab5",
+    "scenes/official_catalog/extracted/13_57_straight_in_adjacent_left_58/13_57_straight_in_adjacent_left_58.json": "2a147f10e62b64290ea491aaa84e06825801c1a525e54ed62b956951151ed612",
+    "scenes/official_catalog/extracted/13_57_straight_in_adjacent_left_58/13_57_straight_in_adjacent_left_58.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/13_57_straight_in_adjacent_left_58/13_57_straight_in_adjacent_left_58_exam.xosc": "d61699318d1233c1eca4b9b1fca5b79ed1f764d51fdb6801304991bcff0f1e51",
+    "scenes/official_catalog/extracted/20_120_left_left_129/20_120_left_left_129.json": "57c3375e8433f3849253fe94984fe779b4d722e054a205dc44be3db704832078",
+    "scenes/official_catalog/extracted/20_120_left_left_129/20_120_left_left_129.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/20_120_left_left_129/20_120_left_left_129_exam.xosc": "5120ff3b56e0ebee381f3bd9f21704bd1b8f156d773d985c15020772705a44f4",
+    "scenes/official_catalog/extracted/1rush27/1rush27.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/1rush27/1rush27.xodr": "a053e1260656e71c1e27a300b5902fcee761b77afe5e82d1e8bfc594900c3726",
+    "scenes/official_catalog/extracted/1rush27/1rush27_exam.xosc": "60265541abe7e85750dd73f1d682c0041563a8681c25fd2f7c134ed632497707",
+    "scenes/official_catalog/extracted/12_93_straight_straight_95/12_93_straight_straight_95.json": "ad1650aee6b153d3a4f4cdfba5e87e50d9e7d32bd67639663a11fcf36461958f",
+    "scenes/official_catalog/extracted/12_93_straight_straight_95/12_93_straight_straight_95.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_93_straight_straight_95/12_93_straight_straight_95_exam.xosc": "ef715c7dce90713e42bf47d31c4ca7ee5b8b4623a4b124b8c1b99cc1667e6502",
+    "scenes/official_catalog/extracted/8_6_1_93/8_6_1_93.json": "56b2b13f347ec01a179f73c37ae63b48531ec4284954a7dd163ea13bdc7d7f90",
+    "scenes/official_catalog/extracted/8_6_1_93/8_6_1_93.xodr": "bdbb84e76843e0c5e97e9a29dc5dab753401118df390d1d649ca5617a1cdc72a",
+    "scenes/official_catalog/extracted/8_6_1_93/8_6_1_93_exam.xosc": "fa88cde11cfa6922d5a22920f6cbc5fe7c7e93a25062f7e9c4d27615c2b9ddaa",
+    "scenes/official_catalog/extracted/13_91_straight_in_opposite_left_96/13_91_straight_in_opposite_left_96.json": "73bc210d5f866c68dc7b82c754179a9560dc6ccea562e10b2b6cf8e619fad1ec",
+    "scenes/official_catalog/extracted/13_91_straight_in_opposite_left_96/13_91_straight_in_opposite_left_96.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/13_91_straight_in_opposite_left_96/13_91_straight_in_opposite_left_96_exam.xosc": "ff4d62c40ee82f090ce2582b5cac02a7d6be6a3386771a33428d03a1b7cb7181",
+    "scenes/official_catalog/extracted/12_27_left_straight_in_opposite_30/12_27_left_straight_in_opposite_30.json": "ac3ea5430986845cf8c8b4c035233ff5342a732aa957af4285bd95502e0aa592",
+    "scenes/official_catalog/extracted/12_27_left_straight_in_opposite_30/12_27_left_straight_in_opposite_30.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_27_left_straight_in_opposite_30/12_27_left_straight_in_opposite_30_exam.xosc": "223965dfec258944b77dfb8655f99e944a42f473868a44e4686bcadc6b4cb372",
+    "scenes/official_catalog/extracted/13_69_left_straight_in_adjacent_71/13_69_left_straight_in_adjacent_71.json": "6c623ccc4e1799103193fe4a3751f2344261cd87527167d0c8061a0928370198",
+    "scenes/official_catalog/extracted/13_69_left_straight_in_adjacent_71/13_69_left_straight_in_adjacent_71.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/13_69_left_straight_in_adjacent_71/13_69_left_straight_in_adjacent_71_exam.xosc": "9045c62c92d31f47d9a4df6ce5164d43cd575400bb3d44ec59b83a8c5728b96a",
+    "scenes/official_catalog/extracted/13_50_straight_in_adjacent_left_53/13_50_straight_in_adjacent_left_53.json": "1f60da4b95d46a85a6e41380c81106a095154f26d9c5a4fc8aef5c6099d9d336",
+    "scenes/official_catalog/extracted/13_50_straight_in_adjacent_left_53/13_50_straight_in_adjacent_left_53.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/13_50_straight_in_adjacent_left_53/13_50_straight_in_adjacent_left_53_exam.xosc": "0c094eb4c959153f740498057de60136a0194889a6a7b4a5d18eb570da1befe6",
+    "scenes/official_catalog/extracted/16_107_left_left_119/16_107_left_left_119.json": "40c640bb60a0dd14eff9ee0c5994f8cd45c73b90dda1e499c6e36c46998d2ef4",
+    "scenes/official_catalog/extracted/16_107_left_left_119/16_107_left_left_119.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/16_107_left_left_119/16_107_left_left_119_exam.xosc": "ab08e0069eb38dedc0e4f901af6e568581c0d870549d0eb069d62d9c5930234c",
+    "scenes/official_catalog/extracted/1rush10/1rush10.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/1rush10/1rush10.xodr": "119039119bf6662f675b75866c6ba38224cc23d95e1f816fc2797f903c0e4ad7",
+    "scenes/official_catalog/extracted/1rush10/1rush10_exam.xosc": "002de64e0051b0f99b3c82cafc7d3ebd5c7552bb880c5ef840db4c1044e32457",
+    "scenes/official_catalog/extracted/18_29_straight_straight_30/18_29_straight_straight_30.json": "21d3d17e3271a50b5053f2f058d96fc93dcbfb37d382421392779c6e94e5fe14",
+    "scenes/official_catalog/extracted/18_29_straight_straight_30/18_29_straight_straight_30.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/18_29_straight_straight_30/18_29_straight_straight_30_exam.xosc": "56d1564f2cc99b5850622714337f241c43056f38c2e4623487ffe4e0bed4b420",
+    "scenes/official_catalog/extracted/12_125_straight_in_opposite_left_127/12_125_straight_in_opposite_left_127.json": "4e6c07f1acc1d147f76ca8f79038da088cb281c1362c81d7d43590da1bda624c",
+    "scenes/official_catalog/extracted/12_125_straight_in_opposite_left_127/12_125_straight_in_opposite_left_127.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_125_straight_in_opposite_left_127/12_125_straight_in_opposite_left_127_exam.xosc": "3bb636e1a24ab7b24e4f8e16dbd8019714d0b2e9f048f10f4e73594a21bb413c",
+    "scenes/official_catalog/extracted/11_84_left_straight_in_opposite_89/11_84_left_straight_in_opposite_89.json": "4b0724a55dbe996cc2fa4bd7cceec4737b5e27ffb62707f8fc944f3671f2ff5c",
+    "scenes/official_catalog/extracted/11_84_left_straight_in_opposite_89/11_84_left_straight_in_opposite_89.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/11_84_left_straight_in_opposite_89/11_84_left_straight_in_opposite_89_exam.xosc": "a3b76ceeb7be49b6f9b38062671afe496fb214fdcc3f44bc1b487dcfa41a1ebb",
+    "scenes/official_catalog/extracted/11_107_left_straight_in_adjacent_112/11_107_left_straight_in_adjacent_112.json": "f084200ab7bf6e60fdee5cdb7cf148c44a3dba69d3a8588d27cd999651912187",
+    "scenes/official_catalog/extracted/11_107_left_straight_in_adjacent_112/11_107_left_straight_in_adjacent_112.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/11_107_left_straight_in_adjacent_112/11_107_left_straight_in_adjacent_112_exam.xosc": "246a7dd67b78c39774c85dea3d91f136bbf64b8bd4a695d9348285ce3349031c",
+    "scenes/official_catalog/extracted/12_32_straight_in_adjacent_left_33/12_32_straight_in_adjacent_left_33.json": "8798f9b795ad948df7fe156839c622e528762ecb290136e9d5ae56239691bd39",
+    "scenes/official_catalog/extracted/12_32_straight_in_adjacent_left_33/12_32_straight_in_adjacent_left_33.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_32_straight_in_adjacent_left_33/12_32_straight_in_adjacent_left_33_exam.xosc": "3ea1072ff19f08c1749469cfb89ccd9e500fa64a4a950fd4bab6a31c5d391c11",
+    "scenes/official_catalog/extracted/14_58_left_left_59/14_58_left_left_59.json": "2d891d2782dcb7acea9a36c3e964716e2c961c170df6307b95fa7a774c4ded46",
+    "scenes/official_catalog/extracted/14_58_left_left_59/14_58_left_left_59.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/14_58_left_left_59/14_58_left_left_59_exam.xosc": "9537ff104ea69b2d6ac27fd4d1f611341c7829b3531b37cfe77878dfb5ad2bb6",
+    "scenes/official_catalog/extracted/1rush2/1rush2.json": "82819c683ec54f7751443e7e7ac4d89ed7caca3e67dfdf94c1c99605066604ab",
+    "scenes/official_catalog/extracted/1rush2/1rush2.xodr": "75c836bd0c109246ba5beb33564a05aab6fe743e337b5fdbc370054b76b8ac7a",
+    "scenes/official_catalog/extracted/1rush2/1rush2_exam.xosc": "5924c819f0c575434e1831a8a39342f5bbf7404c7a0dc2e82411ead13f7f599c",
+    "scenes/official_catalog/extracted/11_57_straight_straight_61/11_57_straight_straight_61.json": "ead1cb12bb9cf8c93f0536a8dfc9d3607f73f6031d5458fc264a0af3f0f41764",
+    "scenes/official_catalog/extracted/11_57_straight_straight_61/11_57_straight_straight_61.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/11_57_straight_straight_61/11_57_straight_straight_61_exam.xosc": "5a25622aefc5171c7332fb8e3ca9832014bef2cea99f8c9cab22428dc923d5b3",
+    "scenes/official_catalog/extracted/12_18_straight_in_opposite_left_24/12_18_straight_in_opposite_left_24.json": "cdd5d11485fd3bfa7e238cd768ab6ea82ea2bf25cb4c608ceb9a46f1ca8d943c",
+    "scenes/official_catalog/extracted/12_18_straight_in_opposite_left_24/12_18_straight_in_opposite_left_24.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_18_straight_in_opposite_left_24/12_18_straight_in_opposite_left_24_exam.xosc": "785d9ba81753715a0cb4c1450dcf0a79e92d1bc542015ebb6c8077337ff7b419",
+    "scenes/official_catalog/extracted/19_9_left_straight_in_opposite_11/19_9_left_straight_in_opposite_11.json": "21d3d17e3271a50b5053f2f058d96fc93dcbfb37d382421392779c6e94e5fe14",
+    "scenes/official_catalog/extracted/19_9_left_straight_in_opposite_11/19_9_left_straight_in_opposite_11.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/19_9_left_straight_in_opposite_11/19_9_left_straight_in_opposite_11_exam.xosc": "bdea41888d5f3f8e416d3f532664b1b32cd6fba14e344a256d9b0c4954833553",
+    "scenes/official_catalog/extracted/13_103_left_straight_in_adjacent_114/13_103_left_straight_in_adjacent_114.json": "d4f1b3c541960da6b2f869deeffa5901a35545612e2076196f691853fb7cfd91",
+    "scenes/official_catalog/extracted/13_103_left_straight_in_adjacent_114/13_103_left_straight_in_adjacent_114.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/13_103_left_straight_in_adjacent_114/13_103_left_straight_in_adjacent_114_exam.xosc": "2e4b67b385f477ad00500cc56ae565c8d56a76ee1cda5ba1115bc6006e55807d",
+    "scenes/official_catalog/extracted/10_60_straight_in_adjacent_left_61/10_60_straight_in_adjacent_left_61.json": "6aedd8d10b069762306f0c058cba5cefcb4d98486a0663117a68c79042d66c44",
+    "scenes/official_catalog/extracted/10_60_straight_in_adjacent_left_61/10_60_straight_in_adjacent_left_61.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/10_60_straight_in_adjacent_left_61/10_60_straight_in_adjacent_left_61_exam.xosc": "18103e1b7c7b9a0663f947661cefe07be68beebd612d406185228a1f531de596",
+    "scenes/official_catalog/extracted/12_43_left_left_44/12_43_left_left_44.json": "4091b75e706299d990faa9371e739bed87ea3fae83e9325a96911a24660defdc",
+    "scenes/official_catalog/extracted/12_43_left_left_44/12_43_left_left_44.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/12_43_left_left_44/12_43_left_left_44_exam.xosc": "065b712e8e4b70bc4ec3c631cbc78701a6d1914fe40e345fa429963aed772cd7",
+    "scenes/official_catalog/extracted/15_69_straight_straight_70/15_69_straight_straight_70.json": "d19fe408c53c4bc7c76cba131f42a35ab1eeb3a146c419e4e943e298ceedf5ba",
+    "scenes/official_catalog/extracted/15_69_straight_straight_70/15_69_straight_straight_70.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/15_69_straight_straight_70/15_69_straight_straight_70_exam.xosc": "4ea1dd72ef0a074ba15149b4283c1e29eaba3b49678f40a9bf10599b2a2ad0af",
+    "scenes/official_catalog/extracted/15_14_straight_in_opposite_left_19/15_14_straight_in_opposite_left_19.json": "a38bd51f7fc5f427ca96eb0320311d8b786d0ba945f886d893c4aa62d607a71a",
+    "scenes/official_catalog/extracted/15_14_straight_in_opposite_left_19/15_14_straight_in_opposite_left_19.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/15_14_straight_in_opposite_left_19/15_14_straight_in_opposite_left_19_exam.xosc": "8d1f3a18c0fada6e216a649de3cb7e335a14e2826e79b6828abd635e491f4345",
+    "scenes/official_catalog/extracted/14_124_left_straight_in_opposite_130/14_124_left_straight_in_opposite_130.json": "2c080ea3c1ebd887443ba195134056587b0a9d8e2cb1db3526e767e156531595",
+    "scenes/official_catalog/extracted/14_124_left_straight_in_opposite_130/14_124_left_straight_in_opposite_130.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/14_124_left_straight_in_opposite_130/14_124_left_straight_in_opposite_130_exam.xosc": "27d192e820dc9f068f32d3a9fa6f8a317576d99b381447e2cb96f70c15afb8c7",
+    "scenes/official_catalog/extracted/21_104_left_straight_in_adjacent_106/21_104_left_straight_in_adjacent_106.json": "ea26d5d303477f8a39974673ff4a1351da5e54e026593bda4fb2ed4a0ce290b3",
+    "scenes/official_catalog/extracted/21_104_left_straight_in_adjacent_106/21_104_left_straight_in_adjacent_106.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/21_104_left_straight_in_adjacent_106/21_104_left_straight_in_adjacent_106_exam.xosc": "b786ec97d6685c86f8967eb51bc082fdde730427e1a78a965b9234d1ce45ff13",
+    "scenes/official_catalog/extracted/20_46_straight_in_adjacent_left_47/20_46_straight_in_adjacent_left_47.json": "0cac79374e129c6a4f318b780c3b592408f09d09884e0a3e7d2be028148bf6a1",
+    "scenes/official_catalog/extracted/20_46_straight_in_adjacent_left_47/20_46_straight_in_adjacent_left_47.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/20_46_straight_in_adjacent_left_47/20_46_straight_in_adjacent_left_47_exam.xosc": "e9e12274b650fff55bb80aa2e1d96bf493ae9a7f9709a10a0e3091d3f39e678a",
+    "scenes/official_catalog/extracted/14_28_left_left_32/14_28_left_left_32.json": "ac9610970a3f3b7058ee8d6bbefc7f1e702037909f4942daec59f2474122c079",
+    "scenes/official_catalog/extracted/14_28_left_left_32/14_28_left_left_32.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/14_28_left_left_32/14_28_left_left_32_exam.xosc": "d8a4d5d616cb03adfb3810f5fdbf5948383b0ad5cb384c35d8a502283b613be4",
+    "scenes/official_catalog/extracted/21_73_straight_straight_75/21_73_straight_straight_75.json": "0237c611a6c0137c28361dd471d748dc15d42a2f1041004bdae122f1931b1128",
+    "scenes/official_catalog/extracted/21_73_straight_straight_75/21_73_straight_straight_75.xodr": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+    "scenes/official_catalog/extracted/21_73_straight_straight_75/21_73_straight_straight_75_exam.xosc": "38508f4a436710aee2e184b772ea4279367668dae9ada7f8f636695cea21e025"
+  },
+  "tool_sha256": "1ef4cf1edf61117f9f3407bd9b31cc5d8c997e3520c5eca89d24939afd35a519",
+  "selection_uses_outcomes": false,
+  "future_trajectories_used_for_selection": false
+}

@@ -1,0 +1,34 @@
+{
+  "run": "unified_r43_20261010_extra100",
+  "scene": "cutin58",
+  "official_outcome": "到达",
+  "trace_sha256": "11afc6cb428e20413c19a48e537a93eda4551f52c95838fca21d78376ae43a69",
+  "map_sha256": "f0e98c38031a2b656107666c52adf49cf70a149f108c445e955d6b18870a6473",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": null,
+    "first_exterior_growth_t": null,
+    "initial_exterior_area": 0.0,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 0.0,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 0.0,
+    "max_exterior_t": 0.0,
+    "max_exterior_state": {
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "v": 22.942,
+      "a": 0,
+      "rot": 0
+    },
+    "outside_frame_count": 0,
+    "total_frames": 120,
+    "episodes": [],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": null,
+  "attribution": null,
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}

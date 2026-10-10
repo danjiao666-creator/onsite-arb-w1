@@ -1,0 +1,34 @@
+{
+  "run": "unified_r43_20261010_devreg130",
+  "scene": "1605follow1466",
+  "official_outcome": "到达",
+  "trace_sha256": "2a08276d617a463b416534ae46ea774dfcea23b95e6aa42de4c6bd975e436877",
+  "map_sha256": "4bd90800f75d048797692b6f797c00c9a2c4f49aebd23597900c941ae636c78c",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": null,
+    "first_exterior_growth_t": null,
+    "initial_exterior_area": 0.0,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 0.0,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 0.0,
+    "max_exterior_t": 0.0,
+    "max_exterior_state": {
+      "x": 7.885,
+      "y": -4.78,
+      "yaw": 0.0,
+      "v": 35.01,
+      "a": 0,
+      "rot": 0
+    },
+    "outside_frame_count": 0,
+    "total_frames": 251,
+    "episodes": [],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": null,
+  "attribution": null,
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}

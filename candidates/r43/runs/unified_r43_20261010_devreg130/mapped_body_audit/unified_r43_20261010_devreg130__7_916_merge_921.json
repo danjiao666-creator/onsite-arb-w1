@@ -1,0 +1,34 @@
+{
+  "run": "unified_r43_20261010_devreg130",
+  "scene": "7_916_merge_921",
+  "official_outcome": "碰撞",
+  "trace_sha256": "b94cedb35d5bc5219a62c28431f138d24595831504a300648c8bfe365280292d",
+  "map_sha256": "969d8cc1cd2fbcb3e2b579b2216d45b2105c51b4830f9074fcb0ee2e6a210fc5",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": null,
+    "first_exterior_growth_t": null,
+    "initial_exterior_area": 0.0,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 0.0,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 0.0,
+    "max_exterior_t": 0.0,
+    "max_exterior_state": {
+      "x": 1138.886,
+      "y": 971.131,
+      "yaw": 3.37,
+      "v": 1.816,
+      "a": 0,
+      "rot": 0
+    },
+    "outside_frame_count": 0,
+    "total_frames": 359,
+    "episodes": [],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": null,
+  "attribution": null,
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}

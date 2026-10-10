@@ -1,0 +1,107 @@
+{
+  "run": "unified_r43_20261010_devreg130",
+  "scene": "14_123_straight_in_opposite_left_124",
+  "official_outcome": "到达",
+  "trace_sha256": "35f3062e694e75f12a8dd696b59e96cd9647d61e83997f2ebf4115789e2fe14b",
+  "map_sha256": "c07c227fada9fb7f672aa297f59a142b7dbe078c9c01ef677a275d5daa4ccf71",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": 0.0,
+    "first_exterior_growth_t": 0.1,
+    "initial_exterior_area": 0.19948082081266227,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 14.3,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 0.2840844892787604,
+    "max_exterior_t": 5.9,
+    "max_exterior_state": {
+      "x": 975.082,
+      "y": 1004.938,
+      "yaw": 6.256,
+      "v": 0.2,
+      "a": 0.8,
+      "rot": 0.0
+    },
+    "outside_frame_count": 143,
+    "total_frames": 264,
+    "episodes": [
+      {
+        "start_t": 0.0,
+        "end_t": 14.2,
+        "frames": 143,
+        "max_exterior_area": 0.2840844892787604,
+        "initial_overhang": true
+      }
+    ],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": {
+    "t": 0.0,
+    "selected": {
+      "id": "route:0:0.00/recovery:constant:-9.8:1",
+      "family": "recovery",
+      "steering_mode": 1,
+      "steering_duration": 2.0,
+      "steering_target": null,
+      "first_hit": null,
+      "clearance": 1.442938654623081,
+      "prefix_clearance": 1.442938654623081,
+      "next_clearance": 1.442938654623081,
+      "buffer_first_hit": null,
+      "contact_first_hit": null,
+      "execution_prefix_buffer_shortfall": false,
+      "actor": null,
+      "branch": null,
+      "contact_actor": null,
+      "contact_branch": null,
+      "goal_time": null,
+      "eta": 16.724894320719876,
+      "budget_eta": 16.724894320719876,
+      "arrival_evidence": "traffic_free_tail_estimate",
+      "cost": 51.78839432391043,
+      "costs": {
+        "eta": 16.724894320719876,
+        "budget": 0.0,
+        "acceleration": 1.0228922000000003,
+        "jerk": 10.580820000000003,
+        "clearance": 0.0,
+        "headway": 0.0,
+        "overspeed": 0.0,
+        "consistency": 0.49000000000000005,
+        "tracking": 12.969787803190554,
+        "steering_override": 10.0,
+        "future_risk": 0.0,
+        "route": 0.0
+      },
+      "max_lateral_error": 1.040200667641955,
+      "rejected_by": [
+        "mapped_road_body_outside"
+      ],
+      "future_risk": false,
+      "first_command": [
+        -9.8,
+        0.0
+      ],
+      "expected_first_state": [
+        973.396,
+        1004.982,
+        6.256,
+        5.169,
+        -4.9,
+        0.0
+      ],
+      "road_status": "mapped_body_on_grid",
+      "road_checked": true,
+      "road_first_outside_step": 0,
+      "road_first_violation": 0.1,
+      "joint_first_violation": 0.1,
+      "risk_body_contact_horizon": 2.0,
+      "road_max_exterior_area": 0.27636294451783433
+    },
+    "feasible_witness_lower_bound": 0,
+    "selection_policy": "prefix_then_executed_goal_then_forecast_clear_then_cost; risk_body_contact_delay_then_joint_road_buffer_delay_then_next_clearance"
+  },
+  "attribution": "route + controller + mapped_boundary + risk_selection",
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}

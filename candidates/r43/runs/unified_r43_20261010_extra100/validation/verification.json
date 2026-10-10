@@ -1,0 +1,438 @@
+{
+  "sources_unchanged": true,
+  "frozen_planner_unchanged": true,
+  "inputs_unchanged": true,
+  "existing_map_caches_unchanged": true,
+  "map_cache_after": {
+    "scenes/official_catalog/extracted/2196cutin148/2196cutin148.xodr": {
+      "path": "bench/.cache/xodr/c4379dbe0179968c2b549321feb22c23.pkl",
+      "sha256": "fa5e7754fda3022716000545e1426ced3fca924ac611f994b766a311d10a1893"
+    },
+    "scenes/official_catalog/extracted/1253lanechanging40/1253lanechanging40.xodr": {
+      "path": "bench/.cache/xodr/083430188abb10732e2f76cb1bbb27a1.pkl",
+      "sha256": "4120e56588e2c29ac266664d2f3deaebae2cc3c5aae1eed9c3094e9fa69a97b9"
+    },
+    "scenes/official_catalog/extracted/2092follow1887/2092follow1887.xodr": {
+      "path": "bench/.cache/xodr/8565fe5195ab79fbd6e48e315e2f1b25.pkl",
+      "sha256": "8b10ae5fcb4a2c1dea2a0fe273fa0020fd19d9d14aaacc5143fb0ed18f6dfebc"
+    },
+    "scenes/official_catalog/extracted/1686cutin98/1686cutin98.xodr": {
+      "path": "bench/.cache/xodr/ffb1051a2bfcc05a0a7e22e60bb2da93.pkl",
+      "sha256": "d30af1cb4be62c47d3ca015729ed889a0b167d71a11cc5ba0cf83759c3c6f519"
+    },
+    "scenes/official_catalog/extracted/1026lanechanging33/1026lanechanging33.xodr": {
+      "path": "bench/.cache/xodr/9959deafd902e8a9c15354cf8bd88546.pkl",
+      "sha256": "dab078b4b1690f56f22c67c1bfadcded8454020acd8d1b458b71aa3017092f2a"
+    },
+    "scenes/official_catalog/extracted/1358follow1243/1358follow1243.xodr": {
+      "path": "bench/.cache/xodr/5787f183968bb4bc2fb74e956346b937.pkl",
+      "sha256": "ceba94357aff4770e13fe5facd4c50961f8c90134f4677d4661ae36031ea9ae0"
+    },
+    "scenes/official_catalog/extracted/1270cutin63/1270cutin63.xodr": {
+      "path": "bench/.cache/xodr/02ec1217a74e58f9c4a50d033d593653.pkl",
+      "sha256": "b863a2b2c9b65240bf1bec793dc16193ec3fea5966fdb11dac23c2d15fdde1be"
+    },
+    "scenes/official_catalog/extracted/0923lanechanging30/0923lanechanging30.xodr": {
+      "path": "bench/.cache/xodr/7b8de1473b79fce42855e4803303e270.pkl",
+      "sha256": "cc077ae976b6dd032c9b1677ddc1565f6cd3f43bbae1aa8280eabe8b6038213f"
+    },
+    "scenes/official_catalog/extracted/0914follow851/0914follow851.xodr": {
+      "path": "bench/.cache/xodr/f9178a526512ec92e4c87be3691f244d.pkl",
+      "sha256": "cc077ae976b6dd032c9b1677ddc1565f6cd3f43bbae1aa8280eabe8b6038213f"
+    },
+    "scenes/official_catalog/extracted/2062cutin134/2062cutin134.xodr": {
+      "path": "bench/.cache/xodr/4763cd3c9943d617056a1e9f491cfe92.pkl",
+      "sha256": "aa984e8e0cc12e7f32f75b3d590ee7a737ca45c6e6f6695926d9dfb167b7a582"
+    },
+    "scenes/official_catalog/extracted/1481lanechanging47/1481lanechanging47.xodr": {
+      "path": "bench/.cache/xodr/cbd34a29678569f27fa6bf064a75ce80.pkl",
+      "sha256": "be2792d1057e1f263a4eaa78a06c92045c14be6ec80654d0de55b84e6ff35c9d"
+    },
+    "scenes/official_catalog/extracted/1423follow1305/1423follow1305.xodr": {
+      "path": "bench/.cache/xodr/0b6a6dca17fd743d56c74ffa0f4f661e.pkl",
+      "sha256": "9a359a229ea08cce0608cffa3ddf7ec341d70a8a8d928ba38e81515fd1d36280"
+    },
+    "scenes/official_catalog/extracted/1356cutin72/1356cutin72.xodr": {
+      "path": "bench/.cache/xodr/eafcae1978bc215fca03e32c4773f667.pkl",
+      "sha256": "ceba94357aff4770e13fe5facd4c50961f8c90134f4677d4661ae36031ea9ae0"
+    },
+    "scenes/official_catalog/extracted/1296lanechanging42/1296lanechanging42.xodr": {
+      "path": "bench/.cache/xodr/ef0335a83119a45c2c8cacd026ce17cc.pkl",
+      "sha256": "b863a2b2c9b65240bf1bec793dc16193ec3fea5966fdb11dac23c2d15fdde1be"
+    },
+    "scenes/official_catalog/extracted/0066follow65/0066follow65.xodr": {
+      "path": "bench/.cache/xodr/7698dbb69ca1a00ddbc74bbad0bae823.pkl",
+      "sha256": "8f8c73dbc60315bc9b9ad7e3f86a9c76be020ffd1e8b5ebc668de2769299fc4b"
+    },
+    "scenes/official_catalog/extracted/2422cutin168/2422cutin168.xodr": {
+      "path": "bench/.cache/xodr/e3c7269694043e1b9edd7ba2a1924df7.pkl",
+      "sha256": "d1b94458eae0c0d5addc578e965a4dd4f59b4497855d799b12b31187c0ed3b73"
+    },
+    "scenes/official_catalog/extracted/1796lanechanging55/1796lanechanging55.xodr": {
+      "path": "bench/.cache/xodr/162bb8ec43889d88b8ed3425ef310a14.pkl",
+      "sha256": "33ac203feae3fc3df7c37fb715c7ae6fac7d01c93e9129a75f9e0e5a3b69017b"
+    },
+    "scenes/official_catalog/extracted/1432follow1313/1432follow1313.xodr": {
+      "path": "bench/.cache/xodr/a9056de836cdc15c48c20161293883f9.pkl",
+      "sha256": "e8e574b93430f3756232c84080d95babe11e3183fec73d77f492253b3a1057cf"
+    },
+    "scenes/official_catalog/extracted/1095cutin44/1095cutin44.xodr": {
+      "path": "bench/.cache/xodr/82ffc4b2800141713c142708fddc1ad9.pkl",
+      "sha256": "dab078b4b1690f56f22c67c1bfadcded8454020acd8d1b458b71aa3017092f2a"
+    },
+    "scenes/official_catalog/extracted/1344lanechanging44/1344lanechanging44.xodr": {
+      "path": "bench/.cache/xodr/34b7fdc443855387aaea9689cc3b1ecc.pkl",
+      "sha256": "ceba94357aff4770e13fe5facd4c50961f8c90134f4677d4661ae36031ea9ae0"
+    },
+    "scenes/official_catalog/extracted/1256follow1157/1256follow1157.xodr": {
+      "path": "bench/.cache/xodr/669d7ce4cd19d654a925d08d435a587c.pkl",
+      "sha256": "4120e56588e2c29ac266664d2f3deaebae2cc3c5aae1eed9c3094e9fa69a97b9"
+    },
+    "scenes/official_catalog/extracted/1571cutin91/1571cutin91.xodr": {
+      "path": "bench/.cache/xodr/afdda2040fe29d24b5d261319f4f2439.pkl",
+      "sha256": "be2792d1057e1f263a4eaa78a06c92045c14be6ec80654d0de55b84e6ff35c9d"
+    },
+    "scenes/official_catalog/extracted/1687lanechanging51/1687lanechanging51.xodr": {
+      "path": "bench/.cache/xodr/b82b8d46b43922b7a6c3efe79164ba17.pkl",
+      "sha256": "d30af1cb4be62c47d3ca015729ed889a0b167d71a11cc5ba0cf83759c3c6f519"
+    },
+    "scenes/official_catalog/extracted/1028follow956/1028follow956.xodr": {
+      "path": "bench/.cache/xodr/df64cfbaabb632813114d018d219653f.pkl",
+      "sha256": "dab078b4b1690f56f22c67c1bfadcded8454020acd8d1b458b71aa3017092f2a"
+    },
+    "scenes/official_catalog/extracted/1434cutin77/1434cutin77.xodr": {
+      "path": "bench/.cache/xodr/4fd5404ff136936634c03f1b16313900.pkl",
+      "sha256": "e8e574b93430f3756232c84080d95babe11e3183fec73d77f492253b3a1057cf"
+    },
+    "scenes/official_catalog/extracted/cutin58/cutin58.xodr": {
+      "path": "bench/.cache/xodr/4bb053554a22e1959ddd1db687bc8b9d.pkl",
+      "sha256": "d6e4e3c349b948992265cefe059345ea14eedba092f5a691b6ae638a21d624e7"
+    },
+    "scenes/official_catalog/extracted/1lanechange42/1lanechange42.xodr": {
+      "path": "bench/.cache/xodr/87b357df26868ea1fcddc60c920da3af.pkl",
+      "sha256": "b3dcea567daf2b3da4e9f9d8ee8064900a954098642318545b45a4a7daa46fa0"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_113/highway_merge_2_1_113.xodr": {
+      "path": "bench/.cache/xodr/d18816af0a98831de8f2d6bb0e77024b.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_223/highway_merge_3_1_223.xodr": {
+      "path": "bench/.cache/xodr/2aa37ad91df8cd1185065666c155bf1f.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_28/highway_merge_2_2_28.xodr": {
+      "path": "bench/.cache/xodr/9877badb5cbd330734aedf3c7d62cafe.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/8_300_merge_311/8_300_merge_311.xodr": {
+      "path": "bench/.cache/xodr/79d4c2eda35e45fabb4deeee48f28857.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/1following199/1following199.xodr": {
+      "path": "bench/.cache/xodr/4e9b3c7455dd91e154e2fb6c16f0dded.pkl",
+      "sha256": "6b86a2f8a5a31f646403ad5977e1d56856c0361da9e31403e75c1f4d08d940f0"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_121/highway_merge_3_2_121.xodr": {
+      "path": "bench/.cache/xodr/0d47a7c873722f3fe9cdcc12fdcbb6eb.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/1cutin74/1cutin74.xodr": {
+      "path": "bench/.cache/xodr/9d280071ffe26aa65f002be49501e780.pkl",
+      "sha256": "42382208eb4daf6c535232f686dc051c41cca1ba4c71717a420bb8d398ce5c8a"
+    },
+    "scenes/official_catalog/extracted/2lanechange60/2lanechange60.xodr": {
+      "path": "bench/.cache/xodr/a985a9a75aaa2a08b610489f19fee859.pkl",
+      "sha256": "3c4cb8adde707d994bf7b29ccf289e04ff7a8a71a28d94bbc527cf7f7887396e"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_183/highway_merge_2_1_183.xodr": {
+      "path": "bench/.cache/xodr/660f8e447d3c542e370c90ad23e36000.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_432/highway_merge_3_1_432.xodr": {
+      "path": "bench/.cache/xodr/943dbf8f77dc338ab431225ad837ef84.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_108/highway_merge_2_2_108.xodr": {
+      "path": "bench/.cache/xodr/3e07fb95324eb7cde45ca5191ba401d3.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/10_428_merge_436/10_428_merge_436.xodr": {
+      "path": "bench/.cache/xodr/a74ee1e056fadcf6d5c07afac0d29ee6.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_248/highway_merge_3_2_248.xodr": {
+      "path": "bench/.cache/xodr/71a693269b61ed3e229f3721d5363c86.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_293/highway_merge_2_1_293.xodr": {
+      "path": "bench/.cache/xodr/34cef3999a7b10c534823c5e601923c2.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_495/highway_merge_3_1_495.xodr": {
+      "path": "bench/.cache/xodr/cace0e8940fcb1ed3629742da3090787.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_446/highway_merge_2_2_446.xodr": {
+      "path": "bench/.cache/xodr/fa2f25332b0cd944554354286a53b9ba.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/7_804_merge_808/7_804_merge_808.xodr": {
+      "path": "bench/.cache/xodr/b9975ae574850e8c59446f7dd9948d05.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_493/highway_merge_3_2_493.xodr": {
+      "path": "bench/.cache/xodr/43ad8f606d1f375e65c306e23702fcfd.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_142/highway_merge_2_1_142.xodr": {
+      "path": "bench/.cache/xodr/e74cad01b2ea54d61036a32591a5de09.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_18/highway_merge_3_1_18.xodr": {
+      "path": "bench/.cache/xodr/f52266bb11635809a2674ff3e7571e7e.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_396/highway_merge_2_2_396.xodr": {
+      "path": "bench/.cache/xodr/f950e81f7b1078fb58b898660584a9fa.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/7_617_merge_622/7_617_merge_622.xodr": {
+      "path": "bench/.cache/xodr/c12a25b2c1104c7037974d54d091ae62.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_164/highway_merge_3_2_164.xodr": {
+      "path": "bench/.cache/xodr/900ab6ff38fd591f84761ea1c84312eb.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_0/highway_merge_2_1_0.xodr": {
+      "path": "bench/.cache/xodr/b050e5274720e9418755c731223e04f7.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_192/highway_merge_3_1_192.xodr": {
+      "path": "bench/.cache/xodr/f1753e49e357f9a345f80d77867b8e42.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_484/highway_merge_2_2_484.xodr": {
+      "path": "bench/.cache/xodr/907ef35e8dcb577d4b783854dc5c15a9.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/7_661_merge_664/7_661_merge_664.xodr": {
+      "path": "bench/.cache/xodr/896f7152fb1ddb62b561512aa82e5248.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_468/highway_merge_3_2_468.xodr": {
+      "path": "bench/.cache/xodr/bee3ac38668893b6e87d45a297ee50c6.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_1_482/highway_merge_2_1_482.xodr": {
+      "path": "bench/.cache/xodr/e236c44bed4a26a206d54e002bd20100.pkl",
+      "sha256": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_1_26/highway_merge_3_1_26.xodr": {
+      "path": "bench/.cache/xodr/02cda01b4b7f740bb22ed506bea44349.pkl",
+      "sha256": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+    },
+    "scenes/official_catalog/extracted/highway_merge_2_2_118/highway_merge_2_2_118.xodr": {
+      "path": "bench/.cache/xodr/ac3b7f13c3399353e2ee973dcdd51781.pkl",
+      "sha256": "82df7f3602b761a445a590c7f80d1ca5bf03f11a3cfb76607b9f045520d77b26"
+    },
+    "scenes/official_catalog/extracted/7_277_merge_292/7_277_merge_292.xodr": {
+      "path": "bench/.cache/xodr/987a5aa027b8c93adcec31129cdab38b.pkl",
+      "sha256": "f9f66297b6f550fa75092cc59ed63b3b73366b955ec3d489988d682f9eaa8acf"
+    },
+    "scenes/official_catalog/extracted/highway_merge_3_2_411/highway_merge_3_2_411.xodr": {
+      "path": "bench/.cache/xodr/804f1744951d6436ec54b3b3f51c9121.pkl",
+      "sha256": "25eaf81ff64e710551754ce41d6ebb721fca26113062972d286f217af04e92f4"
+    },
+    "scenes/official_catalog/extracted/21_105_straight_straight_107/21_105_straight_straight_107.xodr": {
+      "path": "bench/.cache/xodr/423b615dba2562a3f5a481705fc18d10.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/14_65_straight_turn_round_77/14_65_straight_turn_round_77.xodr": {
+      "path": "bench/.cache/xodr/15d35882f4ab768ebe938719b33eea37.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/8_5_1_330/8_5_1_330.xodr": {
+      "path": "bench/.cache/xodr/0ba7785b4f3b351b2a226d4833a6779c.pkl",
+      "sha256": "839d552f02307809ed96326f68db396fc28197d53080a634a2953ecbf4d82c50"
+    },
+    "scenes/official_catalog/extracted/1cutin31/1cutin31.xodr": {
+      "path": "bench/.cache/xodr/5e8da6a011fe377717b6f6b007c8b45a.pkl",
+      "sha256": "01961becda45e9705d4ef9573f6d1a750151b0d3368b1dd80c28d7cbd393176b"
+    },
+    "scenes/official_catalog/extracted/21_41_straight_in_opposite_left_43/21_41_straight_in_opposite_left_43.xodr": {
+      "path": "bench/.cache/xodr/4c9fc2090c97359da371a8754533d030.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/20_76_left_straight_in_opposite_83/20_76_left_straight_in_opposite_83.xodr": {
+      "path": "bench/.cache/xodr/0fe0630a628301232e0ad9f2ee92e0a1.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/16_90_left_straight_in_adjacent_96/16_90_left_straight_in_adjacent_96.xodr": {
+      "path": "bench/.cache/xodr/be6f90855069ffe9a9987c48e0194ddf.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/2following406/2following406.xodr": {
+      "path": "bench/.cache/xodr/76729dd3672e2b9592671dc698575fa1.pkl",
+      "sha256": "258f6189b5feeb02c262ce30f84ccad972bf72f85e32ad3a8b2290f8a102861d"
+    },
+    "scenes/official_catalog/extracted/opp24/opp24.xodr": {
+      "path": "bench/.cache/xodr/cff1a16d01c17a20b19928aab33abc29.pkl",
+      "sha256": "f8917df7a06f890d70ea12f5b9487443c101b76ae18104ba4226e508af353637"
+    },
+    "scenes/official_catalog/extracted/13_57_straight_in_adjacent_left_58/13_57_straight_in_adjacent_left_58.xodr": {
+      "path": "bench/.cache/xodr/096d1765cfb7d3886c878a647108bee2.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/20_120_left_left_129/20_120_left_left_129.xodr": {
+      "path": "bench/.cache/xodr/5acfeda597b932d28f3b0932f5602391.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/1rush27/1rush27.xodr": {
+      "path": "bench/.cache/xodr/316d876a432f85b59a4955e89ed9572d.pkl",
+      "sha256": "ba704b059c4ed1eecf911f5b114f8aea87b6e43587f533157bf0f2a3da1c93e4"
+    },
+    "scenes/official_catalog/extracted/12_93_straight_straight_95/12_93_straight_straight_95.xodr": {
+      "path": "bench/.cache/xodr/9a851e243e61933dfe65c6138a14f7e2.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/8_6_1_93/8_6_1_93.xodr": {
+      "path": "bench/.cache/xodr/a3059fe5cdeb1ea8d4a66f65ed316f51.pkl",
+      "sha256": "839d552f02307809ed96326f68db396fc28197d53080a634a2953ecbf4d82c50"
+    },
+    "scenes/official_catalog/extracted/13_91_straight_in_opposite_left_96/13_91_straight_in_opposite_left_96.xodr": {
+      "path": "bench/.cache/xodr/c5df84ee1b1df5f131a2a7b8128ba4eb.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/12_27_left_straight_in_opposite_30/12_27_left_straight_in_opposite_30.xodr": {
+      "path": "bench/.cache/xodr/9437b1bb4a9afd2bff2a2f6d2ba82c7e.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/13_69_left_straight_in_adjacent_71/13_69_left_straight_in_adjacent_71.xodr": {
+      "path": "bench/.cache/xodr/6361d38353cf2d97da09f948267b7b24.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/13_50_straight_in_adjacent_left_53/13_50_straight_in_adjacent_left_53.xodr": {
+      "path": "bench/.cache/xodr/a69a90ed571fad3ed5544ae24a082a15.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/16_107_left_left_119/16_107_left_left_119.xodr": {
+      "path": "bench/.cache/xodr/b0cf26580efb585127fd8f878804a894.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/1rush10/1rush10.xodr": {
+      "path": "bench/.cache/xodr/80b83cfd2fcd39d0679227d4bcd9a813.pkl",
+      "sha256": "27e530104e789dbdb2dc41c3809b20ce31ec6c071548a9a54e3810ddbd34b70e"
+    },
+    "scenes/official_catalog/extracted/18_29_straight_straight_30/18_29_straight_straight_30.xodr": {
+      "path": "bench/.cache/xodr/50b29eb22a9356da4fa53575e66cd883.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/12_125_straight_in_opposite_left_127/12_125_straight_in_opposite_left_127.xodr": {
+      "path": "bench/.cache/xodr/59a7886ca2f8d683ae392c6d8c63ae8b.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/11_84_left_straight_in_opposite_89/11_84_left_straight_in_opposite_89.xodr": {
+      "path": "bench/.cache/xodr/6ca4a8a483d50059112eb52d3c1b2aca.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/11_107_left_straight_in_adjacent_112/11_107_left_straight_in_adjacent_112.xodr": {
+      "path": "bench/.cache/xodr/fe1a78d5bd3b61d428a2cfe35798f46c.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/12_32_straight_in_adjacent_left_33/12_32_straight_in_adjacent_left_33.xodr": {
+      "path": "bench/.cache/xodr/ce5cbf831b25c28de1c47dd7643d50b5.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/14_58_left_left_59/14_58_left_left_59.xodr": {
+      "path": "bench/.cache/xodr/f662854455489636ea2cb948fd24f95c.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/1rush2/1rush2.xodr": {
+      "path": "bench/.cache/xodr/c046b576d77181dcc23fe996b7da5b77.pkl",
+      "sha256": "84469004a456a10f04ee89db90e83b2c3f9f9bb9d5ffafd8040d3606fb3cd8af"
+    },
+    "scenes/official_catalog/extracted/11_57_straight_straight_61/11_57_straight_straight_61.xodr": {
+      "path": "bench/.cache/xodr/6e5b86a30396e8e6fba56c18b8d7644d.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/12_18_straight_in_opposite_left_24/12_18_straight_in_opposite_left_24.xodr": {
+      "path": "bench/.cache/xodr/e059e30096eb8ca00a88c9c091b425b1.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/19_9_left_straight_in_opposite_11/19_9_left_straight_in_opposite_11.xodr": {
+      "path": "bench/.cache/xodr/1aad9d4397c17d30bdbfd344025b3c72.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/13_103_left_straight_in_adjacent_114/13_103_left_straight_in_adjacent_114.xodr": {
+      "path": "bench/.cache/xodr/7d11d7e9c600ab370886d69a8af79e27.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/10_60_straight_in_adjacent_left_61/10_60_straight_in_adjacent_left_61.xodr": {
+      "path": "bench/.cache/xodr/96ed086ce926a5fe777de29a17fb4eb6.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/12_43_left_left_44/12_43_left_left_44.xodr": {
+      "path": "bench/.cache/xodr/6e0d298d969e9f79a6a9d45b9b909cb7.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/15_69_straight_straight_70/15_69_straight_straight_70.xodr": {
+      "path": "bench/.cache/xodr/6405b915c3731f14415980de4e40c9cf.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/15_14_straight_in_opposite_left_19/15_14_straight_in_opposite_left_19.xodr": {
+      "path": "bench/.cache/xodr/c83c4ff547f7090d48a3652969d47e7c.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/14_124_left_straight_in_opposite_130/14_124_left_straight_in_opposite_130.xodr": {
+      "path": "bench/.cache/xodr/c5cc44bad946240ad0b495e59b828ccd.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/21_104_left_straight_in_adjacent_106/21_104_left_straight_in_adjacent_106.xodr": {
+      "path": "bench/.cache/xodr/5f47322af9732975e06effc8216c9490.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/20_46_straight_in_adjacent_left_47/20_46_straight_in_adjacent_left_47.xodr": {
+      "path": "bench/.cache/xodr/e5eae59f8c2419b42430f468b63e454f.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/14_28_left_left_32/14_28_left_left_32.xodr": {
+      "path": "bench/.cache/xodr/df1324e8e3e0c199ccd97b2d7a1f944d.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    },
+    "scenes/official_catalog/extracted/21_73_straight_straight_75/21_73_straight_straight_75.xodr": {
+      "path": "bench/.cache/xodr/f9cb2cb224518f829aaf914a9446b399.pkl",
+      "sha256": "a771e3456508b07f2c5de33cb4ac092dd569aa1f7fa9ddde2cc26bc29d30e088"
+    }
+  },
+  "imported_stack_sources": {
+    "stack": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\__init__.py",
+    "stack.adapters": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\adapters\\__init__.py",
+    "stack.core": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\__init__.py",
+    "stack.core.geometry": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\geometry.py",
+    "stack.core.native_distance": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\native_distance.py",
+    "stack.core.native_envelope": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\native_envelope.py",
+    "stack.core.tail_eta": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\tail_eta.py",
+    "stack.core.goal_contract": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\goal_contract.py",
+    "stack.core.arbiter": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\arbiter.py",
+    "stack.core.replay_contract": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\replay_contract.py",
+    "stack.core.control": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\control.py",
+    "stack.core.route": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\route.py",
+    "stack.core.world": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\world.py",
+    "stack.adapters.onsite_replay": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\adapters\\onsite_replay.py",
+    "stack.core.capability_arbiter": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\capability_arbiter.py",
+    "stack.adapters.onsite_dynamic_route": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\adapters\\onsite_dynamic_route.py",
+    "stack.core.native_profile": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\native_profile.py",
+    "stack.adapters.onsite_cadence": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\adapters\\onsite_cadence.py",
+    "stack.core.candidates": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\candidates.py",
+    "stack.core.native_execution": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\native_execution.py",
+    "stack.core.decision_record": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\decision_record.py",
+    "stack.core.unified_evaluation": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\unified_evaluation.py",
+    "stack.core.shared_border": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\shared_border.py",
+    "stack.core.road_boundary": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\road_boundary.py",
+    "stack.core.compound_route": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\compound_route.py",
+    "stack.adapters.onsite_unified": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\adapters\\onsite_unified.py",
+    "stack.core.native_route": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\source\\stack\\core\\native_route.py"
+  },
+  "competing_python_after": []
+}

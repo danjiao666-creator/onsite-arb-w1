@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "scenes": 230,
+    "outcomes": {
+      "到达": 199,
+      "碰撞": 8,
+      "超时": 23
+    },
+    "nonarrivals": 31,
+    "category_counts": {
+      "terminal_visibility_startup": 2,
+      "observed_traffic_prediction_recovery": 6,
+      "slow_intermittent_progress": 1,
+      "moving_deadline_progress": 13,
+      "parked_deferred_restart": 5,
+      "goal_route_coverage": 3,
+      "occupancy_road_recovery": 1
+    },
+    "next_state_checks": 4968,
+    "next_state_mismatches": 0,
+    "next_state_max_error": 0.0,
+    "moving_deadline_scenes_with_goal_entry_and_prefix_road_check": 3,
+    "source_file_count": 34
+  },
+  "reports": [
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\nonarrival_attribution_r59\\v2\\attribution.json",
+      "sha256": "2e95095d84ad3f652c1a92ccf376be3f58a64690b0234b789a04f026cc4a2cff"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\nonarrival_attribution_r59\\v2\\REPORT.md",
+      "sha256": "43a0c1bb7cbd2fbd52009de3eedc53a9b868fbc7c73a97ccfb305ceee9d7304e"
+    }
+  ],
+  "tool": {
+    "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\nonarrival_attribution_r59\\v2\\audit_nonarrival_attribution.py",
+    "sha256": "b022cab62e6ab95bbef2a0a8b89da56bdf98094f57516340e1795526cf17ef73"
+  },
+  "runs": [
+    {
+      "run": "unified_r43_20261010_devreg130",
+      "archive_sha256": "efac5095d2eb0665f8389c4ed37898fd039dc21aae4d870f265b50e705813d2a",
+      "manifest": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\manifest.json",
+        "sha256": "a447c2284dd2020bb6a08d0d6f7ba3ab080d541ba3333ade1258f780b4db0393"
+      },
+      "input_manifest": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\manifest.json",
+        "sha256": "1897260161b9bd1f60e47d07c7b396a73bb7b8b03a4f279b28c4733f38897d4a"
+      },
+      "results": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\results.json",
+        "sha256": "c4fead013dbe6d79c9ac275feb35290c2da186ccf2e3e7fcec9d074df5879170"
+      },
+      "attribution": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\failure_attribution.json",
+        "sha256": "57a4d45689c2e07abaebb719eac9d888f8ba8984e87c3c23f15afac07a16610b"
+      },
+      "r26_comparison": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\comparisons\\unified_r26_20261009_devreg130\\failure_attribution.json",
+        "sha256": "60dcc53e427b0c77beacca3d53814f863e7e0265101ca18dd41790b003b966f2"
+      },
+      "mapped_audit": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\mapped_body_audit\\summary.json",
+        "sha256": "a22d914ce67118f3c474934b44ab1833eb396be7fb81ebba355e665163ac4014"
+      }
+    },
+    {
+      "run": "unified_r43_20261010_extra100",
+      "archive_sha256": "f4141c7b9b0f09f2724dc171e0f1e7a31ec42c07f473e2fdef509c191371091e",
+      "manifest": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\manifest.json",
+        "sha256": "8a72bf7ca283ab418935ffd896a482211b7c65c1cc6b9fa979a60170ff91e0a2"
+      },
+      "input_manifest": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\manifest.json",
+        "sha256": "fe5351f3b7b504e991de5f02c14a8bddaad6b5d4537c0533f6c556066770cf5f"
+      },
+      "results": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\results.json",
+        "sha256": "ee7f00d7d513ee96494723f997a5785cfa09ffd61b17b6f5443cd3fd830f95ef"
+      },
+      "attribution": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\failure_attribution.json",
+        "sha256": "e935793084e73d9075de8e3b4dd551f63b5b59c5dab912c3123739aaebd7e15b"
+      },
+      "r26_comparison": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\failure_attribution.json",
+        "sha256": "e935793084e73d9075de8e3b4dd551f63b5b59c5dab912c3123739aaebd7e15b"
+      },
+      "mapped_audit": {
+        "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\mapped_body_audit\\summary.json",
+        "sha256": "0add5616ca276333236787e9d3bc5525907802e588539ebf35b2b643cd3de864"
+      }
+    }
+  ],
+  "source_sha256": {
+    "stack/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/adapters/onsite_cadence.py": "8806ba144d7a21206949f0ff4c457c24c5ac7af4594685523b7f3cfefbc79acd",
+    "stack/adapters/onsite_capability.py": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73",
+    "stack/adapters/onsite_close_guard.py": "0ced59d47b7701549c3735feb68b4e35d925867c589842413e36aa8b435bc5a9",
+    "stack/adapters/onsite_coverage.py": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f",
+    "stack/adapters/onsite_dynamic_route.py": "79e22bb24643291377a8612e7402f512b1887c1ad83e6f7d2faec444bc1c3e5c",
+    "stack/adapters/onsite_observed.py": "94bf45f3f430da6d994ae410023e041d7d19562522fe9ec91ebc9ab56eb0546e",
+    "stack/adapters/onsite_replay.py": "21c0509b905eec34c3240caaaa151b5b0e37c27f1767de11d4e3c70f78d21d00",
+    "stack/adapters/onsite_route_capability.py": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426",
+    "stack/adapters/onsite_unified.py": "92509cacb751ab88de789bf21054f6a44b570b93096e852a767aa8e6d1627bf0",
+    "stack/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stack/core/arbiter.py": "5d349cbab7ef8b4e79559179d4ca1e08f38ccf530c10a041db52ca3baa5473c2",
+    "stack/core/candidates.py": "90c725c680de2cada1c240ac990d2e4d26a904d6ff5c426043fb4acb94d284f1",
+    "stack/core/capability_arbiter.py": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7",
+    "stack/core/compound_route.py": "0bdc868479a2345a6a4d40b46ca7afda8db5a47a262773d5d6bd4f3ac6aafc33",
+    "stack/core/control.py": "9d2a99510a7e2bfeaedc678a2ae450b9144896b4b899478f2ba9428d53a93c36",
+    "stack/core/coverage_world.py": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476",
+    "stack/core/current_world.py": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5",
+    "stack/core/decision_record.py": "dda5ca4d761f1bf4c0ece75376a0c16ac43960c466371ce391554899d0258614",
+    "stack/core/geometry.py": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0",
+    "stack/core/goal_contract.py": "c9272efa8638a85e8d3f127986cc640f567ab8e9a4565f6c9e0900e592729c5b",
+    "stack/core/native_distance.py": "05167792c7d7e8fbb1a00a36aadd327a6a6b279fae1bb363dfa82f837d609a5f",
+    "stack/core/native_envelope.py": "43c30233f6d9de221f659fb50da892f93541c22e83530fecbdae31ccec34d7c0",
+    "stack/core/native_execution.py": "8f5037db757b58267ff02949b08d219c6aaffe5a52677dea36312578aa3c5100",
+    "stack/core/native_profile.py": "53036c845eb42147bca536e7c321c3aed9db8cda3f8202767ec90618b690adfe",
+    "stack/core/native_route.py": "c4c8a7eb3b39284a114a3c2ddc2129d6ce6e85254b8c9912acd3c1648512cfa6",
+    "stack/core/replay_contract.py": "2da12a80e22a6e51cf935a2eae4e3e61f36afa6b8646f7ead599c1a44db372fd",
+    "stack/core/road_boundary.py": "7658b3e551a028b11a0aa5d0bb67ed75184389a0b835f1c2f6991506b82c6439",
+    "stack/core/route.py": "abd907b503c3e8bd1f5b0a60ed305e7d7d1d3504c3810bd55407b83bce10230f",
+    "stack/core/shared_border.py": "67c9dd38b4fe871a6963ed4550a94f6c5829d9234af675a2dcb29cc7d432c399",
+    "stack/core/tail_eta.py": "acf03af2e606d7bb6cabf095b00af55f27745805a960ad65ca8fcd8f44c901b4",
+    "stack/core/unified_evaluation.py": "3d1b4a32a9683efe588e748d95565c0768098d4b04f8fcbe010154a1a4a08ddd",
+    "stack/core/world.py": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce"
+  },
+  "dependencies": [
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\route_coverage_r43\\full230_review.json",
+      "sha256": "d76e3c9b98df792e3ce08d4abd854e8d610b9fad97e2038470ddffe1182ba540"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\r26_collision_chain\\REPORT.md",
+      "sha256": "f9fef04a68a8db09c0f26380d2e017872e469873c578f9fcfb73933f3ca629c7"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\r26_collision_chain\\audit_summary.json",
+      "sha256": "3b6a4cbdaaa299b8c319a906db844631de87e6bf0704ad9b297ee4a09a36aafa"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\candidate_coverage_r42\\paired_suite_v2.json",
+      "sha256": "afa3f134dd6ef90d10051174d7a37940461d50d788a6fd48bd6cd4ee17074118"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\candidate_coverage_r42\\REVIEW.md",
+      "sha256": "fe8b5911345574736b5c83e621a4c2430530c55b24ce3eedf629791c519f5da7"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_round_r46\\identity_audit.json",
+      "sha256": "6ac7fc3070db0a7dd3fa1719c0f08bd9d61afac80a15efe631cf8116628a2667"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_round_r46\\REVIEW.md",
+      "sha256": "48534d2edc7192d7b4deea589992c249cee808f415260794abba476577baee77"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_coverage_r33\\car6_extra100\\summary.json",
+      "sha256": "056ab6a5b5b26fbae0c39cacdd41172b4e69042ac7c5d0f404fa6f3ac2ba0777"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_coverage_r33\\car8_extra100\\summary.json",
+      "sha256": "5bcf105ee2f9c918268fbadfb6103464b22137f226ac9865f62eb727de57cc2c"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_coverage_r33\\car2_extra100\\summary.json",
+      "sha256": "6f1dab02e09724971830a9d8c81fa7d83c888f10eb7560f22c86235fb5e6fd22"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_curvature_trend_r52\\identity_review_v2.json",
+      "sha256": "f470e78cfd4e133126511592d8cd69a820b8c85d82f206b37921367f66b678a0"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_curvature_trend_r52\\REVIEW.md",
+      "sha256": "58cd58efedf2607db8de1ac8270db932101ea7a0392e4d9f0cb88f68d91e555b"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_progress_r57\\identity_review.json",
+      "sha256": "139ce0703509462aa59c7a5b5a7a995d7d3de0aaaed737f8c11976f0ad66f3c0"
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\analysis\\prediction_progress_r57\\20_46_frontier_v2.json",
+      "sha256": "9fbde69737626840a1c577913686571e15f977b723c0130572843b2604a4f90d"
+    }
+  ],
+  "verified_trace_count": 31,
+  "source_changed": false,
+  "default_changed": false,
+  "new_driving": false,
+  "baseline_driving_rerun": false,
+  "all_nonarrival_results_covered": true,
+  "all_nonarrival_actions_and_states_match_r26": true
+}

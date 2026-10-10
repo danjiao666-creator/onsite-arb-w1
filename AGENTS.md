@@ -1,10 +1,13 @@
 # 本仓库工作规则
 
 - 面向用户默认使用简体中文。
-- 当前开发底座为 `research/arb_capability_20261007/runs/recovery_pulse_r99_devreg130/source/`，入口 `stack.adapters.onsite_close_guard:CloseGuardPlanner`；根目录 `stack/` 是同一源码副本。
-- 用户已暂停修复和实验。上传归档没有恢复实验授权。
+- 保留已审核 r99：`research/arb_capability_20261007/runs/recovery_pulse_r99_devreg130/source/`，入口 `stack.adapters.onsite_close_guard:CloseGuardPlanner`；根目录 `stack/` 仍是 r99 的逐字节副本。
+- 最新独立候选为 `candidates/r43/source/`，入口 `stack.adapters.onsite_unified:UnifiedPlanner`。源码34文件；原130场115到达/3碰撞/12超时，追加开发100场84/5/11。相对r99仍丢4成功且新增7_916碰撞，时延未全量通过，不替换r99入口或本地默认。
+- 2026-10-10用户明确要求比较已上传版本并更新GitHub。本次只归档源码、验证和比较，旧半小时算法实验自动化已删除；继续实验须遵守用户最新消息，不从历史续推说明自行派发。
 - 封存 `source/`、`sources.zip`、原始验证和审核文件不得原位修改。后续开发复制独立候选，保留来源。
 - r99完整130场107到达、7碰撞、16超时、0异常；不称安全认证或官方线上成绩。
 - 比较要求保留原成功、无新增碰撞、无异常，并审核驾驶和逐场完整 `act()` 耗时；总到达增益不能抵消新增碰撞。
 - v1、r5、r96和r99均保留，HOLD数据未包含在本仓库。
+- r43当前源码/运行记录和失败实验分开。后续r44-r62未通过策略不得混入候选源码或作为已完成安全/到达改善。
+- r43的完整结果和审核导出，原始压缩trace只保留明确列出的3场；其余trace哈希/大小保留，数据仍在原本地归档。离线验证必须明确这一范围。
 - 官方工具、场景和地图缓存是外部依赖。不得上传访问令牌、激活密钥或本机凭据。

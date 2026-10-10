@@ -66,6 +66,9 @@ def main():
     actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*')
               if p.is_file() and '.git' not in p.relative_to(ROOT).parts
               and '__pycache__' not in p.relative_to(ROOT).parts
+              and p.relative_to(ROOT).parts[0] not in ('outputs', 'new_runs', 'code', 'scenes')
+              and '.cache' not in p.relative_to(ROOT).parts
+              and p.suffix not in ('.pyc', '.nbc', '.nbi')
               and p.name != 'EXPORT_MANIFEST.json'}
     require(actual == set(recorded), 'Export file set changed')
     for name, expected in recorded.items():
@@ -94,6 +97,51 @@ def main():
     for name, expected in review['log_sha256']['candidate'].items():
         require(digest(r99 / 'validation' / (name + '.json.gz')) == expected,
                 'Audited log changed: ' + name)
+    candidate = ROOT / 'candidates/r43'
+    if candidate.exists():
+        verified = read(candidate / 'verification.json')['source_sha256']
+        actual = {p.relative_to(candidate / 'source').as_posix():digest(p)
+                  for p in (candidate / 'source').rglob('*.py')}
+        require(actual == verified and len(actual) == 34, 'Current candidate differs from verified r43')
+        for tag, expected in (
+            ('unified_r43_20261010_devreg130', {'到达':115, '碰撞':3, '超时':12}),
+            ('unified_r43_20261010_extra100', {'到达':84, '碰撞':5, '超时':11}),
+        ):
+            base = candidate / 'runs' / tag
+            manifest = read(base / 'manifest.json')
+            require(manifest['sources'] == verified, 'Candidate run source mismatch')
+            require(digest(base / 'sources.zip') == manifest['archive_sha256'], 'Candidate archive changed')
+            require(digest(base / 'sets.json') == manifest['sets_sha256'], 'Candidate scene list changed')
+            with zipfile.ZipFile(base / 'sources.zip') as archive:
+                require(set(archive.namelist()) == set(verified), 'Candidate archive file set changed')
+                for name, value in verified.items():
+                    require(digest(base / 'source' / name) == value, 'Candidate frozen source changed')
+                    require(hashlib.sha256(archive.read(name)).hexdigest() == value, 'Candidate archived source changed')
+            scope = read(base / 'EXPORT_SCOPE.json')
+            for name, value in scope['included'].items():
+                require(digest(base / name) == value, 'Candidate exported evidence changed: ' + name)
+            rows = read(base / 'validation/results.json')['rows']
+            sets = read(base / 'sets.json')
+            names = [row['name'] for row in rows]
+            require(len(names) == len(set(names)), 'Duplicate candidate result scene')
+            require(set(names) == set(sets['DEV'] + sets['REG']), 'Missing candidate result scenes')
+            require(dict(Counter(row['end'] for row in rows)) == expected, 'Candidate outcomes changed')
+            require(all(not row.get('error') for row in rows), 'Recorded candidate exception')
+            index = read(base / 'trace_index.json')['traces']
+            require(set(index) == set(names), 'Candidate original trace index incomplete')
+            trace_files = {p.name[:-8] for p in (base / 'validation').glob('*.json.gz')}
+            require(trace_files == set(scope['included_trace_scenes']), 'Candidate trace export scope mismatch')
+            for name in trace_files:
+                path = base / 'validation' / (name + '.json.gz')
+                require(digest(path) == index[name]['sha256'], 'Candidate included original trace changed')
+                with gzip.open(path, 'rt', encoding='utf-8') as stream:
+                    trace = json.load(stream)
+                require(trace['result']['name'] == name and trace['result']['end'] == next(
+                    row['end'] for row in rows if row['name'] == name), 'Candidate trace/result mismatch')
+            road = read(base / 'mapped_body_audit/summary.json')
+            require(road['source_identity_passed'], 'Candidate road source identity failed')
+            print(tag + ': 34 sources, all results/reviews, ' + str(len(trace_files))
+                  + '/' + str(len(names)) + ' original traces included; remaining trace hashes recorded')
     print('Root stack: 24 r99 sources verified; r99 act calls: 28,659; export files: '
           + str(len(recorded)))
     print('Offline verification passed. No planner or replay was run.')

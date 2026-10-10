@@ -1,0 +1,2215 @@
+{
+  "summary": {
+    "old_commit": "4fbe34fbe5dcfbfdb232bfe5406dfadd4efff1d6",
+    "r99_files": 24,
+    "r43_files": 34,
+    "source_counts": {
+      "unchanged": 17,
+      "modified": 7,
+      "added": 10
+    },
+    "original_130": {
+      "r99": {
+        "到达": 107,
+        "碰撞": 7,
+        "超时": 16
+      },
+      "r43": {
+        "到达": 115,
+        "碰撞": 3,
+        "超时": 12
+      }
+    },
+    "extra_100": {
+      "到达": 84,
+      "超时": 11,
+      "碰撞": 5
+    },
+    "same_scene_set": true,
+    "same_original_input_hashes": true,
+    "r99_successes_retained": 103,
+    "gained_successes": [
+      "12_36_straight_in_adjacent_left_37",
+      "12_60_straight_in_adjacent_left_64",
+      "13_72_straight_straight_75",
+      "14_14_left_straight_in_adjacent_38",
+      "18_34_straight_in_opposite_left_37",
+      "19_67_straight_straight_70",
+      "20_94_straight_straight_97",
+      "8_282_merge_291",
+      "highway_merge_2_1_112",
+      "highway_merge_2_2_362",
+      "highway_merge_3_1_86",
+      "highway_merge_3_2_127"
+    ],
+    "lost_successes": [
+      "1346cutin71",
+      "7_916_merge_921",
+      "highway_merge_2_1_141",
+      "highway_merge_2_2_265"
+    ],
+    "new_collisions": [
+      "7_916_merge_921"
+    ],
+    "resolved_collisions": [
+      "12_36_straight_in_adjacent_left_37",
+      "12_60_straight_in_adjacent_left_64",
+      "14_14_left_straight_in_adjacent_38",
+      "20_94_straight_straight_97",
+      "8_282_merge_291"
+    ],
+    "old_timing_pass_count": 130,
+    "new_timing_pass_count": 72,
+    "extra_timing_pass_count": 56,
+    "limitations": [
+      "Existing local closed-loop records; no baseline was rerun.",
+      "r43 explicitly orders seven original target rectangles in memory; input XML is unchanged.",
+      "Outcome improvement alone does not meet retained-success/no-new-collision promotion requirements."
+    ],
+    "unchanged_target_protocol_123": {
+      "r99": {
+        "到达": 107,
+        "碰撞": 7,
+        "超时": 9
+      },
+      "r43": {
+        "到达": 114,
+        "超时": 6,
+        "碰撞": 3
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "stack/__init__.py",
+      "status": "unchanged",
+      "r99_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "r43_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stack/adapters/__init__.py",
+      "status": "unchanged",
+      "r99_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "r43_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stack/adapters/onsite_cadence.py",
+      "status": "unchanged",
+      "r99_sha256": "8806ba144d7a21206949f0ff4c457c24c5ac7af4594685523b7f3cfefbc79acd",
+      "r43_sha256": "8806ba144d7a21206949f0ff4c457c24c5ac7af4594685523b7f3cfefbc79acd"
+    },
+    {
+      "path": "stack/adapters/onsite_capability.py",
+      "status": "unchanged",
+      "r99_sha256": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73",
+      "r43_sha256": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73"
+    },
+    {
+      "path": "stack/adapters/onsite_close_guard.py",
+      "status": "modified",
+      "r99_sha256": "353cc303b2a28007688bb8567b371b761dfe4e65a82863b910500e3ff7a351f7",
+      "r43_sha256": "0ced59d47b7701549c3735feb68b4e35d925867c589842413e36aa8b435bc5a9",
+      "added_definitions": [
+        "CloseGuardPlanner.__init__",
+        "CloseGuardPlanner._nominal_return",
+        "CloseGuardPlanner._record_guard_return",
+        "CloseGuardPlanner.diagnostics",
+        "CloseGuardPlanner.safety_diagnostics"
+      ],
+      "changed_definitions": [
+        "CloseGuardPlanner._execute",
+        "CloseGuardPlanner.init"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/adapters/onsite_coverage.py",
+      "status": "unchanged",
+      "r99_sha256": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f",
+      "r43_sha256": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f"
+    },
+    {
+      "path": "stack/adapters/onsite_dynamic_route.py",
+      "status": "modified",
+      "r99_sha256": "96d4316cb499c484674e8d5e9c8f4c14a40acec2a7b5050916366877f3dc19fa",
+      "r43_sha256": "79e22bb24643291377a8612e7402f512b1887c1ad83e6f7d2faec444bc1c3e5c",
+      "added_definitions": [],
+      "changed_definitions": [
+        "DynamicRouteCapabilityPlanner.diagnostics"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/adapters/onsite_observed.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "94bf45f3f430da6d994ae410023e041d7d19562522fe9ec91ebc9ab56eb0546e"
+    },
+    {
+      "path": "stack/adapters/onsite_replay.py",
+      "status": "modified",
+      "r99_sha256": "6b434216b30a772838fa6f89bafa42394feae77b02397af866d210eb70bba1c0",
+      "r43_sha256": "21c0509b905eec34c3240caaaa151b5b0e37c27f1767de11d4e3c70f78d21d00",
+      "added_definitions": [],
+      "changed_definitions": [
+        "ArbiterPlanner.diagnostics",
+        "ArbiterPlanner.init"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/adapters/onsite_route_capability.py",
+      "status": "unchanged",
+      "r99_sha256": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426",
+      "r43_sha256": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426"
+    },
+    {
+      "path": "stack/adapters/onsite_unified.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "92509cacb751ab88de789bf21054f6a44b570b93096e852a767aa8e6d1627bf0"
+    },
+    {
+      "path": "stack/core/__init__.py",
+      "status": "unchanged",
+      "r99_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "r43_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stack/core/arbiter.py",
+      "status": "modified",
+      "r99_sha256": "ee307c780d4ba5d728aff6374d531c93bbffc54dda6d8c8c24fc05460643a80c",
+      "r43_sha256": "5d349cbab7ef8b4e79559179d4ca1e08f38ccf530c10a041db52ca3baa5473c2",
+      "added_definitions": [],
+      "changed_definitions": [
+        "Arbiter.decide"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/core/candidates.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "90c725c680de2cada1c240ac990d2e4d26a904d6ff5c426043fb4acb94d284f1"
+    },
+    {
+      "path": "stack/core/capability_arbiter.py",
+      "status": "unchanged",
+      "r99_sha256": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7",
+      "r43_sha256": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7"
+    },
+    {
+      "path": "stack/core/compound_route.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "0bdc868479a2345a6a4d40b46ca7afda8db5a47a262773d5d6bd4f3ac6aafc33"
+    },
+    {
+      "path": "stack/core/control.py",
+      "status": "modified",
+      "r99_sha256": "dd43311b9c7477bd59f852b0626fea8f05f1935887e56fa4250bdae5f945a160",
+      "r43_sha256": "9d2a99510a7e2bfeaedc678a2ae450b9144896b4b899478f2ba9428d53a93c36",
+      "added_definitions": [],
+      "changed_definitions": [
+        "ControlAdapter.command"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/core/coverage_world.py",
+      "status": "unchanged",
+      "r99_sha256": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476",
+      "r43_sha256": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476"
+    },
+    {
+      "path": "stack/core/current_world.py",
+      "status": "unchanged",
+      "r99_sha256": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5",
+      "r43_sha256": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5"
+    },
+    {
+      "path": "stack/core/decision_record.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "dda5ca4d761f1bf4c0ece75376a0c16ac43960c466371ce391554899d0258614"
+    },
+    {
+      "path": "stack/core/geometry.py",
+      "status": "unchanged",
+      "r99_sha256": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0",
+      "r43_sha256": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0"
+    },
+    {
+      "path": "stack/core/goal_contract.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "c9272efa8638a85e8d3f127986cc640f567ab8e9a4565f6c9e0900e592729c5b"
+    },
+    {
+      "path": "stack/core/native_distance.py",
+      "status": "unchanged",
+      "r99_sha256": "05167792c7d7e8fbb1a00a36aadd327a6a6b279fae1bb363dfa82f837d609a5f",
+      "r43_sha256": "05167792c7d7e8fbb1a00a36aadd327a6a6b279fae1bb363dfa82f837d609a5f"
+    },
+    {
+      "path": "stack/core/native_envelope.py",
+      "status": "unchanged",
+      "r99_sha256": "43c30233f6d9de221f659fb50da892f93541c22e83530fecbdae31ccec34d7c0",
+      "r43_sha256": "43c30233f6d9de221f659fb50da892f93541c22e83530fecbdae31ccec34d7c0"
+    },
+    {
+      "path": "stack/core/native_execution.py",
+      "status": "modified",
+      "r99_sha256": "47427fd4e10305053a7fac35d96f1031e4bbb9d7ccea65f2b802ea20f20459cb",
+      "r43_sha256": "8f5037db757b58267ff02949b08d219c6aaffe5a52677dea36312578aa3c5100",
+      "added_definitions": [
+        "rollout_projected"
+      ],
+      "changed_definitions": [
+        "execute",
+        "rollout"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/core/native_profile.py",
+      "status": "unchanged",
+      "r99_sha256": "53036c845eb42147bca536e7c321c3aed9db8cda3f8202767ec90618b690adfe",
+      "r43_sha256": "53036c845eb42147bca536e7c321c3aed9db8cda3f8202767ec90618b690adfe"
+    },
+    {
+      "path": "stack/core/native_route.py",
+      "status": "unchanged",
+      "r99_sha256": "c4c8a7eb3b39284a114a3c2ddc2129d6ce6e85254b8c9912acd3c1648512cfa6",
+      "r43_sha256": "c4c8a7eb3b39284a114a3c2ddc2129d6ce6e85254b8c9912acd3c1648512cfa6"
+    },
+    {
+      "path": "stack/core/replay_contract.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "2da12a80e22a6e51cf935a2eae4e3e61f36afa6b8646f7ead599c1a44db372fd"
+    },
+    {
+      "path": "stack/core/road_boundary.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "7658b3e551a028b11a0aa5d0bb67ed75184389a0b835f1c2f6991506b82c6439"
+    },
+    {
+      "path": "stack/core/route.py",
+      "status": "modified",
+      "r99_sha256": "00d4d80253baa7c3d2fda5b08eb5a24ccc9b93dea2d00bc02d2a07428ddc775f",
+      "r43_sha256": "abd907b503c3e8bd1f5b0a60ed305e7d7d1d3504c3810bd55407b83bce10230f",
+      "added_definitions": [
+        "RoutePlanner._topo_connected"
+      ],
+      "changed_definitions": [
+        "RoutePlanner._topo_edges",
+        "RoutePlanner.finish",
+        "RoutePlanner.is_lateral",
+        "RoutePlanner.plan",
+        "RoutePlanner.variant",
+        "_box_span",
+        "chain_fallback"
+      ],
+      "removed_definitions": []
+    },
+    {
+      "path": "stack/core/shared_border.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "67c9dd38b4fe871a6963ed4550a94f6c5829d9234af675a2dcb29cc7d432c399"
+    },
+    {
+      "path": "stack/core/tail_eta.py",
+      "status": "unchanged",
+      "r99_sha256": "acf03af2e606d7bb6cabf095b00af55f27745805a960ad65ca8fcd8f44c901b4",
+      "r43_sha256": "acf03af2e606d7bb6cabf095b00af55f27745805a960ad65ca8fcd8f44c901b4"
+    },
+    {
+      "path": "stack/core/unified_evaluation.py",
+      "status": "added",
+      "r99_sha256": null,
+      "r43_sha256": "3d1b4a32a9683efe588e748d95565c0768098d4b04f8fcbe010154a1a4a08ddd"
+    },
+    {
+      "path": "stack/core/world.py",
+      "status": "unchanged",
+      "r99_sha256": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce",
+      "r43_sha256": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce"
+    }
+  ],
+  "scenes": [
+    {
+      "scene": "0091follow86",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 5.0,
+      "after_t": 5.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0909follow846",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.4,
+      "after_t": 8.48,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0912follow849",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.6,
+      "after_t": 9.88,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0934follow870",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.92,
+      "after_t": 9.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0936follow872",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.12,
+      "after_t": 8.32,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0956follow891",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0977lanechanging31",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.64,
+      "after_t": 9.48,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0984follow917",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 3.72,
+      "after_t": 3.68,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "0992follow925",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1009follow940",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.64,
+      "after_t": 8.68,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1010follow941",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1033follow961",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.16,
+      "after_t": 8.04,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1036follow963",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.52,
+      "after_t": 9.68,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1061follow986",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 4.48,
+      "after_t": 4.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1075lanechanging37",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.04,
+      "after_t": 9.16,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "10_17_left_straight_in_opposite_27",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 23.8,
+      "after_t": 18.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "10_274_merge_279",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 53.7,
+      "after_t": 53.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "10_441_merge_444",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 56.6,
+      "after_t": 56.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "10_531_merge_533",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 77.6,
+      "after_t": 77.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1129follow1045",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.88,
+      "after_t": 9.88,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "11_13_left_left_15",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 26.7,
+      "after_t": 24.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "11_24_left_straight_in_opposite_26",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 16.6,
+      "after_t": 14.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "11_73_straight_in_adjacent_left_74",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 26.0,
+      "after_t": 26.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "11_75_left_straight_in_opposite_80",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 26.7,
+      "after_t": 24.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1200follow1107",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.96,
+      "after_t": 9.08,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1258follow1159",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 5.0,
+      "after_t": 5.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_118_straight_straight_122",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 12.7,
+      "after_t": 10.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_36_straight_in_adjacent_left_37",
+      "before": "碰撞",
+      "after": "到达",
+      "before_t": 4.6,
+      "after_t": 5.5,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": true,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_60_straight_in_adjacent_left_64",
+      "before": "碰撞",
+      "after": "到达",
+      "before_t": 16.7,
+      "after_t": 29.5,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": true,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_74_left_straight_in_adjacent_77",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 19.4,
+      "after_t": 22.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_88_left_straight_in_adjacent_89",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 20.2,
+      "after_t": 13.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "12_97_straight_straight_100",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 17.9,
+      "after_t": 18.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1308cutin67",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.68,
+      "after_t": 8.68,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1326cutin69",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 6.56,
+      "after_t": 6.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1346cutin71",
+      "before": "到达",
+      "after": "超时",
+      "before_t": 9.88,
+      "after_t": 10.0,
+      "lost_success": true,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1379follow1264",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 5.0,
+      "after_t": 5.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "13_47_straight_in_opposite_left_48",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.1,
+      "after_t": 4.9,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "13_53_left_straight_in_opposite_61",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 33.4,
+      "after_t": 31.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "13_72_straight_straight_75",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 19.1,
+      "after_t": 18.8,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "13_90_right_turn_right_turn_92",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 12.3,
+      "after_t": 12.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1436cutin78",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 9.96,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "14_123_straight_in_opposite_left_124",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 26.4,
+      "after_t": 26.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "14_132_straight_straight_136",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 20.3,
+      "after_t": 19.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "14_139_left_straight_in_adjacent_143",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 23.3,
+      "after_t": 21.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "14_14_left_straight_in_adjacent_38",
+      "before": "碰撞",
+      "after": "到达",
+      "before_t": 20.4,
+      "after_t": 12.0,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": true,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "14_63_straight_in_opposite_left_71",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 40.6,
+      "after_t": 41.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1549follow1415",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.16,
+      "after_t": 9.44,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1563follow1425",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.68,
+      "after_t": 9.88,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1583follow1444",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_108_straight_straight_112",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 20.9,
+      "after_t": 19.9,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_114_straight_in_adjacent_left_116",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 20.9,
+      "after_t": 14.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_115_straight_in_adjacent_left_117",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 14.5,
+      "after_t": 12.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_31_straight_straight_37",
+      "before": "碰撞",
+      "after": "碰撞",
+      "before_t": 6.7,
+      "after_t": 6.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_4_straight_straight_6",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 14.7,
+      "after_t": 10.9,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_5_straight_straight_12",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 18.2,
+      "after_t": 18.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "15_89_straight_straight_92",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 13.7,
+      "after_t": 13.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1605follow1466",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1693lanechanging52",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.24,
+      "after_t": 6.28,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "16_14_straight_straight_22",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 30.1,
+      "after_t": 30.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "16_63_straight_in_opposite_left_74",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 38.4,
+      "after_t": 37.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1715lanechanging53",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.36,
+      "after_t": 9.48,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1753cutin108",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.44,
+      "after_t": 9.44,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "17_35_straight_in_adjacent_left_39",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 13.1,
+      "after_t": 10.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "18_108_straight_straight_112",
+      "before": "碰撞",
+      "after": "碰撞",
+      "before_t": 4.3,
+      "after_t": 11.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "18_34_straight_in_opposite_left_37",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 27.5,
+      "after_t": 27.2,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "18_37_left_left_39",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 17.2,
+      "after_t": 15.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "18_82_straight_in_adjacent_left_83",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 19.6,
+      "after_t": 19.4,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "1985follow1789",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.28,
+      "after_t": 7.64,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "19_20_left_straight_in_opposite_21",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 12.8,
+      "after_t": 8.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "19_28_straight_straight_30",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.3,
+      "after_t": 7.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "19_67_straight_straight_70",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 23.6,
+      "after_t": 22.9,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "19_83_straight_straight_85",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.4,
+      "after_t": 6.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "20_39_left_straight_in_opposite_45",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 16.4,
+      "after_t": 14.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "20_56_straight_straight_61",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 24.2,
+      "after_t": 24.4,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "20_69_left_straight_in_adjacent_77",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 26.6,
+      "after_t": 22.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "20_94_straight_straight_97",
+      "before": "碰撞",
+      "after": "到达",
+      "before_t": 8.4,
+      "after_t": 18.8,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": true,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "2130follow1920",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 6.56,
+      "after_t": 6.56,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "21_15_straight_straight_18",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 25.8,
+      "after_t": 24.4,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "21_75_straight_in_adjacent_left_77",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 18.9,
+      "after_t": 13.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "2284follow2054",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 5.0,
+      "after_t": 5.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "2289follow2057",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.32,
+      "after_t": 7.32,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "2302follow2070",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.44,
+      "after_t": 7.44,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "6_2166_merge_2202",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 38.8,
+      "after_t": 38.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "6_2263_merge_2285",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 41.5,
+      "after_t": 41.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_350_merge_353",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 47.0,
+      "after_t": 46.9,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_421_merge_423",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 44.2,
+      "after_t": 44.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_635_merge_643",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 52.6,
+      "after_t": 52.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_821_merge_825",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 31.1,
+      "after_t": 31.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_916_merge_921",
+      "before": "到达",
+      "after": "碰撞",
+      "before_t": 46.7,
+      "after_t": 35.8,
+      "lost_success": true,
+      "gained_success": false,
+      "new_collision": true,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "7_955_merge_978",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 44.0,
+      "after_t": 44.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "8_204_merge_216",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 92.3,
+      "after_t": 92.4,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "8_282_merge_291",
+      "before": "碰撞",
+      "after": "到达",
+      "before_t": 4.4,
+      "after_t": 42.4,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": true,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "8_468_merge_474",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 58.0,
+      "after_t": 57.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "8_615_merge_627",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 49.8,
+      "after_t": 49.8,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "8_621_merge_622",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 48.5,
+      "after_t": 48.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "9_381_merge_397",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 68.0,
+      "after_t": 68.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "9_546_merge_572",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 63.4,
+      "after_t": 63.5,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "9_717_merge_733",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 75.7,
+      "after_t": 75.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "cutin78",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.2,
+      "after_t": 8.6,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_1_112",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 9.7,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_1_141",
+      "before": "到达",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": true,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_1_178",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 8.9,
+      "after_t": 9.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_1_464",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_0",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_160",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.7,
+      "after_t": 9.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_162",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.9,
+      "after_t": 8.4,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_167",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_259",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.8,
+      "after_t": 9.9,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_260",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.2,
+      "after_t": 9.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_265",
+      "before": "到达",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": true,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_269",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.8,
+      "after_t": 9.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_2_2_362",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_1_107",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.9,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_1_156",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.3,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_1_197",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            470.022,
+            -0.5
+          ],
+          [
+            480.022,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            470.022,
+            -2.5
+          ],
+          [
+            480.022,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_301",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            488.008,
+            -0.5
+          ],
+          [
+            498.008,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            488.008,
+            -2.5
+          ],
+          [
+            498.008,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            396.046,
+            -0.5
+          ],
+          [
+            406.046,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            396.046,
+            -2.5
+          ],
+          [
+            406.046,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_391",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            401.746,
+            -0.5
+          ],
+          [
+            411.746,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            401.746,
+            -2.5
+          ],
+          [
+            411.746,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_68",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            401.596,
+            -0.5
+          ],
+          [
+            411.596,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            401.596,
+            -2.5
+          ],
+          [
+            411.596,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_86",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 9.7,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            506.696,
+            -0.5
+          ],
+          [
+            516.696,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            506.696,
+            -2.5
+          ],
+          [
+            516.696,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_87",
+      "before": "超时",
+      "after": "超时",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": {
+        "applied": true,
+        "original_target": [
+          [
+            398.81,
+            -0.5
+          ],
+          [
+            408.81,
+            -2.5
+          ]
+        ],
+        "corrected_target": [
+          [
+            398.81,
+            -2.5
+          ],
+          [
+            408.81,
+            -0.5
+          ]
+        ],
+        "method": "sort_each_target_axis_in_memory",
+        "source_xml_unchanged": true
+      }
+    },
+    {
+      "scene": "highway_merge_3_2_127",
+      "before": "超时",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": true,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_142",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 7.9,
+      "after_t": 9.1,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_246",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.3,
+      "after_t": 9.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_268",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.3,
+      "after_t": 9.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_376",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.8,
+      "after_t": 9.7,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_402",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.2,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_438",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 10.0,
+      "after_t": 10.0,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_46",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.3,
+      "after_t": 9.3,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    },
+    {
+      "scene": "highway_merge_3_2_460",
+      "before": "到达",
+      "after": "到达",
+      "before_t": 9.4,
+      "after_t": 9.2,
+      "lost_success": false,
+      "gained_success": false,
+      "new_collision": false,
+      "resolved_collision": false,
+      "r43_execution_mismatches": null,
+      "r43_input_fix": null
+    }
+  ],
+  "input_keys_only_r99": [],
+  "input_keys_only_r43": [],
+  "changed_input_hashes": [],
+  "evidence_sha256": {
+    "uploaded_r99/research/arb_capability_20261007/runs/recovery_pulse_r99_devreg130/manifest.json": "c0201129c61b4398487f930d1694fcddef953ba514f0b8523a2a83620a0ab305",
+    "uploaded_r99/research/arb_capability_20261007/runs/recovery_pulse_r99_devreg130/validation/results.json": "27a6dce05888b5a48aec2df51486dea2b66d169880af3dd31e44a189b4eee223",
+    "uploaded_r99/research/arb_capability_20261007/runs/recovery_pulse_r99_devreg130/validation/manifest.json": "e565c1c13c9464045c59d5da3a6e774dd94063eab79626d49ed5ac921e179eb9",
+    "local_r43/runs/unified_r43_20261010_devreg130/manifest.json": "a447c2284dd2020bb6a08d0d6f7ba3ab080d541ba3333ade1258f780b4db0393",
+    "local_r43/runs/unified_r43_20261010_devreg130/validation/results.json": "c4fead013dbe6d79c9ac275feb35290c2da186ccf2e3e7fcec9d074df5879170",
+    "local_r43/runs/unified_r43_20261010_devreg130/validation/manifest.json": "1897260161b9bd1f60e47d07c7b396a73bb7b8b03a4f279b28c4733f38897d4a",
+    "local_r43/runs/unified_r43_20261010_extra100/validation/results.json": "ee7f00d7d513ee96494723f997a5785cfa09ffd61b17b6f5443cd3fd830f95ef",
+    "local_r43/verification.json": "9c1efce67345686ef7a27fa0a2a53f0dd69c60a40e851616ae2a7d0271c8d10d"
+  }
+}

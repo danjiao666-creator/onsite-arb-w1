@@ -1,0 +1,34 @@
+{
+  "run": "unified_r43_20261010_devreg130",
+  "scene": "highway_merge_3_1_197",
+  "official_outcome": "超时",
+  "trace_sha256": "70bf02111412f9506cc5fa828ed8f5c74a7cde034d007e535ab0903ef3c348b8",
+  "map_sha256": "a09a94295cc3dfa8be8f6cd8631b56a6694e6d5405f065bc0276207de357505c",
+  "actual_mapped_boundary": {
+    "checked": true,
+    "first_body_outside_t": null,
+    "first_exterior_growth_t": null,
+    "initial_exterior_area": 0.0,
+    "initial_exterior_recovered": true,
+    "initial_recovery_t": 0.0,
+    "initial_exterior_unrecovered": false,
+    "exterior_allowance_policy": "Initial exterior may not grow until recovery; any positive exterior after recovery is new",
+    "max_exterior_area": 0.0,
+    "max_exterior_t": 0.0,
+    "max_exterior_state": {
+      "x": 197.602,
+      "y": -10.501,
+      "yaw": 0.001,
+      "v": 22.583,
+      "a": 0,
+      "rot": 0
+    },
+    "outside_frame_count": 0,
+    "total_frames": 101,
+    "episodes": [],
+    "scope": "Actual full body on supplied map grid; separate from official replay outcome"
+  },
+  "first_growth_precursor": null,
+  "attribution": null,
+  "certainty": "Observed mapped-body exterior; requires geometry and candidate counterfactual for causal or legal-road claim"
+}
