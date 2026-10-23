@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "failed_at": 3.3,
+  "error": "New compound route lost full-window admission; no uncertified action submitted",
+  "exact_history_frames": 33,
+  "new_driving": 0,
+  "new_scene_simulation_steps": 0,
+  "unchanged_algorithm": true,
+  "failed_frame_evaluations": 1
+}

@@ -1,0 +1,557 @@
+--- r43/stack/adapters/onsite_unified.py
++++ gap_event_v2/stack/adapters/onsite_unified.py
+@@ -7,12 +7,13 @@
+ from ..core.arbiter import EgoState, Plan
+ from ..core.world import Agent
+ from ..core.candidates import generate
++from ..core.gap_events import generate_gap_events, combine_assessments
+ from ..core.unified_evaluation import ExecutionEvaluator, occupancy, select_execution
+ from ..core.native_execution import rollout, project_states
+ from ..core.decision_record import ExecutionDecision, feedback, finite
+ from ..core.replay_contract import checked_action
+ from ..core.road_boundary import RoadBoundary
+-from ..core.compound_route import install_compound, commit_compound
++from ..core.compound_route import install_compound, commit_compound, build_compound_routes
+ 
+ 
+ class UnifiedPlanner(CadencePlanner):
+@@ -38,6 +39,13 @@
+         occupancy(states,np.zeros((3,0,2,2)),np.zeros((3,0,2)),np.zeros(0),np.zeros(0),
+                   np.zeros((3,0,2),dtype=np.bool_),np.array([1],dtype=np.int64),4.5,1.8,self.dt,.15,.06)
+         install_compound(self)
++        extra, evidence = build_compound_routes(self.rp, self.route, self._start,
++            self._heading, self.rect, (0.,), include_existing=True)
++        if extra:
++            self.cands.extend((r,r.s0,r.compound_edges[0],0.) for r in extra)
++            self._dynamic_active = True
++        self.extra_compound_evidence = evidence
++        self._committed_event = None
+ 
+     def _make_variants(self):
+         if commit_compound(self):
+@@ -103,15 +111,30 @@
+             suffix=None
+             if self._continuation is not None and self._continuation[0] is route:
+                 suffix=self._continuation[1:]
+-            candidates=generate(self.arb,state,station,env_s,env_v,desired,suffix)
++            candidates=generate(self.arb,state,station,env_s,env_v,desired,suffix,
++                execution_context=(route.path,measured,self.ctrl,self.lat))
+             timings['generation_ms']+=(time.perf_counter()-generation_started)*1000
+             evaluation_started=time.perf_counter()
+             assessed=evaluator.evaluate(candidates,route.path,station,error,state,measured,
+                 self.ctrl,self.lat,dt,self.rect,route.goal_in,desired,env_s,env_v,self.arb.cfg,
+                 time_left,previous_action,self.W_LATE*fraction)
++            added = generate_gap_events(evaluator,assessed,candidates,self.arb,state,station,
++                env_s,env_v,desired,route.path,measured,self.ctrl,self.lat,timestamp,
++                committed=self._committed_event[1] if self._committed_event is not None
++                    and self._committed_event[0] is route else None)
++            if added:
++                extra_assessment = evaluator.evaluate(added,route.path,station,error,state,measured,
++                    self.ctrl,self.lat,dt,self.rect,route.goal_in,desired,env_s,env_v,self.arb.cfg,
++                    time_left,previous_action,self.W_LATE*fraction)
++                assessed = combine_assessments(assessed,extra_assessment)
++                candidates.extend(added)
++            assessed.original_candidate_mask = np.array([c.original_reference for c in candidates],dtype=bool)
+             timings['evaluation_ms']+=(time.perf_counter()-evaluation_started)*1000
+             route_id='route:%d:%.2f'%(index,fraction)
++            assessed.original_route = not hasattr(route, 'compound_geometry')
+             rows=evaluator.rows(candidates,assessed,route_id)
++            for row,c in zip(rows,candidates):
++                if c.event is not None: row['gap_event'] = dict(c.event)
+             all_rows.extend(rows)
+             batches.append((route,station,error,edge,fraction,candidates,assessed,rows,route_id))
+         if not batches:
+@@ -125,6 +148,10 @@
+         candidate=candidates[ci]
+         action=assessed.commands[ci,0].tolist()
+         safe=selection.feasible
++        if hasattr(route,'compound_geometry') and not selection.progress['selected_full_window_admitted']:
++            raise RuntimeError('New compound route lost full-window admission; no uncertified action submitted')
++        if candidate.event is not None:
++            self._committed_event = (route,dict(candidate.event))
+         status='execution_prefix_checked_on_grid' if safe else 'risk_mitigation_no_feasible_candidate'
+         if safe and rows[ci].get('road_status')=='initial_exterior_recovery_no_growth':
+             status='initial_exterior_recovery_checked_on_grid'
+@@ -138,7 +165,7 @@
+         self.route,self.s=route,station
+         held_target=measured if np.isnan(candidate.steering_target) else candidate.steering_target
+         self._continuation=(route,candidate.acceleration.copy(),candidate.steering_mode,
+-                            candidate.steering_duration,held_target)
++                            candidate.steering_duration,held_target,candidate.original_reference,candidate.event)
+         plan=Plan(a_cmd=action[0],label=candidate.id,cost=float(assessed.cost[ci]),
+             t_collide=float(assessed.first_hit[ci]),min_clear=float(assessed.clearance[ci]),
+             s=assessed.stations[ci].copy(),v=assessed.states[ci,1:,3].copy(),
+@@ -162,8 +189,8 @@
+             execution_decision=self.execution_decision.snapshot(),execution_feedback=self.execution_feedback,
+             prediction_feedback=forecast_feedback,selected=selected,candidates=all_rows,
+             assessment_contract=dict(horizon=float(self.arb.t[-1]),hard_execution_horizon=self.EXECUTION_HORIZON,
+-                future_risk_policy='forecast_clear_preferred_not_certified',dt=dt,geometry='SAT rectangles',
+-                selection_policy='prefix_then_executed_goal_then_forecast_clear_then_cost; risk_body_contact_delay_then_joint_road_buffer_delay_then_next_clearance',
++                future_risk_policy='full_window_checked_before_replacement; original_if_empty',dt=dt,geometry='SAT rectangles',
++                selection_policy='full_window_gate_then_on_time_eta_grid_cost; no_admitted_original_r43_selection',
+                 eta_policy='same_traffic_free_tail_estimate_for_efficiency_and_budget',
+                 margin0=self.arb.cfg.buf0,margin_t=self.arb.cfg.buf_t,
+                 hard_collision_margin='margin0+margin_t*t',buffer_policy='buffer_shortfall_and_body_contact_recorded_separately',
+@@ -182,7 +209,8 @@
+                 executed_goal_on_time_count=sum(r['goal_time'] is not None and r['goal_time']<=time_left+1e-7 for r in all_rows),
+                 on_time_count_scope='includes_traffic_free_tail_estimates_not_certified_arrival',
+                 road_boundary=road,road_policy='lazy_feasible_gate_then_full_joint_risk_grid',time_left=time_left,
+-                route_issues=list(route.issues)),timings=timings)
++                route_issues=list(route.issues)),timings=timings,
++            progress_selection=selection.progress)
+         return action
+ 
+     def safety_diagnostics(self):
+--- r43/stack/core/candidates.py
++++ gap_event_v2/stack/core/candidates.py
+@@ -11,9 +11,11 @@
+     steering_mode: int = 0
+     steering_duration: float = 2.0
+     steering_target: float = np.nan
++    event: dict = None
++    original_reference: bool = True
+ 
+ 
+-def generate(arb, ego, station, env_s, env_v, desired, previous=None):
++def generate(arb, ego, station, env_s, env_v, desired, previous=None, execution_context=None):
+     _, _, accelerations = arb.rollout(ego, station, env_s, env_v, desired)
+     result = [Candidate('main:%d' % i, 'main', values.copy())
+               for i, values in enumerate(accelerations)]
+@@ -44,7 +46,14 @@
+         target=previous[3] if len(previous)>3 else np.nan
+         shifted = np.r_[values[1:], values[-1]]
+         result.append(Candidate('continuation', 'continuation', shifted, mode,
+-                                max(0.,duration-arb.cfg.dt),target))
++                                max(0.,duration-arb.cfg.dt),target,
++                                event=previous[5] if len(previous)>5 else None,
++                                original_reference=bool(previous[4]) if len(previous)>4 else True))
++    if execution_context is not None:
++        from .progress_profile import generate_progress
++        path, measured, ctrl, lat = execution_context
++        for peak, values in generate_progress(arb, ego, station, env_s, env_v, desired, path, measured, ctrl, lat):
++            result.append(Candidate('progress:envelope:%g' % peak, 'envelope_progress', values, original_reference=False))
+     unique, seen = [], set()
+     for item in result:
+         key = (item.steering_mode, item.acceleration.tobytes(),
+--- r43/stack/core/compound_route.py
++++ gap_event_v2/stack/core/compound_route.py
+@@ -19,7 +19,7 @@
+     return np.flatnonzero(turns > math.pi/2.)
+ 
+ 
+-def build_compound_routes(rp, route, start, heading, rect, fractions):
++def build_compound_routes(rp, route, start, heading, rect, fractions, include_existing=False):
+     """Use the declared adjacent-lane chain, retaining its source and final topology."""
+     from .geometry import dedup, wrap
+     from .route import _smoothstep5
+@@ -29,7 +29,7 @@
+     if chain is None:
+         return [], dict(reason='no_consecutive_lateral_chain')
+     first, last = chain
+-    if set(rp.lateral_edges(sequence)).issubset(route.spans) and not len(route_cusps(route)):
++    if not include_existing and set(rp.lateral_edges(sequence)).issubset(route.spans) and not len(route_cusps(route)):
+         return [], dict(reason='existing_geometry_realizes_all_transitions')
+     source_states = rp._corridor(sequence[:first+1])
+     target_states = list(sequence[last+1:])
+@@ -61,7 +61,8 @@
+         return [], dict(reason='no_directed_parallel_compound_corridor')
+     lo_index, hi_index = max(blocks, key=lambda block: block[1]-block[0])
+     lo, hi = float(grid[lo_index]), float(grid[hi_index-1])
+-    nominal = max(25., max(rp.v_ref, 5.)*rp.TRANSITION_S)
++    nominal = (max(25., rp.v_ref*math.sqrt(5.8*float(np.median(gap[lo_index:hi_index]))/2.))
++               if include_existing else max(25., max(rp.v_ref, 5.)*rp.TRANSITION_S))
+     results, rejected = [], []
+     for fraction in fractions:
+         a = lo+float(fraction)*max(0., hi-lo-8.)
+--- r43/stack/core/gap_events.py
++++ gap_event_v2/stack/core/gap_events.py
+@@ -0,0 +1,151 @@
++"""Forecast-derived lane-occupancy events; proposals still require full assessment."""
++from dataclasses import fields
++import numpy as np
++from numba import njit
++from .candidates import Candidate
++from .native_execution import execute, interpolate
++
++
++def lane_interval(path, station, actor_xy, actor_heading, ego_length, ego_width,
++                  actor_width, margin, seed_station):
++    grid = np.r_[np.arange(station, path.length, .5), path.length]
++    points = np.column_stack(path.xy(grid))
++    normal = np.array([-np.sin(actor_heading), np.cos(actor_heading)])
++    cross = np.abs(np.sin(path.heading(grid)-actor_heading))
++    extent = .5*(ego_width+actor_width)+.5*ego_length*cross+margin
++    overlap = np.abs((points-actor_xy) @ normal) <= extent
++    blocks, start = [], None
++    for index, flag in enumerate(np.r_[overlap, False]):
++        if flag and start is None:
++            start = index
++        elif not flag and start is not None:
++            blocks.append((start, index-1))
++            start = None
++    if not blocks:
++        return None
++    lo, hi = min(blocks, key=lambda b: abs(.5*(grid[b[0]]+grid[b[1]])-seed_station))
++    return float(max(station, grid[lo]-.5)), float(min(path.length, grid[hi]+.5))
++
++
++def forecast_events(evaluator, assessed, candidates, path, station, ego, timestamp, cfg):
++    indices = [i for i,c in enumerate(candidates)
++               if c.family == 'envelope_progress' and np.isfinite(assessed.first_hit[i])]
++    indices.sort(key=lambda i: (assessed.first_hit[i], assessed.eta[i], i))
++    events, used = [], set()
++    for ci in indices:
++        ai, bi = int(assessed.collision_actor[ci]), int(assessed.collision_branch[ci])
++        if ai < 0 or bi < 0:
++            continue
++        actor_id = evaluator.prediction['ids'][ai]
++        if actor_id in used:
++            continue
++        used.add(actor_id)
++        hit = float(assessed.first_hit[ci])
++        k = min(len(evaluator.times)-1, max(0, int(round(hit/cfg.dt))-1))
++        heading = float(evaluator.headings[bi,ai,k])
++        actor_xy = evaluator.prediction['now'][ai]
++        margin = cfg.buf0+cfg.buf_t*hit
++        interval = lane_interval(path, station, actor_xy, heading, ego.length, ego.width,
++            evaluator.prediction['W'][ai], margin, assessed.stations[ci,k])
++        if interval is None:
++            continue
++        enter, leave = interval
++        direction = np.array([np.cos(heading), np.sin(heading)])
++        active = np.flatnonzero(evaluator.enabled[bi,ai])
++        if not len(active):
++            continue
++        times = evaluator.times[active]
++        positions = evaluator.positions[bi,ai,active]
++        extent = .5*(ego.length+evaluator.prediction['L'][ai])+margin
++        before_projection = (positions-np.asarray(path.xy(leave))) @ direction
++        event_station = float(assessed.stations[ci,k])
++        after_projection = (positions-np.asarray(path.xy(event_station))) @ direction
++        before = np.flatnonzero(before_projection >= -extent)
++        after = np.flatnonzero(after_projection >= extent)
++        if len(before) and before[0] > 0 and leave < path.length-.5:
++            deadline = float(times[before[0]-1])
++            events.append(dict(side='before', actor=actor_id, branch=bi,
++                station=leave, deadline_abs=timestamp+deadline, created_at=timestamp,
++                interval=[enter,leave], seed_hit=hit, seed_station=float(assessed.stations[ci,k]), seed_candidate=candidates[ci].id,
++                forecast_last_enabled=float(times[-1]), time_basis='forecast_grid_previous_clear_step'))
++        if len(after) and event_station > station+.5:
++            deadline = float(times[after[0]])
++            events.append(dict(side='after', actor=actor_id, branch=bi,
++                station=event_station, deadline_abs=timestamp+deadline, created_at=timestamp,
++                interval=[enter,leave], seed_hit=hit, seed_station=float(assessed.stations[ci,k]), seed_candidate=candidates[ci].id,
++                forecast_last_enabled=float(times[-1]), time_basis='forecast_grid_first_actor_ahead'))
++        if len(used) >= 2:
++            break
++    return events[:4]
++
++
++@njit
++def _event_profile(initial, points, cumulative, headings, curvature, station0, memory0,
++                   dt, length, ke, kpsi, preview, acc_min, acc_max, steer_max, steer_rate,
++                   wheelbase_factor, env_s, env_v, desired, count, event_station, event_left,
++                   before, normal_jerk, emergency_jerk):
++    current = initial.copy()
++    memory, station = memory0, station0
++    proposal = np.zeros(count)
++    for k in range(count):
++        cap = interpolate(station, env_s, env_v)
++        remaining = event_left-k*dt
++        if station < event_station and remaining > dt*.5:
++            distance = max(0., event_station-station)
++            target_speed = max(0., 2.*distance/max(remaining,dt)-current[3])
++            if before:
++                target_speed = max(desired, target_speed)
++            target_speed = min(cap, target_speed)
++        else:
++            target_speed = min(cap,desired)
++        target = min(9.8,max(-9.8,1.5*(target_speed-current[3])))
++        jerk = emergency_jerk if target < -3.5 else normal_jerk
++        command = current[4]+min(max(target-current[4],-jerk*dt),jerk*dt)
++        states, controls, stations = execute(current,np.array([[command]]),points,cumulative,
++            headings,curvature,station,memory,dt,length,ke,kpsi,preview,
++            acc_min,acc_max,steer_max,steer_rate,wheelbase_factor,
++            np.zeros(1,dtype=np.int64),np.zeros(1),np.full(1,np.nan))
++        next_cap = interpolate(stations[0,0],env_s,env_v)
++        if states[0,1,3] > next_cap+1e-7:
++            rounded_cap = np.floor(next_cap*1000.+1e-9)/1000.
++            command = min(command,(rounded_cap-current[3])/dt)
++            states,controls,stations = execute(current,np.array([[command]]),points,cumulative,
++                headings,curvature,station,memory,dt,length,ke,kpsi,preview,
++                acc_min,acc_max,steer_max,steer_rate,wheelbase_factor,
++                np.zeros(1,dtype=np.int64),np.zeros(1),np.full(1,np.nan))
++        proposal[k] = command
++        current = states[0,1].copy()
++        station = stations[0,0]
++        memory = controls[0,0,1]
++    return proposal
++
++
++def generate_gap_events(evaluator, assessed, candidates, arb, ego, station, env_s, env_v,
++                        desired, path, measured, ctrl, lat, timestamp, committed=None):
++    events = forecast_events(evaluator,assessed,candidates,path,station,ego,timestamp,arb.cfg)
++    if committed is not None and committed['station'] > station and committed['deadline_abs'] > timestamp:
++        events = [dict(committed)]+[e for e in events
++            if (e['actor'],e['side']) != (committed['actor'],committed['side'])]
++    events = events[:4]
++    initial = np.array([ego.x,ego.y,ego.yaw,ego.v,ego.a,measured])
++    lim = ctrl.lim
++    added = []
++    for index,event in enumerate(events):
++        proposal = _event_profile(initial,path.pts,path.cum,path._hd_unwrap,path._curv,
++            station,ctrl.prev_steer,arb.cfg.dt,ego.length,lat.k_e,lat.k_psi,lat.preview_s,
++            lim.acc_min,lim.acc_max,lim.steer_max,lim.steer_rate,lim.wheelbase_factor,
++            env_s,env_v,desired,arb.n,event['station'],event['deadline_abs']-timestamp,
++            event['side']=='before',arb.cfg.jerk,arb.cfg.jerk_emerg)
++        added.append(Candidate('gap:%s:%s:%d'%(event['actor'],event['side'],index),
++            'gap_event',proposal,event=event,original_reference=False))
++    return added
++
++
++def combine_assessments(first, second):
++    for field in fields(first):
++        left,right = getattr(first,field.name),getattr(second,field.name)
++        if isinstance(left,dict):
++            setattr(first,field.name,{k:np.concatenate((v,right[k])) for k,v in left.items()})
++        elif isinstance(left,np.ndarray):
++            setattr(first,field.name,np.concatenate((left,right)))
++    return first
+--- r43/stack/core/progress_profile.py
++++ gap_event_v2/stack/core/progress_profile.py
+@@ -0,0 +1,40 @@
++"""Finite speed-envelope proposals with the unchanged native execution law."""
++import numpy as np
++from numba import njit
++from .native_execution import execute, interpolate
++
++
++@njit
++def _profiles(initial, points, cumulative, headings, curvature, station0, memory0,
++              dt, length, ke, kpsi, preview, acc_min, acc_max, steer_max, steer_rate,
++              wheelbase_factor, env_s, env_v, desired, count):
++    peaks = np.array([2.5, 4.5, 9.8])
++    proposals = np.zeros((3, count))
++    for pi in range(3):
++        current = initial.copy()
++        memory, station = memory0, station0
++        for k in range(count):
++            cap = min(desired, interpolate(station, env_s, env_v))
++            target = min(peaks[pi], max(-9.8, 1.5*(cap-current[3])))
++            jerk = 20. if target < -3.5 else 6.
++            command = current[4]+min(max(target-current[4], -jerk*dt), jerk*dt)
++            control = np.array([[command]])
++            states, controls, stations = execute(current, control, points, cumulative,
++                headings, curvature, station, memory, dt, length, ke, kpsi, preview,
++                acc_min, acc_max, steer_max, steer_rate, wheelbase_factor,
++                np.zeros(1, dtype=np.int64), np.zeros(1), np.full(1, np.nan))
++            proposals[pi, k] = command
++            current = states[0, 1].copy()
++            station = stations[0, 0]
++            memory = controls[0, 0, 1]
++    return proposals
++
++
++def generate_progress(arb, ego, station, env_s, env_v, desired, path, measured, ctrl, lat):
++    limits = ctrl.lim
++    initial = np.array([ego.x, ego.y, ego.yaw, ego.v, ego.a, measured])
++    proposals = _profiles(initial, path.pts, path.cum, path._hd_unwrap, path._curv,
++        station, ctrl.prev_steer, arb.cfg.dt, ego.length, lat.k_e, lat.k_psi, lat.preview_s,
++        limits.acc_min, limits.acc_max, limits.steer_max, limits.steer_rate,
++        limits.wheelbase_factor, env_s, env_v, desired, arb.n)
++    return list(zip((2.5, 4.5, 9.8), proposals))
+--- r43/stack/core/unified_evaluation.py
++++ gap_event_v2/stack/core/unified_evaluation.py
+@@ -99,6 +99,8 @@
+     budget_eta: np.ndarray
+     contact_actor: np.ndarray
+     contact_branch: np.ndarray
++    speed_valid: np.ndarray = None
++    speed_excess: np.ndarray = None
+ 
+ 
+ def execution_rank(assessment, index, time_left, hard_horizon=2.):
+@@ -121,9 +123,10 @@
+     checked_count: int
+     road_rejected: int
+     initial_exterior: float
+-
+-
+-def select_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
++    progress: dict = None
++
++
++def select_original_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
+     steps=int(round(hard_horizon/dt))
+     initial=float(boundary.outside_area(np.array([[ego.x,ego.y,ego.yaw]]),
+                                         ego.length,ego.width)[0])
+@@ -192,6 +195,155 @@
+         risks.append((rank,bi,ci))
+     _,bi,ci=min(risks)
+     return selected(bi,ci,False)
++
++
++def select_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
++    from copy import deepcopy
++    base_indices = [i for i,a in enumerate(assessments) if getattr(a,'original_route',True)]
++    if not base_indices:
++        base_indices = list(range(len(assessments)))
++    base_assessments, base_rows, candidate_indices = [], [], []
++    for bi in base_indices:
++        a = deepcopy(assessments[bi])
++        mask = getattr(a,'original_candidate_mask',np.ones(len(a.cost),dtype=bool))
++        indices = np.flatnonzero(mask)
++        for key,value in vars(a).items():
++            if isinstance(value,np.ndarray): setattr(a,key,value[indices])
++            elif isinstance(value,dict): setattr(a,key,{k:v[indices] for k,v in value.items()})
++        base_assessments.append(a)
++        base_rows.append([rows[bi][i] for i in indices])
++        candidate_indices.append(indices)
++    original = select_original_execution(base_assessments,base_rows,boundary,ego,dt,time_left,hard_horizon)
++    original.candidate = int(candidate_indices[original.batch][original.candidate])
++    original.batch = base_indices[original.batch]
++    baseline_row = deepcopy(rows[original.batch][original.candidate])
++    committed_new_route = not any(getattr(a,'original_route',True) for a in assessments)
++    if not committed_new_route and (not original.feasible or assessments[original.batch].eta[original.candidate] <= time_left+1e-7):
++        original.progress = dict(status='original_on_time_preserved' if original.feasible else 'original_risk_preserved',
++            full_window_admitted_count=0, rejection_counts={}, original_batch=original.batch,
++            original_candidate=original.candidate, original_feasible=original.feasible,
++            original_selected=baseline_row, candidate_changed=False, action_changed=False,
++            selected_full_window_admitted=False, forecast_scope='original_enabled_branches_only',
++            eta_scope='original_traffic_free_tail_estimate', intervention='only_if_original_feasible_and_late')
++        return original
++    admitted = []
++    counts = dict(prefix_ineligible=0, future_occupancy=0, nonfinite=0,
++                  prefix_road_failed=0, full_road_failed=0, full_road_unknown=0, speed_envelope_failed=0, speed_envelope_unknown=0, still_late=0)
++    prefix_steps = int(round(hard_horizon / dt))
++    for bi, a in enumerate(assessments):
++        pending = []
++        for ci in range(len(a.cost)):
++            row = rows[bi][ci]
++            if not bool(a.eligible[ci]):
++                counts['prefix_ineligible'] += 1
++                row['progress_status'] = 'prefix_ineligible'
++            elif not np.isposinf(a.first_hit[ci]):
++                counts['future_occupancy'] += 1
++                row['progress_status'] = 'forecast_occupancy_conflict'
++            elif not (np.isfinite(a.eta[ci]) and np.isfinite(a.cost[ci]) and
++                      np.isfinite(a.states[ci]).all() and np.isfinite(a.commands[ci]).all()):
++                counts['nonfinite'] += 1
++                row['progress_status'] = 'nonfinite_execution'
++            elif a.speed_valid is None:
++                counts['speed_envelope_unknown'] += 1
++                row['progress_status'] = 'executed_speed_envelope_unknown'
++            elif not a.speed_valid[ci]:
++                counts['speed_envelope_failed'] += 1
++                row['progress_status'] = 'executed_speed_envelope_failed'
++                row['executed_speed_max_excess'] = float(a.speed_excess[ci])
++            elif a.eta[ci] > time_left+1e-7:
++                counts['still_late'] += 1
++                row['progress_status'] = 'no_on_time_progress_repair'
++            else:
++                row['executed_speed_max_excess'] = float(a.speed_excess[ci])
++                pending.append(ci)
++        if not pending:
++            continue
++        indices = np.asarray(pending, dtype=int)
++        prefix = boundary.inspect(a.states[indices, 1:prefix_steps+1], ego.length, ego.width,
++                                  np.minimum(a.terminal[indices], prefix_steps-1))
++        full = boundary.inspect(a.states[indices, 1:], ego.length, ego.width, a.terminal[indices])
++        for offset, ci in enumerate(pending):
++            row = rows[bi][ci]
++            pfirst = int(prefix['first_outside_step'][offset]) if prefix.get('checked') else None
++            ffirst = int(full['first_outside_step'][offset]) if full.get('checked') else None
++            pg = bool(prefix.get('checked') and pfirst < 0)
++            fg = bool(full.get('checked') and ffirst < 0)
++            if not pg and prefix.get('checked') and original.initial_exterior > 0.:
++                pg = boundary.recovers_initial_exterior(a.states[ci, 1:prefix_steps+1],
++                    ego.length, ego.width, original.initial_exterior, min(a.terminal[ci], prefix_steps-1))
++            if not fg and full.get('checked') and original.initial_exterior > 0.:
++                fg = boundary.recovers_initial_exterior(a.states[ci, 1:], ego.length, ego.width,
++                                                       original.initial_exterior, a.terminal[ci])
++            row.update(road_status=prefix['status'], road_checked=bool(prefix.get('checked')),
++                       road_first_outside_step=pfirst,
++                       road_first_violation=finite((pfirst+1)*dt) if not pg and pfirst is not None else None,
++                       full_window_road_checked=bool(full.get('checked')),
++                       full_window_first_outside_step=ffirst,
++                       full_window_road_pass=bool(fg))
++            if pg and pfirst >= 0:
++                row['road_status'] = 'initial_exterior_recovery_no_growth'
++            if not pg:
++                tag = 'mapped_road_body_outside' if prefix.get('checked') else 'mapped_road_body_unverified'
++                if tag not in row['rejected_by']:
++                    row['rejected_by'].append(tag)
++                counts['prefix_road_failed'] += 1
++                row['progress_status'] = 'prefix_road_failed'
++            elif not full.get('checked'):
++                counts['full_road_unknown'] += 1
++                row['progress_status'] = 'full_road_unknown'
++            elif not fg:
++                counts['full_road_failed'] += 1
++                row['progress_status'] = 'full_road_failed'
++            else:
++                row['progress_status'] = 'full_window_admitted'
++                key = (bool(a.eta[ci] > time_left+1e-7),
++                       int(np.floor((a.eta[ci]+1e-7)/dt)), float(a.cost[ci]), bi, ci)
++                admitted.append((key, bi, ci))
++    chosen = original
++    if admitted:
++        _, bi, ci = min(admitted)
++        checked = sum(bool(r.get('road_checked')) for group in rows for r in group)
++        rejected = sum(any(x.startswith('mapped_road_body_') for x in r['rejected_by'])
++                       for group in rows for r in group)
++        chosen = Selection(bi, ci, True, checked, rejected, original.initial_exterior)
++    chosen.checked_count = sum(bool(r.get('road_checked')) for group in rows for r in group)
++    chosen.road_rejected = sum(any(x.startswith('mapped_road_body_') for x in r['rejected_by'])
++                              for group in rows for r in group)
++    changed = (chosen.batch, chosen.candidate) != (original.batch, original.candidate)
++    changed_action = not np.array_equal(assessments[chosen.batch].commands[chosen.candidate, 0],
++                                       assessments[original.batch].commands[original.candidate, 0])
++    chosen.progress = dict(status='full_window_eta_ranked' if admitted else 'no_full_window_progress_candidate',
++        full_window_admitted_count=len(admitted), rejection_counts=counts,
++        original_batch=original.batch, original_candidate=original.candidate,
++        original_feasible=original.feasible, original_selected=baseline_row,
++        candidate_changed=changed, action_changed=changed_action,
++        selected_full_window_admitted=bool(admitted),
++        forecast_scope='original_enabled_branches_only', eta_scope='original_traffic_free_tail_estimate')
++    return chosen
++
++
++def executed_speed_gate(states, stations, initial, dt, env_s, env_v, terminal):
++    from .replay_contract import checked_action
++    cap = np.interp(stations, env_s, env_v)
++    initial_over = initial[3] > env_v[0]+1e-7
++    allowed = cap.copy()
++    if initial_over:
++        speed, acc = float(initial[3]), float(initial[4])
++        floor = []
++        for _ in range(stations.shape[1]):
++            acc, _ = checked_action(dt, speed, acc, 0., -9.8, 0.)
++            speed = float(np.round(max(0., speed+acc*dt), 3))
++            acc = float(np.round(acc, 3))
++            floor.append(speed)
++        # Only the physically unavoidable initial entry may exceed the cap.
++        recovered = np.zeros(len(states), dtype=bool)
++        for k in range(stations.shape[1]):
++            allowed[:, k] = np.where(recovered, cap[:, k], np.maximum(cap[:, k], floor[k]))
++            recovered |= states[:, k+1, 3] <= cap[:, k]+1e-7
++    live = np.arange(stations.shape[1])[None, :] <= terminal[:, None]
++    excess = np.where(live, states[:, 1:, 3]-allowed, 0.).max(axis=1)
++    return excess <= 1e-7, excess
+ 
+ 
+ class ExecutionEvaluator:
+@@ -259,9 +411,12 @@
+             route=np.full(len(candidates),extra_cost))
+         terms['jerk'] = terms['jerk'].sum(-1)*dt
+         cost = sum(terms.values())
+-        return Assessment(states,controls,stations,first,clear,actor,branch,goal_time,
++        result = Assessment(states,controls,stations,first,clear,actor,branch,goal_time,
+                           eta,cost,max_error,eligible,terms,terminal,prefix_clear,next_clear,buffer_first,contact_first,budget_eta,
+                           contact_actor,contact_branch)
++        result.speed_valid, result.speed_excess = executed_speed_gate(
++            states, stations, initial, dt, env_s, env_v, terminal)
++        return result
+ 
+     def rows(self,candidates,assessment,route_id):
+         p = self.prediction

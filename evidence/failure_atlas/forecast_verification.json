@@ -1,0 +1,196 @@
+{
+  "scope": "causal frozen R43 forecast reconstruction, not new driving",
+  "sources": {
+    "E:\\Onsite\u6bd4\u8d5b\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\source\\stack\\core\\world.py": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce",
+    "E:\\Onsite\u6bd4\u8d5b\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\source\\stack\\core\\unified_evaluation.py": "3d1b4a32a9683efe588e748d95565c0768098d4b04f8fcbe010154a1a4a08ddd"
+  },
+  "input_events_sha256": "4fe2fd3eaa192bdb94a30d45da424e77dfe0e1b7843810f91cb409884569842e",
+  "scenes": [
+    {
+      "scene": "12_60_straight_in_adjacent_left_64",
+      "frames": 296,
+      "feedback_checks": 3217
+    },
+    {
+      "scene": "14_123_straight_in_opposite_left_124",
+      "frames": 264,
+      "feedback_checks": 3035
+    },
+    {
+      "scene": "15_31_straight_straight_37",
+      "frames": 68,
+      "feedback_checks": 867
+    },
+    {
+      "scene": "18_108_straight_straight_112",
+      "frames": 114,
+      "feedback_checks": 1375
+    },
+    {
+      "scene": "8_282_merge_291",
+      "frames": 425,
+      "feedback_checks": 5648
+    },
+    {
+      "scene": "9_381_merge_397",
+      "frames": 681,
+      "feedback_checks": 7146
+    },
+    {
+      "scene": "highway_merge_2_1_141",
+      "frames": 101,
+      "feedback_checks": 495
+    },
+    {
+      "scene": "highway_merge_2_2_0",
+      "frames": 101,
+      "feedback_checks": 990
+    },
+    {
+      "scene": "highway_merge_2_2_265",
+      "frames": 101,
+      "feedback_checks": 1485
+    },
+    {
+      "scene": "highway_merge_3_1_197",
+      "frames": 101,
+      "feedback_checks": 1485
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "frames": 101,
+      "feedback_checks": 990
+    },
+    {
+      "scene": "highway_merge_3_1_391",
+      "frames": 101,
+      "feedback_checks": 693
+    },
+    {
+      "scene": "highway_merge_3_1_87",
+      "frames": 101,
+      "feedback_checks": 1188
+    },
+    {
+      "scene": "1346cutin71",
+      "frames": 251,
+      "feedback_checks": 2241
+    },
+    {
+      "scene": "7_916_merge_921",
+      "frames": 359,
+      "feedback_checks": 3633
+    },
+    {
+      "scene": "highway_merge_2_1_464",
+      "frames": 101,
+      "feedback_checks": 1188
+    },
+    {
+      "scene": "highway_merge_3_1_301",
+      "frames": 101,
+      "feedback_checks": 1089
+    },
+    {
+      "scene": "highway_merge_3_1_68",
+      "frames": 101,
+      "feedback_checks": 693
+    },
+    {
+      "scene": "2422cutin168",
+      "frames": 222,
+      "feedback_checks": 1540
+    },
+    {
+      "scene": "1lanechange42",
+      "frames": 149,
+      "feedback_checks": 294
+    },
+    {
+      "scene": "highway_merge_3_1_223",
+      "frames": 101,
+      "feedback_checks": 1188
+    },
+    {
+      "scene": "1cutin74",
+      "frames": 149,
+      "feedback_checks": 588
+    },
+    {
+      "scene": "highway_merge_3_1_432",
+      "frames": 101,
+      "feedback_checks": 1980
+    },
+    {
+      "scene": "highway_merge_3_1_495",
+      "frames": 101,
+      "feedback_checks": 1287
+    },
+    {
+      "scene": "highway_merge_3_1_18",
+      "frames": 101,
+      "feedback_checks": 1089
+    },
+    {
+      "scene": "7_661_merge_664",
+      "frames": 343,
+      "feedback_checks": 3579
+    },
+    {
+      "scene": "highway_merge_2_1_482",
+      "frames": 101,
+      "feedback_checks": 1485
+    },
+    {
+      "scene": "highway_merge_3_1_26",
+      "frames": 101,
+      "feedback_checks": 1485
+    },
+    {
+      "scene": "highway_merge_2_2_118",
+      "frames": 101,
+      "feedback_checks": 990
+    },
+    {
+      "scene": "7_277_merge_292",
+      "frames": 420,
+      "feedback_checks": 5214
+    },
+    {
+      "scene": "13_91_straight_in_opposite_left_96",
+      "frames": 113,
+      "feedback_checks": 1168
+    },
+    {
+      "scene": "18_29_straight_straight_30",
+      "frames": 199,
+      "feedback_checks": 1958
+    },
+    {
+      "scene": "11_57_straight_straight_61",
+      "frames": 100,
+      "feedback_checks": 1160
+    },
+    {
+      "scene": "20_46_straight_in_adjacent_left_47",
+      "frames": 114,
+      "feedback_checks": 742
+    }
+  ],
+  "new_driving": 0,
+  "new_optimization": 0,
+  "display_round_decimals": 4,
+  "display_sample_seconds": 0.4,
+  "passed": true,
+  "forecast_frames": 5950,
+  "feedback_checks": 63205,
+  "maximum_feedback_numeric_difference": 2.2633631080459793e-13,
+  "output_sha256": "6df066e07ba8cb192a307c3b72c2953c22a815051313fefb21d140aeb5053c94",
+  "browser": {
+    "all34_scenes_prediction_midframe_and_terminal_rendered": true,
+    "actor_filter": true,
+    "branch_filter": true,
+    "mobile_width_390_no_overflow": true,
+    "console_errors": 0
+  }
+}

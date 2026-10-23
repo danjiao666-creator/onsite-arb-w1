@@ -1,0 +1,81 @@
+{
+  "scope": "saved candidate states against causally reconstructed original forecast, not observed future",
+  "events": [
+    {
+      "scene": "highway_merge_3_1_68",
+      "candidate": "route:5:0.00/progress:envelope:2.5",
+      "eta": 9.525012568558804,
+      "forecast_first_hit": 3.3000000000000003,
+      "actor": "vehicle/car4",
+      "branch": "W1",
+      "ego_state_at_hit": [
+        265.874,
+        -3.464,
+        0.103,
+        21.439,
+        -0.749,
+        -0.011
+      ],
+      "actor_center_at_hit": [
+        261.04600000000005,
+        -4.5
+      ],
+      "actor_heading_at_hit": 0.0,
+      "original_buffer": 0.348,
+      "first_command": [
+        -0.22779953092427796,
+        0.004261434785474147
+      ],
+      "future_truth_used": false,
+      "actual_driving": false,
+      "read_only_observed_actor_at_hit": [
+        261.07,
+        -4.5,
+        34.94,
+        0.0,
+        4.5,
+        2.1
+      ],
+      "forecast_vs_observed_center_error_m": 0.023999999999944066,
+      "posthoc_only_not_policy_input": true
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "candidate": "route:5:0.00/progress:envelope:2.5",
+      "eta": 9.404021990090754,
+      "forecast_first_hit": 2.1,
+      "actor": "vehicle/car7",
+      "branch": "W1",
+      "ego_state_at_hit": [
+        240.849,
+        -7.081,
+        0.158,
+        20.259,
+        2.42,
+        0.002
+      ],
+      "actor_center_at_hit": [
+        244.988,
+        -4.5
+      ],
+      "actor_heading_at_hit": 0.0,
+      "original_buffer": 0.276,
+      "first_command": [
+        0.3677004776864159,
+        0.004100776713116123
+      ],
+      "future_truth_used": false,
+      "actual_driving": false,
+      "read_only_observed_actor_at_hit": [
+        244.99,
+        -4.5,
+        34.94,
+        0.0,
+        4.5,
+        2.1
+      ],
+      "forecast_vs_observed_center_error_m": 0.0020000000000095497,
+      "posthoc_only_not_policy_input": true
+    }
+  ]
+}

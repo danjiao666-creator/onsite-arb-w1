@@ -1,0 +1,136 @@
+--- r43/stack/adapters/onsite_unified.py
++++ selector_a/stack/adapters/onsite_unified.py
+@@ -162,8 +162,8 @@
+             execution_decision=self.execution_decision.snapshot(),execution_feedback=self.execution_feedback,
+             prediction_feedback=forecast_feedback,selected=selected,candidates=all_rows,
+             assessment_contract=dict(horizon=float(self.arb.t[-1]),hard_execution_horizon=self.EXECUTION_HORIZON,
+-                future_risk_policy='forecast_clear_preferred_not_certified',dt=dt,geometry='SAT rectangles',
+-                selection_policy='prefix_then_executed_goal_then_forecast_clear_then_cost; risk_body_contact_delay_then_joint_road_buffer_delay_then_next_clearance',
++                future_risk_policy='full_window_checked_before_replacement; original_if_empty',dt=dt,geometry='SAT rectangles',
++                selection_policy='full_window_gate_then_on_time_eta_grid_cost; no_admitted_original_r43_selection',
+                 eta_policy='same_traffic_free_tail_estimate_for_efficiency_and_budget',
+                 margin0=self.arb.cfg.buf0,margin_t=self.arb.cfg.buf_t,
+                 hard_collision_margin='margin0+margin_t*t',buffer_policy='buffer_shortfall_and_body_contact_recorded_separately',
+@@ -182,7 +182,8 @@
+                 executed_goal_on_time_count=sum(r['goal_time'] is not None and r['goal_time']<=time_left+1e-7 for r in all_rows),
+                 on_time_count_scope='includes_traffic_free_tail_estimates_not_certified_arrival',
+                 road_boundary=road,road_policy='lazy_feasible_gate_then_full_joint_risk_grid',time_left=time_left,
+-                route_issues=list(route.issues)),timings=timings)
++                route_issues=list(route.issues)),timings=timings,
++            progress_selection=selection.progress)
+         return action
+ 
+     def safety_diagnostics(self):
+--- r43/stack/core/unified_evaluation.py
++++ selector_a/stack/core/unified_evaluation.py
+@@ -121,9 +121,10 @@
+     checked_count: int
+     road_rejected: int
+     initial_exterior: float
+-
+-
+-def select_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
++    progress: dict = None
++
++
++def select_original_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
+     steps=int(round(hard_horizon/dt))
+     initial=float(boundary.outside_area(np.array([[ego.x,ego.y,ego.yaw]]),
+                                         ego.length,ego.width)[0])
+@@ -192,6 +193,96 @@
+         risks.append((rank,bi,ci))
+     _,bi,ci=min(risks)
+     return selected(bi,ci,False)
++
++
++def select_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon=2.):
++    from copy import deepcopy
++    original = select_original_execution(assessments, rows, boundary, ego, dt, time_left, hard_horizon)
++    baseline_row = deepcopy(rows[original.batch][original.candidate])
++    admitted = []
++    counts = dict(prefix_ineligible=0, future_occupancy=0, nonfinite=0,
++                  prefix_road_failed=0, full_road_failed=0, full_road_unknown=0)
++    prefix_steps = int(round(hard_horizon / dt))
++    for bi, a in enumerate(assessments):
++        pending = []
++        for ci in range(len(a.cost)):
++            row = rows[bi][ci]
++            if not bool(a.eligible[ci]):
++                counts['prefix_ineligible'] += 1
++                row['progress_status'] = 'prefix_ineligible'
++            elif not np.isposinf(a.first_hit[ci]):
++                counts['future_occupancy'] += 1
++                row['progress_status'] = 'forecast_occupancy_conflict'
++            elif not (np.isfinite(a.eta[ci]) and np.isfinite(a.cost[ci]) and
++                      np.isfinite(a.states[ci]).all() and np.isfinite(a.commands[ci]).all()):
++                counts['nonfinite'] += 1
++                row['progress_status'] = 'nonfinite_execution'
++            else:
++                pending.append(ci)
++        if not pending:
++            continue
++        indices = np.asarray(pending, dtype=int)
++        prefix = boundary.inspect(a.states[indices, 1:prefix_steps+1], ego.length, ego.width,
++                                  np.minimum(a.terminal[indices], prefix_steps-1))
++        full = boundary.inspect(a.states[indices, 1:], ego.length, ego.width, a.terminal[indices])
++        for offset, ci in enumerate(pending):
++            row = rows[bi][ci]
++            pfirst = int(prefix['first_outside_step'][offset]) if prefix.get('checked') else None
++            ffirst = int(full['first_outside_step'][offset]) if full.get('checked') else None
++            pg = bool(prefix.get('checked') and pfirst < 0)
++            fg = bool(full.get('checked') and ffirst < 0)
++            if not pg and prefix.get('checked') and original.initial_exterior > 0.:
++                pg = boundary.recovers_initial_exterior(a.states[ci, 1:prefix_steps+1],
++                    ego.length, ego.width, original.initial_exterior, min(a.terminal[ci], prefix_steps-1))
++            if not fg and full.get('checked') and original.initial_exterior > 0.:
++                fg = boundary.recovers_initial_exterior(a.states[ci, 1:], ego.length, ego.width,
++                                                       original.initial_exterior, a.terminal[ci])
++            row.update(road_status=prefix['status'], road_checked=bool(prefix.get('checked')),
++                       road_first_outside_step=pfirst,
++                       road_first_violation=finite((pfirst+1)*dt) if not pg and pfirst is not None else None,
++                       full_window_road_checked=bool(full.get('checked')),
++                       full_window_first_outside_step=ffirst,
++                       full_window_road_pass=bool(fg))
++            if pg and pfirst >= 0:
++                row['road_status'] = 'initial_exterior_recovery_no_growth'
++            if not pg:
++                tag = 'mapped_road_body_outside' if prefix.get('checked') else 'mapped_road_body_unverified'
++                if tag not in row['rejected_by']:
++                    row['rejected_by'].append(tag)
++                counts['prefix_road_failed'] += 1
++                row['progress_status'] = 'prefix_road_failed'
++            elif not full.get('checked'):
++                counts['full_road_unknown'] += 1
++                row['progress_status'] = 'full_road_unknown'
++            elif not fg:
++                counts['full_road_failed'] += 1
++                row['progress_status'] = 'full_road_failed'
++            else:
++                row['progress_status'] = 'full_window_admitted'
++                key = (bool(a.eta[ci] > time_left+1e-7),
++                       int(np.floor((a.eta[ci]+1e-7)/dt)), float(a.cost[ci]), bi, ci)
++                admitted.append((key, bi, ci))
++    chosen = original
++    if admitted:
++        _, bi, ci = min(admitted)
++        checked = sum(bool(r.get('road_checked')) for group in rows for r in group)
++        rejected = sum(any(x.startswith('mapped_road_body_') for x in r['rejected_by'])
++                       for group in rows for r in group)
++        chosen = Selection(bi, ci, True, checked, rejected, original.initial_exterior)
++    chosen.checked_count = sum(bool(r.get('road_checked')) for group in rows for r in group)
++    chosen.road_rejected = sum(any(x.startswith('mapped_road_body_') for x in r['rejected_by'])
++                              for group in rows for r in group)
++    changed = (chosen.batch, chosen.candidate) != (original.batch, original.candidate)
++    changed_action = not np.array_equal(assessments[chosen.batch].commands[chosen.candidate, 0],
++                                       assessments[original.batch].commands[original.candidate, 0])
++    chosen.progress = dict(status='full_window_eta_ranked' if admitted else 'no_full_window_progress_candidate',
++        full_window_admitted_count=len(admitted), rejection_counts=counts,
++        original_batch=original.batch, original_candidate=original.candidate,
++        original_feasible=original.feasible, original_selected=baseline_row,
++        candidate_changed=changed, action_changed=changed_action,
++        selected_full_window_admitted=bool(admitted),
++        forecast_scope='original_enabled_branches_only', eta_scope='original_traffic_free_tail_estimate')
++    return chosen
+ 
+ 
+ class ExecutionEvaluator:

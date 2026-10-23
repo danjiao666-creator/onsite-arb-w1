@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "algorithm_accepted": false,
+  "new_recoveries": 0,
+  "prior_A_recoveries_retained": 2,
+  "target_merge_count": 18,
+  "new_original_start_driving": 1,
+  "driving_steps": 100,
+  "all_native_next_states_exact": true,
+  "new_collisions": 0,
+  "new_body_growth": 0,
+  "old_success_lost": 1,
+  "raw_synthetic_setup_error_preserved": false,
+  "synthetic_error_disclosed_in_receipt": true,
+  "versions": [
+    {
+      "version": "bounded_progress_v1",
+      "status": "stopped_regression",
+      "protected_files": 186,
+      "frozen_files": 39,
+      "new_driving": 1
+    },
+    {
+      "version": "deadline_rescue_v2",
+      "status": "stopped_no_qualified_action_change",
+      "protected_files": 230,
+      "frozen_files": 39,
+      "new_driving": 0
+    },
+    {
+      "version": "envelope_progress_b1",
+      "status": "stopped_no_new_qualified_progress",
+      "protected_files": 272,
+      "frozen_files": 40,
+      "new_driving": 0
+    },
+    {
+      "version": "compound_merge_c1",
+      "status": "stopped_no_new_qualified_progress",
+      "protected_files": 313,
+      "frozen_files": 39,
+      "new_driving": 0
+    },
+    {
+      "version": "compound_progress_c2",
+      "status": "stopped_no_new_qualified_progress",
+      "protected_files": 355,
+      "frozen_files": 39,
+      "new_driving": 0
+    }
+  ],
+  "new_driving_in_audit": 0,
+  "new_candidate_evaluations_in_audit": 0,
+  "causal_forecast_reconstruction": true,
+  "protected_originals_verified": true,
+  "artifacts": {
+    "RESULT.md": "dec6282a1816c755d9bfeab8eca4c2829a5cb3be6595bf6b08e1d9983d4f4bc2",
+    "merge_status.json": "0fdb47a2cc166fc888de42b3db2efd67aa50344b2bfc0dd7317db04c053f1a9d",
+    "conflict_evidence.json": "256bf7be63237bb089533c6b8e17f172d2a1a6bef5c52e8f50ad5676556fde87",
+    "R43合流半小时推进.html": "200c4fab4b98b437c5eaf749b163df8776dcbe7e8b96fabf567d87a798dd5bed",
+    "html_data_verification.json": "6c7e4273ba4b747e57d6a74040dd0dcf221086393530841018e082526715a112"
+  }
+}

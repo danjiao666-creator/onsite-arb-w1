@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "scene": "highway_merge_3_1_68",
+      "action_changed": false,
+      "new_candidates": 71,
+      "event_candidates": 12,
+      "qualified_events": 0,
+      "qualified_new": 0,
+      "minimum_new_eta": 7.084345068392295
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "action_changed": true,
+      "new_candidates": 74,
+      "event_candidates": 7,
+      "qualified_events": 2,
+      "qualified_new": 2,
+      "minimum_new_eta": 6.98286354900712
+    }
+  ],
+  "eligible_for_driving": true
+}

@@ -1,0 +1,192 @@
+{
+  "scope": "Frozen R43 saved-record-only objective audit",
+  "source_files_verified": 35,
+  "sources": [
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\r43_events.json",
+      "sha256": "4fe2fd3eaa192bdb94a30d45da424e77dfe0e1b7843810f91cb409884569842e",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\15_31_straight_straight_37.json.gz",
+      "sha256": "b148de0da32b57187dd8ce0fc283b422a7d0be04e9677f167615039342133a6c",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\18_108_straight_straight_112.json.gz",
+      "sha256": "fb560a63ee242b6840c8cfbde4d2719ea6e502b92ed30f13c5e05e241444b228",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\9_381_merge_397.json.gz",
+      "sha256": "83ea79496cc1cb77e63dbc455476d814cbe2aef93948e7938973d1b8463316de",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_1_141.json.gz",
+      "sha256": "fa9b7e6d5c064ad35d5de432ad4daf242ced9826eabecc2c0e689e0b32559f95",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_2_0.json.gz",
+      "sha256": "7b16a44d0c4172f7afde011ced988f2428acf960d2923f50cb32750c48fdd83e",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_2_265.json.gz",
+      "sha256": "fc0a65c4ed77fc8874a71cc51fa3fbd953411915b120b243b269009a40fbfa97",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_197.json.gz",
+      "sha256": "70bf02111412f9506cc5fa828ed8f5c74a7cde034d007e535ab0903ef3c348b8",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_332.json.gz",
+      "sha256": "8f94c70965cf0fe6e1eb7b4d63ed8643f911841b4bf7ff71228c3da338295359",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_391.json.gz",
+      "sha256": "5990b87f7cb70932311bc0212d4a937d49ff66887a1cec8ed11ad91c57b6aa48",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_87.json.gz",
+      "sha256": "01c4f55e164bd874b3f92d22a76ad81a86d454d970840c2c38655b389d19c32b",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\1346cutin71.json.gz",
+      "sha256": "2d94091c001c4909d0c3510ab9c5ef4ac1efaac3d0b87ed53d07f7d3b6dfeeb0",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\7_916_merge_921.json.gz",
+      "sha256": "b94cedb35d5bc5219a62c28431f138d24595831504a300648c8bfe365280292d",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_1_464.json.gz",
+      "sha256": "d3edaa9ef1fc10b6dc6b8bc3c9a40082fbb2f13a775ca3f81aa48b4667e2b38a",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_301.json.gz",
+      "sha256": "0c66ec3efc2da0da8f9fa9c23fa3cd26be0bd264994a03306ff5642bd75bf7f2",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_68.json.gz",
+      "sha256": "acd62bb4233dd1414e64331d5f5cb4d1ccb985d58097e34e428b229dfa54d290",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\2422cutin168.json.gz",
+      "sha256": "1ef4dc2269c3d559a4a9ea641c822c1c3885b2437012c0bc5b7be9e443a04666",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\1lanechange42.json.gz",
+      "sha256": "21f40d53a6b62868639fc5f8207a5a754ea51bd8727a396a2cfa1902e5fd8024",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_3_1_223.json.gz",
+      "sha256": "375465e44df15708280fc440ef0af889ef5aa90d7d332073f8cfcf0b867617f1",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\1cutin74.json.gz",
+      "sha256": "dfed0abd900a7f3bbbc4afec4c4f4dd407145c77fb293d82c17fcc29a9a4faec",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_3_1_432.json.gz",
+      "sha256": "8c89a81fdd1f54603d96b8c0099cf78817c25fe4ec47a69e40e0e8c1affe9d17",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_3_1_495.json.gz",
+      "sha256": "5ff841353f6c585b9d2e07684df300afe0e5203bd0e58993b414e571ba9cc7e7",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_3_1_18.json.gz",
+      "sha256": "9590dd7dce728ffdf57af3d6e987196641eb63369e2077e4ac302883ec346221",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\7_661_merge_664.json.gz",
+      "sha256": "ddfa3d7068047a0c0d622589c59a56c2d7020db3181597c2c521d18b2f515a47",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_2_1_482.json.gz",
+      "sha256": "aa191c0cb465c0ee67d63013b608a56b9dcaaf580611cb5d4e456e11360a627f",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_3_1_26.json.gz",
+      "sha256": "0d57554bd4706a7a6d259a116a702c6184f222dbb66a649094592a8c84dbf132",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\highway_merge_2_2_118.json.gz",
+      "sha256": "ebd9aa9a2802cd174e8154cb408581020cb5923340615623a1a8f8b093ca38f5",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\7_277_merge_292.json.gz",
+      "sha256": "d37878688b7c4edac9c8108f00c8567aef704ae033a783a1b23a323aa74c2082",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\13_91_straight_in_opposite_left_96.json.gz",
+      "sha256": "d1e7d864a5be0e22782ced5efb32d795359b470c2720846e14250606aaa78272",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\18_29_straight_straight_30.json.gz",
+      "sha256": "ee3208f6d093dcd2e5e1bafd2b6327721bbd45be7748004538b25b1260569e7f",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\11_57_straight_straight_61.json.gz",
+      "sha256": "c2729eff0cac746e7a7f77ac2eafd5c62320f45cbc5a28483c57ac660b7691f3",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_extra100\\validation\\20_46_straight_in_adjacent_left_47.json.gz",
+      "sha256": "de4827443c9c363672f3cf8081685c0acc8a8f64c8b0eecc1969f04203b7acde",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\source\\stack\\core\\unified_evaluation.py",
+      "sha256": "3d1b4a32a9683efe588e748d95565c0768098d4b04f8fcbe010154a1a4a08ddd",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\source\\stack\\adapters\\onsite_unified.py",
+      "sha256": "92509cacb751ab88de789bf21054f6a44b570b93096e852a767aa8e6d1627bf0",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\source\\stack\\adapters\\onsite_dynamic_route.py",
+      "sha256": "79e22bb24643291377a8612e7402f512b1887c1ad83e6f7d2faec444bc1c3e5c",
+      "unchanged": true
+    }
+  ],
+  "timeouts": 23,
+  "timeouts_max_command_at_most_2p5": 21,
+  "timeouts_without_positive_command": 4,
+  "highway_merge_timeouts": 17,
+  "highway_merge_first_positive_at_least_3s_or_never": 10,
+  "new_driving": 0,
+  "new_solve": 0,
+  "new_forecast": 0,
+  "algorithm_changes": 0,
+  "hold_access": 0,
+  "json_outputs_parse": true
+}

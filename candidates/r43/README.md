@@ -1,11 +1,9 @@
-# r43统一执行候选
+# 原版 R43 冻结比较底座
 
-源码34文件与本地冻结r43及verification逐字节一致。入口 `stack.adapters.onsite_unified:UnifiedPlanner`，需以本目录source作为独立模块根。根目录stack为r99，两版不要混合导入。
+`source/` 的 34 个 Python 文件逐字节保持提交 `1dbd0507353666c90ec7a9fdc3c752b62e85d001`。入口是 `stack.adapters.onsite_unified:UnifiedPlanner`，独立模块根为本目录的 `source/`。不要与两个实验原型混合导入。
 
-当前原130场115到达/3碰撞/12超时，归一追加开发100场84/5/11，合计199/8/23。相对r99有4成功损失和1新碰撞；时延与实际道路未全量通过，候选未晋级。[完整比较](../../docs/UPDATE_20261010.md)。
+`verification.json` 和两个 `runs/` 下的运行身份、源码 ZIP、结果与审核为历史原件。原 130 场 115 到达 / 3 碰撞 / 12 超时，追加开发 100 场 84 / 5 / 11，合计 199 / 8 / 23。该版存在碰撞、超时及道路外伸，不是安全验收完成版。
 
-`runs/`保存源码、ZIP、结果、运行/输入身份、逐场审核和全车身道路报告。两run的trace_index记录全部230场原始trace哈希/大小，只上传14_14、7_916和20_46三场原始trace；其它大体量每帧诊断以及外部地图/平台ZIP仍保留在原本地归档，未宣称仓库含完整230轨迹。`EXPORT_SCOPE.json`逐文件标明导出与排除。
+本次审阅保留原始源码，不将任何后续修复写回底座。两份 run 中共有 7 场原始压缩 trace；全部 230 场 trace 哈希与大小仍在 `trace_index.json`。旧报告中的绝对路径、曾经的比较和导出范围是当时记录，不代表本次包的目录或完整性。
 
-`verification.json`是2026-10-10已有合同验证的历史原件，SHA256为 `9c1efce67345686ef7a27fa0a2a53f0dd69c60a40e851616ae2a7d0271c8d10d`。p0测试仅适配外部官方纯函数位置和仓库r99轨迹路径，24个测试方法AST保持；PACKAGING.json单列导出路径变更身份。重新运行打包测试不会覆写原verification。
-
-复现和导出范围见 [REPRODUCTION_R43.md](../../docs/REPRODUCTION_R43.md)。原始报告中的绝对路径是历史身份，不是本仓库的可执行路径。所有被否定的r44-r62策略未收入source。
+当前问题从根目录 `review/REVIEW_BRIEF.md` 开始；当前导出范围、校验和外部依赖见根目录 `review/EVIDENCE_INDEX.md` 与 `review/REPRODUCTION.md`。本次身份以根目录 `REVIEW_MANIFEST.json` 为准。

@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "saved_trace_only": true,
+  "new_driving": 0,
+  "new_candidate_evaluations": 0,
+  "new_forecast_reconstruction": true,
+  "forecast_audits": [
+    {
+      "scene": "highway_merge_3_1_68",
+      "old": {
+        "feedback_checks": 693,
+        "max_error": 2.7755575615628914e-17
+      },
+      "new": {
+        "feedback_checks": 448,
+        "max_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "old": {
+        "feedback_checks": 990,
+        "max_error": 2.7755575615628914e-17
+      },
+      "new": {
+        "feedback_checks": 650,
+        "max_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "scene": "highway_merge_2_1_141",
+      "old": {
+        "feedback_checks": 495,
+        "max_error": 1.3877787807814457e-17
+      },
+      "new": {
+        "feedback_checks": 495,
+        "max_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "scene": "highway_merge_2_1_112",
+      "old": {
+        "feedback_checks": 480,
+        "max_error": 1.3877787807814457e-17
+      },
+      "new": {
+        "feedback_checks": 495,
+        "max_error": 1.3877787807814457e-17
+      }
+    }
+  ],
+  "input_identities": {
+    "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_68\\trace.json.gz": "8f3de2c11712d5bf149bc6edf02ff5f60d067d4192fcd985b7c1b2b24c4078e4",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\6717b478a5df607291c1c9fd3dff3d2c.pkl": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10",
+    "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_332\\trace.json.gz": "b1e99f72fcace4c6f396f036df73ee4e2b3b8c5924bc4443097d356c2714eec0",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\277fa1444985ac1ffd6ae6098a81cf61.pkl": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10",
+    "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_141\\trace.json.gz": "e8c25a7c7250d3bf329f509eb037bdac08426568ed1da20c9a3b368f71fe3695",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\e4581a6485898420e97f1ea17b670e6e.pkl": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6",
+    "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_112\\trace.json.gz": "14319727efed7993e6ebef1f8b0df559e81d57c8f183d4169351fe77d097e9cf",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\2ea17459bc056465e56b2c25f35eaf12.pkl": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6"
+  },
+  "output_sha256": "79f077ec3208bf2f69388bc70a00395a2b5542bd6a59ec9dd156a4b64a9a7d0e",
+  "forecast_scope": "causal original W1 6s; CV/CA enabled original 2s; no future observations",
+  "display_scope": "model stops at original goal mask; roads simplified .08m for display only"
+}

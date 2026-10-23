@@ -1,0 +1,197 @@
+{
+  "target_count": 18,
+  "new_recoveries": 0,
+  "previous_A_recoveries_retained": 2,
+  "unresolved_original_merge_targets": 16,
+  "qualified_current_candidate": null,
+  "scenes": [
+    {
+      "scene": "9_381_merge_397",
+      "original_result": "timeout",
+      "baseline_deadline": 68.0,
+      "original_category": "低速停走",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_1_141",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_2_0",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_2_265",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_197",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": 6.6,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": [
+        "envelope_progress_b1",
+        "compound_merge_c1",
+        "compound_progress_c2"
+      ]
+    },
+    {
+      "scene": "highway_merge_3_1_391",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_87",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_1_464",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "刹停后未重新起步",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_301",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "刹停后未重新起步",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_68",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": 6.5,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": [
+        "envelope_progress_b1",
+        "compound_merge_c1",
+        "compound_progress_c2"
+      ]
+    },
+    {
+      "scene": "highway_merge_3_1_223",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "刹停后未重新起步",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_432",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "刹停后未重新起步",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_495",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_18",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_1_482",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "刹停后未重新起步",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_3_1_26",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    },
+    {
+      "scene": "highway_merge_2_2_118",
+      "original_result": "timeout",
+      "baseline_deadline": 10.0,
+      "original_category": "持续行驶但推进不足",
+      "previous_A_arrival_s": null,
+      "new_original_start_driving": false,
+      "new_recovery": false,
+      "saved_initial_probe_versions": []
+    }
+  ]
+}

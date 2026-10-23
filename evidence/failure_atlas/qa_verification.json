@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "R43 commit 1dbd0507353666c90ec7a9fdc3c752b62e85d001 only",
+  "source_files_unchanged": 42,
+  "published_frozen_extension_source_files_equal": 34,
+  "exact_real_ego_frames_checked": 5984,
+  "real_actor_counts_checked": 5984,
+  "events": 34,
+  "terminal_failures": 31,
+  "additional_arrival_road_anomalies": 3,
+  "browser": {
+    "all34_events_start_mid_end_four_layers_rendered": true,
+    "playback_advances": true,
+    "collision_filter_count": 8,
+    "road_filter_count": 3,
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "horizontal_overflow": false,
+    "standalone_html_loaded": true,
+    "final_console_errors": 0
+  },
+  "new_driving": 0,
+  "new_optimization": 0,
+  "algorithm_edits": 0
+}

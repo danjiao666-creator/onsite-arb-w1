@@ -1,0 +1,749 @@
+{
+  "scope": "Exact selected copies of saved evidence; absolute paths are historical provenance, not portable runtime dependencies.",
+  "copies": {
+    "experiments/selector_a/source/stack/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_cadence.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_cadence.py",
+      "sha256": "8806ba144d7a21206949f0ff4c457c24c5ac7af4594685523b7f3cfefbc79acd",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_capability.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_capability.py",
+      "sha256": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_close_guard.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_close_guard.py",
+      "sha256": "0ced59d47b7701549c3735feb68b4e35d925867c589842413e36aa8b435bc5a9",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_coverage.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_coverage.py",
+      "sha256": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_dynamic_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_dynamic_route.py",
+      "sha256": "79e22bb24643291377a8612e7402f512b1887c1ad83e6f7d2faec444bc1c3e5c",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_observed.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_observed.py",
+      "sha256": "94bf45f3f430da6d994ae410023e041d7d19562522fe9ec91ebc9ab56eb0546e",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_replay.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_replay.py",
+      "sha256": "21c0509b905eec34c3240caaaa151b5b0e37c27f1767de11d4e3c70f78d21d00",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_route_capability.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_route_capability.py",
+      "sha256": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/onsite_unified.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\onsite_unified.py",
+      "sha256": "2a065a82afd63a65984825992d195ba506ae9cbb9695b207849ea8b8d9f98213",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/adapters/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\adapters\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/arbiter.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\arbiter.py",
+      "sha256": "5d349cbab7ef8b4e79559179d4ca1e08f38ccf530c10a041db52ca3baa5473c2",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/candidates.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\candidates.py",
+      "sha256": "90c725c680de2cada1c240ac990d2e4d26a904d6ff5c426043fb4acb94d284f1",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/capability_arbiter.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\capability_arbiter.py",
+      "sha256": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/compound_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\compound_route.py",
+      "sha256": "0bdc868479a2345a6a4d40b46ca7afda8db5a47a262773d5d6bd4f3ac6aafc33",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/control.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\control.py",
+      "sha256": "9d2a99510a7e2bfeaedc678a2ae450b9144896b4b899478f2ba9428d53a93c36",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/coverage_world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\coverage_world.py",
+      "sha256": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/current_world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\current_world.py",
+      "sha256": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/decision_record.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\decision_record.py",
+      "sha256": "dda5ca4d761f1bf4c0ece75376a0c16ac43960c466371ce391554899d0258614",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/geometry.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\geometry.py",
+      "sha256": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/goal_contract.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\goal_contract.py",
+      "sha256": "c9272efa8638a85e8d3f127986cc640f567ab8e9a4565f6c9e0900e592729c5b",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/native_distance.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\native_distance.py",
+      "sha256": "05167792c7d7e8fbb1a00a36aadd327a6a6b279fae1bb363dfa82f837d609a5f",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/native_envelope.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\native_envelope.py",
+      "sha256": "43c30233f6d9de221f659fb50da892f93541c22e83530fecbdae31ccec34d7c0",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/native_execution.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\native_execution.py",
+      "sha256": "8f5037db757b58267ff02949b08d219c6aaffe5a52677dea36312578aa3c5100",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/native_profile.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\native_profile.py",
+      "sha256": "53036c845eb42147bca536e7c321c3aed9db8cda3f8202767ec90618b690adfe",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/native_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\native_route.py",
+      "sha256": "c4c8a7eb3b39284a114a3c2ddc2129d6ce6e85254b8c9912acd3c1648512cfa6",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/replay_contract.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\replay_contract.py",
+      "sha256": "2da12a80e22a6e51cf935a2eae4e3e61f36afa6b8646f7ead599c1a44db372fd",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/road_boundary.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\road_boundary.py",
+      "sha256": "7658b3e551a028b11a0aa5d0bb67ed75184389a0b835f1c2f6991506b82c6439",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\route.py",
+      "sha256": "abd907b503c3e8bd1f5b0a60ed305e7d7d1d3504c3810bd55407b83bce10230f",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/shared_border.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\shared_border.py",
+      "sha256": "67c9dd38b4fe871a6963ed4550a94f6c5829d9234af675a2dcb29cc7d432c399",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/tail_eta.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\tail_eta.py",
+      "sha256": "acf03af2e606d7bb6cabf095b00af55f27745805a960ad65ca8fcd8f44c901b4",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/unified_evaluation.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\unified_evaluation.py",
+      "sha256": "7611eb306a4872360b853f478af56a3442f3479b9bf25a8cebdd026e3b7ceac3",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\world.py",
+      "sha256": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce",
+      "copy": "exact"
+    },
+    "experiments/selector_a/source/stack/core/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\source\\stack\\core\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/selector_a/RESULT.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\RESULT.md",
+      "sha256": "164c53501b4c24c1e591a1cfafc1ca2698d157624c40e47ca21caeee0c65c924",
+      "copy": "exact"
+    },
+    "experiments/selector_a/PLAN.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\PLAN.md",
+      "sha256": "c0bba3b50f209377db36237f51d87407268ea06de99412190b1a824426b07918",
+      "copy": "exact"
+    },
+    "experiments/selector_a/candidate_identity.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\candidate_identity.json",
+      "sha256": "14867c820917eabc4c6f37f9040a773fc78707265b0e92606957fbd46bfcfbb2",
+      "copy": "exact"
+    },
+    "experiments/selector_a/verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\verification.json",
+      "sha256": "707b6d6e752f2dca04d9294b5a91707e307a89310ebf1f6ffc9189f58927fa88",
+      "copy": "exact"
+    },
+    "experiments/selector_a/review.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\review.json",
+      "sha256": "9259fde83304160b166dd9038cc766d332b112bb1f6d2154ea1df337decb511a",
+      "copy": "exact"
+    },
+    "experiments/selector_a/saved_diagnosis.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\saved_diagnosis.json",
+      "sha256": "10e165e8d12eb9b8c8339feff53b2965fe9ed33a2361f64a184468c70652de2f",
+      "copy": "exact"
+    },
+    "experiments/selector_a/review_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\review_verification.json",
+      "sha256": "d4d0b73ee9e20b119dd874b6008cb4600ffe2e5b607e4c359f88183ad62a001b",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving_result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving_result.json",
+      "sha256": "27edc602648293ac999b5f2604b210d561eb1b5fbebc1bc749e9252d3cdf99c2",
+      "copy": "exact"
+    },
+    "experiments/selector_a/contracts.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\contracts.json",
+      "sha256": "f88e89f42c63862934004f268fea3e16be0456b9fcac9f5b20fb88d5c1854d5d",
+      "copy": "exact"
+    },
+    "experiments/selector_a/test_selector.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\test_selector.py",
+      "sha256": "6b5303956b62da5a76e788b3cd84b8a03b154fcb6cb8e2443fd8ceefc3a637bd",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_112/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_112\\body_areas.json",
+      "sha256": "82efda7cd9d1885aa5cb35c963467a9b086aba934603e49c78d29195a3ae74ad",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_112/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_112\\result.json",
+      "sha256": "5f29b0ab7bb23f39d22395dc8c44381cbb7734c99d1f23b31744fcfbad760043",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_112/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_112\\trace.json.gz",
+      "sha256": "14319727efed7993e6ebef1f8b0df559e81d57c8f183d4169351fe77d097e9cf",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_141/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_141\\body_areas.json",
+      "sha256": "82efda7cd9d1885aa5cb35c963467a9b086aba934603e49c78d29195a3ae74ad",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_141/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_141\\result.json",
+      "sha256": "defafd03cfeda7eafcd1903b1606c3505a59d0f3541418c17ce1e76c5c424c0d",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_2_1_141/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_2_1_141\\trace.json.gz",
+      "sha256": "e8c25a7c7250d3bf329f509eb037bdac08426568ed1da20c9a3b368f71fe3695",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_332/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_332\\body_areas.json",
+      "sha256": "52d64c76da845509257c9e6766c1b046ffd6293c77617d72ea78c116001571a1",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_332/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_332\\result.json",
+      "sha256": "fd4e1b0b85758ad8d7bf477b7bdcdd27941e19eccd1c8bcd640f12571f1b6ee8",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_332/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_332\\trace.json.gz",
+      "sha256": "b1e99f72fcace4c6f396f036df73ee4e2b3b8c5924bc4443097d356c2714eec0",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_68/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_68\\body_areas.json",
+      "sha256": "80315f9160a1b86ad26dec85bc100f87666520a5a5a78df0f1886e6ba5082f0a",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_68/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_68\\result.json",
+      "sha256": "4cd08b91ee36747d81323cb40a5f162835289f06b4d04f5309c9ccea75c9ee0b",
+      "copy": "exact"
+    },
+    "experiments/selector_a/driving/highway_merge_3_1_68/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\driving\\highway_merge_3_1_68\\trace.json.gz",
+      "sha256": "8f3de2c11712d5bf149bc6edf02ff5f60d067d4192fcd985b7c1b2b24c4078e4",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_cadence.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_cadence.py",
+      "sha256": "8806ba144d7a21206949f0ff4c457c24c5ac7af4594685523b7f3cfefbc79acd",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_capability.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_capability.py",
+      "sha256": "3b3ae35ad816ec8aaeb279c8b0b1ca9d5858497e33c45568043f373d74938f73",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_close_guard.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_close_guard.py",
+      "sha256": "0ced59d47b7701549c3735feb68b4e35d925867c589842413e36aa8b435bc5a9",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_coverage.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_coverage.py",
+      "sha256": "7967f6daa867bd57d0764b9d10c495b503029e87c2a654febd4be35aead62e0f",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_dynamic_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_dynamic_route.py",
+      "sha256": "79e22bb24643291377a8612e7402f512b1887c1ad83e6f7d2faec444bc1c3e5c",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_observed.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_observed.py",
+      "sha256": "94bf45f3f430da6d994ae410023e041d7d19562522fe9ec91ebc9ab56eb0546e",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_replay.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_replay.py",
+      "sha256": "21c0509b905eec34c3240caaaa151b5b0e37c27f1767de11d4e3c70f78d21d00",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_route_capability.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_route_capability.py",
+      "sha256": "646948c5a438e8159c937cc4da29a2ed015b4cf85a48b53184a1ba374e852426",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/onsite_unified.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\onsite_unified.py",
+      "sha256": "1d3d355db73e087148550f20949c8297468d1ca70f6274e36a15571e39e061e5",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/adapters/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\adapters\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/arbiter.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\arbiter.py",
+      "sha256": "5d349cbab7ef8b4e79559179d4ca1e08f38ccf530c10a041db52ca3baa5473c2",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/candidates.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\candidates.py",
+      "sha256": "c9b94754f86cab947c76b0f6c802b7afb0ddec85a7a16294c7bae7beed6b34fe",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/capability_arbiter.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\capability_arbiter.py",
+      "sha256": "63a1e0ad833a6aba4330fed056eb6222c29065c629f05f491a3bb9f2931639f7",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/compound_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\compound_route.py",
+      "sha256": "cd1e6659c955767d1ed14f5652c4b038fd91a7f168f6fdbd52689927898dc5cd",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/control.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\control.py",
+      "sha256": "9d2a99510a7e2bfeaedc678a2ae450b9144896b4b899478f2ba9428d53a93c36",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/coverage_world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\coverage_world.py",
+      "sha256": "baf939c7b2f33c529ab3a0a465494fd70f9a8f2cdb7c30b32eacaec5df684476",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/current_world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\current_world.py",
+      "sha256": "e46543baac5cbcd05bd52de76834cc9c3c97ca0864eb60d1d61b38d6a38db1b5",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/decision_record.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\decision_record.py",
+      "sha256": "dda5ca4d761f1bf4c0ece75376a0c16ac43960c466371ce391554899d0258614",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/gap_events.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\gap_events.py",
+      "sha256": "0f41d57b6d01953449f422cd1b3ba9dd90b4abfd68b683684a9160370d68b87b",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/geometry.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\geometry.py",
+      "sha256": "8bcfd844f2564a6c0c92d251ffc3e562f87cdc58acb4364df564f135fcda6ef0",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/goal_contract.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\goal_contract.py",
+      "sha256": "c9272efa8638a85e8d3f127986cc640f567ab8e9a4565f6c9e0900e592729c5b",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/native_distance.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\native_distance.py",
+      "sha256": "05167792c7d7e8fbb1a00a36aadd327a6a6b279fae1bb363dfa82f837d609a5f",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/native_envelope.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\native_envelope.py",
+      "sha256": "43c30233f6d9de221f659fb50da892f93541c22e83530fecbdae31ccec34d7c0",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/native_execution.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\native_execution.py",
+      "sha256": "8f5037db757b58267ff02949b08d219c6aaffe5a52677dea36312578aa3c5100",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/native_profile.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\native_profile.py",
+      "sha256": "53036c845eb42147bca536e7c321c3aed9db8cda3f8202767ec90618b690adfe",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/native_route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\native_route.py",
+      "sha256": "c4c8a7eb3b39284a114a3c2ddc2129d6ce6e85254b8c9912acd3c1648512cfa6",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/progress_profile.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\progress_profile.py",
+      "sha256": "35a07b1ad7fb431baa411f5a4ce5d6139753cd638b8a225eee68090757e79bc6",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/replay_contract.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\replay_contract.py",
+      "sha256": "2da12a80e22a6e51cf935a2eae4e3e61f36afa6b8646f7ead599c1a44db372fd",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/road_boundary.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\road_boundary.py",
+      "sha256": "7658b3e551a028b11a0aa5d0bb67ed75184389a0b835f1c2f6991506b82c6439",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/route.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\route.py",
+      "sha256": "abd907b503c3e8bd1f5b0a60ed305e7d7d1d3504c3810bd55407b83bce10230f",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/shared_border.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\shared_border.py",
+      "sha256": "67c9dd38b4fe871a6963ed4550a94f6c5829d9234af675a2dcb29cc7d432c399",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/tail_eta.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\tail_eta.py",
+      "sha256": "acf03af2e606d7bb6cabf095b00af55f27745805a960ad65ca8fcd8f44c901b4",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/unified_evaluation.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\unified_evaluation.py",
+      "sha256": "911d74d919da971cfd7d6597359952f1a069448d681e956ad65e82cd5581f78f",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/world.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\world.py",
+      "sha256": "1a1ef045d41a5f2b8b9bb4a460e4e48499107956cb3df13ccd315be198966dce",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/source/stack/core/__init__.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\source\\stack\\core\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/RESULT.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\RESULT.md",
+      "sha256": "2e8f8b4a542b52b99ddb4049fe0524e5430b3b3005fd4d12d8e4eb62804ddd6e",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/PLAN.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\PLAN.md",
+      "sha256": "5512eaa806c19c1532f710c2a79b2abd756752ce6fe25af9ff5e22566cb51805",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/candidate_identity.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\candidate_identity.json",
+      "sha256": "506b0843ccbce109099c8dbae14631edaba6e62b837ff7a5d15a268b034720b7",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\verification.json",
+      "sha256": "e836e7935db1b04e417f942bf48c423bacfeff2debe5e7e968bfd71abd5220ab",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\result.json",
+      "sha256": "e7cdca15d680f74a1811d857d1a312f1f27211c62ba5f3aa7d92340b71128a71",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/diagnosis.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\diagnosis.json",
+      "sha256": "4bc5ee8ec091eb067f71ee6d1a61d390843fdb3b839a9b6b23ae691c285cd041",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/review_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\review_verification.json",
+      "sha256": "fc427dca13aace050c16c1f1e07b035af4f183861587caeec22e1a5751ffd141",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/probe_result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\probe_result.json",
+      "sha256": "9a79652f563fbdfc8a42ae0e1eb923cd76f96481de6f215c04b2567ebc71110f",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/contracts_receipt.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\contracts_receipt.json",
+      "sha256": "42fa4cd71256ee910cac3badb235e31de82c75bbcbbb869344327463debb857e",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/test_gap_events.py": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\test_gap_events.py",
+      "sha256": "424ef326ad7c5569315f948f0bbffb29e647cd69618e7c30b33e5266a73f588b",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/failed_selection_3_30.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\failed_selection_3_30.json",
+      "sha256": "ac5c291f949fc967b879c1ce745378d3e26a192061c5cdeca9d65332239c03ec",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/failed_selection_3_30.npz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\failed_selection_3_30.npz",
+      "sha256": "2542049d13e89b5fcd8b1e6d01f2e0e5f585a677f64879e4b4ffc6257841b0c5",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/failed_selection_recovery.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\failed_selection_recovery.json",
+      "sha256": "bf7544948a7fe62a0a58e2ba888d4c3f0ac86a9b705440e49e27095ffb97e5ce",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/highway_merge_3_1_332_origin.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\highway_merge_3_1_332_origin.json",
+      "sha256": "789b42ab570329e8b8b99d50ca93eca6778ccfc1bc9b5f85666355460c319bdb",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/highway_merge_3_1_332_origin.npz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\highway_merge_3_1_332_origin.npz",
+      "sha256": "5fa140d5134fa265915e94902e30f4e83ab076d1c2e8094a47c55718ed7fd6ad",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/highway_merge_3_1_68_origin.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\highway_merge_3_1_68_origin.json",
+      "sha256": "d924c9efccb1e62d9713a8069bab5005bb5e1693ea315e1cfc0b706063a5d763",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/highway_merge_3_1_68_origin.npz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\highway_merge_3_1_68_origin.npz",
+      "sha256": "4d68d23189124342c95458e9b446ed8f21f0d40fd7a7e059b84dc3422af965a6",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_2_1_112/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_2_1_112\\body_areas.json",
+      "sha256": "6248f1b10fc1cbe6e909efa10302cc5710b82a0ebc15a07ef6a16bfb34ff216b",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_2_1_112/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_2_1_112\\result.json",
+      "sha256": "82650d636de896038e0c50a8a91c75c7cb833f8fa52bca094b2f43bf27860a13",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_2_1_112/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_2_1_112\\trace.json.gz",
+      "sha256": "f83175469f658914968bfc408204fad4e2201d90174b552342b86a9f9ab7cdbf",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_332/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_332\\body_areas.json",
+      "sha256": "ed740f4bf77d53b342cd48076fc8e11a67077b2dc544dbabec8d93a798ea9ff8",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_332/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_332\\result.json",
+      "sha256": "1fa022476b016e85871a8f0974e308c2b761b7631b8ef9cca3698832efb7c904",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_332/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_332\\trace.json.gz",
+      "sha256": "2cb5cb7c558f1eb65ca03e96c810dde031b8ba2a08a27a246c16aff0c46577cf",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_68/body_areas.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_68\\body_areas.json",
+      "sha256": "82efda7cd9d1885aa5cb35c963467a9b086aba934603e49c78d29195a3ae74ad",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_68/result.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_68\\result.json",
+      "sha256": "a72679462768d3dd0acda9a24142996671f7da4acd672faed750845fb1f3e9c2",
+      "copy": "exact"
+    },
+    "experiments/gap_event_v2/driving/highway_merge_3_1_68/trace.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\driving\\highway_merge_3_1_68\\trace.json.gz",
+      "sha256": "c5aab14798a1d9d6c197eb23ca2651196e4df5d6e2faafb93ec1e0c76bed118a",
+      "copy": "exact"
+    },
+    "evidence/merge_sprint/RESULT.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\RESULT.md",
+      "sha256": "dec6282a1816c755d9bfeab8eca4c2829a5cb3be6595bf6b08e1d9983d4f4bc2",
+      "copy": "exact"
+    },
+    "evidence/merge_sprint/verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\verification.json",
+      "sha256": "617c390389a1e3926fd627fbb0a249202fc6e0d157af8930256cf24747991796",
+      "copy": "exact"
+    },
+    "evidence/merge_sprint/merge_status.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\merge_status.json",
+      "sha256": "0fdb47a2cc166fc888de42b3db2efd67aa50344b2bfc0dd7317db04c053f1a9d",
+      "copy": "exact"
+    },
+    "evidence/merge_sprint/merge_targets.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\merge_targets.json",
+      "sha256": "84798a3570068bdc5efbe83c9b1c3f64c97e883033756f2e5b2bfa30db144b1f",
+      "copy": "exact"
+    },
+    "evidence/merge_sprint/conflict_evidence.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\conflict_evidence.json",
+      "sha256": "256bf7be63237bb089533c6b8e17f172d2a1a6bef5c52e8f50ad5676556fde87",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/r43_diagnosis.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\r43_diagnosis.json",
+      "sha256": "14007b23e6820b0893d9134054d9e024be581be26977c589bae80074196b6f9c",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/r43_layers.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\r43_layers.json",
+      "sha256": "5b1ed39dcef502c48e409742d855106db1dcacb6d7f782bd9bb3093621bba02d",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/R43_DIAGNOSIS.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\R43_DIAGNOSIS.md",
+      "sha256": "429ae6100dd269ca4c41722a5e3736389b83fd4efd606789e5fa5b1e7ec91699",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/R43_LAYERS.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\R43_LAYERS.md",
+      "sha256": "1c4faa7b545a06e52e2ae32d851f6edc696efcf19c3bc513e1c5934961525dea",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/forecast_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\forecast_verification.json",
+      "sha256": "3858cf36b528ce7acffb43ff18e22453ca3e9e39072bdc6f854d60c92d4363c3",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/build_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\build_verification.json",
+      "sha256": "fc1b18df622d532ba9bb83525ddebaff965f5b8128827ad3ffdadacc5c82d979",
+      "copy": "exact"
+    },
+    "evidence/failure_atlas/qa_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\qa_verification.json",
+      "sha256": "3d1b880c13c7a7fb0c7934de586fc48744b58c3677dc6df9780c333cc428a7b8",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/all_timeouts.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\all_timeouts.json",
+      "sha256": "c096464586e5e3917c8b311434996b063e1686b9f207f88c2882b95d9e9b15ac",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/all_timeouts_verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\all_timeouts_verification.json",
+      "sha256": "230a0879fdc13d2cb5b6ecdb6bc96023f81999ba7954af9c3c47a6fb5ab66194",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/ALL_TIMEOUTS.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\ALL_TIMEOUTS.md",
+      "sha256": "9a13f0e373cac56e8fb5ecc4ca39168e1d75faa71b964de33218d3ea999565dc",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/lateral_evidence.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\lateral_evidence.json",
+      "sha256": "fe4fd2ba1fca6783c851942763d99f052e458eed29bc94522fa4e1797e58fafd",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/LATERAL_FINDINGS.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\LATERAL_FINDINGS.md",
+      "sha256": "5382b1086ab5bd3277744b64ad05a2c4109603b0c2caa905aeb04d95dff6ca0b",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/objective_evidence.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\objective_evidence.json",
+      "sha256": "adc281eccdfa62108bcc94e2acf7b3c9917f60966dd008e425a4f017b224c384",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/RESULT.md": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\RESULT.md",
+      "sha256": "5a4733f50b1e74538df7afa16bdb54be554078511d940ebf8b9606867e07fcbc",
+      "copy": "exact"
+    },
+    "evidence/timeout_audit/verification.json": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\verification.json",
+      "sha256": "88cdcd1ac5a23383393133e7ecbad88e1a2cb04e2b522f8503d234c87b7242df",
+      "copy": "exact"
+    },
+    "replays/selector_a.html": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_progress_selector_a_20261021\\R43_A轮新旧对照.html",
+      "sha256": "79f077ec3208bf2f69388bc70a00395a2b5542bd6a59ec9dd156a4b64a9a7d0e",
+      "copy": "exact"
+    },
+    "replays/gap_event_v2.html": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_gap_event_v2_20261022\\R43合流间隙事件回放.html",
+      "sha256": "41cb051eb92ceab8e1d9a65f1c242f27299431cfcdf179b5ed29b9e84feaf19e",
+      "copy": "exact"
+    },
+    "replays/merge_sprint.html": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\r43_merge_sprint_20261022\\R43合流半小时推进.html",
+      "sha256": "200c4fab4b98b437c5eaf749b163df8776dcbe7e8b96fabf567d87a798dd5bed",
+      "copy": "exact"
+    },
+    "replays/all_timeouts.html": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\objective_audit_20261021\\R43全部超时逐场检查.html",
+      "sha256": "3c785a4b03e617a17db07518b5810485c10d86b70a0e67cededd8a521475339e",
+      "copy": "exact"
+    },
+    "replays/all_failures.html.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\four_module_failure_atlas_20261021\\R43失败事件回放.html",
+      "copy": "gzip-only",
+      "decoded_sha256": "ef14a62edbbd1a70a7a99859a875c1acbfca62e4f2b37ae40c020880c578a045",
+      "decoded_bytes": 84622684
+    },
+    "candidates/r43/runs/unified_r43_20261010_devreg130/validation/highway_merge_2_1_112.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_1_112.json.gz",
+      "sha256": "8a0917aa0fc24842f29fc50fb1b5af6b22e61b37ae5cb835acb1de7a8ea97018",
+      "copy": "exact"
+    },
+    "candidates/r43/runs/unified_r43_20261010_devreg130/validation/highway_merge_2_1_141.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_2_1_141.json.gz",
+      "sha256": "fa9b7e6d5c064ad35d5de432ad4daf242ced9826eabecc2c0e689e0b32559f95",
+      "copy": "exact"
+    },
+    "candidates/r43/runs/unified_r43_20261010_devreg130/validation/highway_merge_3_1_68.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_68.json.gz",
+      "sha256": "acd62bb4233dd1414e64331d5f5cb4d1ccb985d58097e34e428b229dfa54d290",
+      "copy": "exact"
+    },
+    "candidates/r43/runs/unified_r43_20261010_devreg130/validation/highway_merge_3_1_332.json.gz": {
+      "source": "E:\\Onsite比赛\\onsite_challenge\\research\\arb_capability_20261007\\unified_execution_20261009\\runs\\unified_r43_20261010_devreg130\\validation\\highway_merge_3_1_332.json.gz",
+      "sha256": "8f94c70965cf0fe6e1eb7b4d63ed8643f911841b4bf7ff71228c3da338295359",
+      "copy": "exact"
+    }
+  },
+  "not_exported": [
+    "HOLD",
+    "official tools",
+    "raw scene packages",
+    "map cache",
+    "old version baseline packages",
+    "historical orchestration scripts and protected-path inventory"
+  ]
+}

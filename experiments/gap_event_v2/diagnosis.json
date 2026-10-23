@@ -1,0 +1,264 @@
+{
+  "scenes": [
+    {
+      "scene": "highway_merge_2_1_112",
+      "end": "到达",
+      "end_t": 9.7,
+      "submitted_steps": 97,
+      "full_window_selected_steps": 0,
+      "frames_exactly_original": true,
+      "actions_exactly_original": true,
+      "max_next_state_error": 0.0,
+      "first_body_growth": null
+    },
+    {
+      "scene": "highway_merge_3_1_68",
+      "end": "超时",
+      "end_t": 10.0,
+      "submitted_steps": 100,
+      "full_window_selected_steps": 0,
+      "frames_exactly_original": true,
+      "actions_exactly_original": true,
+      "max_next_state_error": 0.0,
+      "first_body_growth": null
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "end": "失效",
+      "end_t": 3.3,
+      "submitted_steps": 33,
+      "full_window_selected_steps": 33,
+      "frames_exactly_original": false,
+      "actions_exactly_original": false,
+      "max_next_state_error": 0.0,
+      "first_body_growth": null
+    }
+  ],
+  "qualified_initial_event_proposals": [
+    {
+      "scene": "highway_merge_3_1_332",
+      "candidate": "route:5:0.00/gap:vehicle/car7:before:0",
+      "event": {
+        "side": "before",
+        "actor": "vehicle/car7",
+        "branch": 0,
+        "station": 81.0,
+        "deadline_abs": 2.9000000000000004,
+        "created_at": 0.0,
+        "interval": [
+          42.5,
+          81.0
+        ],
+        "seed_hit": 2.1,
+        "seed_station": 41.106806762061616,
+        "seed_candidate": "progress:envelope:4.5",
+        "forecast_last_enabled": 6.0,
+        "time_basis": "forecast_grid_previous_clear_step"
+      },
+      "state_at_event_deadline": [
+        256.738,
+        -4.635,
+        0.138,
+        21.675,
+        -2.01,
+        -0.008
+      ],
+      "eta": 9.475333330034822,
+      "full_window_admitted": true,
+      "semantic_event_achievement": "not_certified_by_selector"
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "candidate": "route:5:0.00/gap:vehicle/car7:after:1",
+      "event": {
+        "side": "after",
+        "actor": "vehicle/car7",
+        "branch": 0,
+        "station": 41.106806762061616,
+        "deadline_abs": 2.2,
+        "created_at": 0.0,
+        "interval": [
+          42.5,
+          81.0
+        ],
+        "seed_hit": 2.1,
+        "seed_station": 41.106806762061616,
+        "seed_candidate": "progress:envelope:4.5",
+        "forecast_last_enabled": 6.0,
+        "time_basis": "forecast_grid_first_actor_ahead"
+      },
+      "state_at_event_deadline": [
+        240.859,
+        -7.102,
+        0.157,
+        18.501,
+        0.2,
+        0.002
+      ],
+      "eta": 9.627369652204324,
+      "full_window_admitted": true,
+      "semantic_event_achievement": "not_certified_by_selector"
+    }
+  ],
+  "failed_selection": {
+    "t": 3.3,
+    "candidates": 79,
+    "gate_counts": {
+      "forecast_occupancy_conflict": 77,
+      "prefix_ineligible": 2
+    },
+    "original_fallback_not_submitted": "route:0:0.00/recovery:pulse:9.8:1",
+    "fallback_first_hit": 2.4000000000000004,
+    "fallback_actor": "vehicle/car1",
+    "fallback_branch": "W1",
+    "event_proposals": [
+      {
+        "id": "route:0:0.00/gap:vehicle/car1:before:0",
+        "family": "gap_event",
+        "steering_mode": 0,
+        "steering_duration": 2.0,
+        "steering_target": null,
+        "first_hit": 1.7000000000000002,
+        "clearance": -0.6483778088493934,
+        "prefix_clearance": -0.15927425313865218,
+        "next_clearance": 25.98095398924712,
+        "buffer_first_hit": 1.7000000000000002,
+        "contact_first_hit": 1.9000000000000001,
+        "execution_prefix_buffer_shortfall": true,
+        "actor": "vehicle/car1",
+        "branch": "observed_heading_cv",
+        "contact_actor": "vehicle/car1",
+        "contact_branch": "observed_heading_cv",
+        "goal_time": null,
+        "eta": 6.595615644403086,
+        "budget_eta": 6.595615644403086,
+        "arrival_evidence": "traffic_free_tail_estimate",
+        "cost": 1389.8687355084226,
+        "costs": {
+          "eta": 6.595615644403086,
+          "budget": 0.0,
+          "acceleration": 0.290308952,
+          "jerk": 0.5325189,
+          "clearance": 6.770479786060312,
+          "headway": 1364.0636287332047,
+          "overspeed": 0.0,
+          "consistency": 0.11000000000000001,
+          "tracking": 0.39507238164358416,
+          "steering_override": 0.0,
+          "future_risk": 11.111111111111109,
+          "route": 0.0
+        },
+        "max_lateral_error": 0.362572817315065,
+        "rejected_by": [
+          "execution_prefix_occupancy_conflict"
+        ],
+        "future_risk": false,
+        "first_command": [
+          -1.7999999999999998,
+          -0.007660172265376368
+        ],
+        "expected_first_state": [
+          259.826,
+          -4.233,
+          0.131,
+          16.399,
+          -1.8,
+          -0.008
+        ],
+        "gap_event": {
+          "side": "before",
+          "actor": "vehicle/car1",
+          "branch": 1,
+          "station": 77.124611578246,
+          "deadline_abs": 4.6,
+          "created_at": 3.3,
+          "interval": [
+            58.62461157824601,
+            77.124611578246
+          ],
+          "seed_hit": 1.7000000000000002,
+          "seed_station": 88.01500822405411,
+          "seed_candidate": "progress:envelope:4.5",
+          "forecast_last_enabled": 2.0,
+          "time_basis": "forecast_grid_previous_clear_step"
+        },
+        "progress_status": "forecast_occupancy_conflict"
+      },
+      {
+        "id": "route:0:0.00/gap:vehicle/car1:after:1",
+        "family": "gap_event",
+        "steering_mode": 0,
+        "steering_duration": 2.0,
+        "steering_target": null,
+        "first_hit": 1.5,
+        "clearance": -2.081249474625044,
+        "prefix_clearance": 0.15341110461083218,
+        "next_clearance": 25.98095398924712,
+        "buffer_first_hit": 1.5,
+        "contact_first_hit": 5.0,
+        "execution_prefix_buffer_shortfall": true,
+        "actor": "vehicle/car1",
+        "branch": "observed_heading_cv",
+        "contact_actor": "vehicle/car6",
+        "contact_branch": "W1",
+        "goal_time": null,
+        "eta": 7.21806609156738,
+        "budget_eta": 7.21806609156738,
+        "arrival_evidence": "traffic_free_tail_estimate",
+        "cost": 726.7033948184759,
+        "costs": {
+          "eta": 7.21806609156738,
+          "budget": 1.5541982747021388,
+          "acceleration": 0.17469617199999998,
+          "jerk": 0.7283508000000002,
+          "clearance": 24.860541708214427,
+          "headway": 679.349849439224,
+          "overspeed": 0.0,
+          "consistency": 0.020000000000000018,
+          "tracking": 0.2976923327679356,
+          "steering_override": 0.0,
+          "future_risk": 12.5,
+          "route": 0.0
+        },
+        "max_lateral_error": 0.2856000499837059,
+        "rejected_by": [
+          "execution_prefix_occupancy_conflict"
+        ],
+        "future_risk": false,
+        "first_command": [
+          -4.4,
+          -0.007660172265376368
+        ],
+        "expected_first_state": [
+          259.826,
+          -4.233,
+          0.131,
+          16.139,
+          -4.4,
+          -0.008
+        ],
+        "gap_event": {
+          "side": "after",
+          "actor": "vehicle/car1",
+          "branch": 1,
+          "station": 88.01500822405411,
+          "deadline_abs": 5.3,
+          "created_at": 3.3,
+          "interval": [
+            58.62461157824601,
+            77.124611578246
+          ],
+          "seed_hit": 1.7000000000000002,
+          "seed_station": 88.01500822405411,
+          "seed_candidate": "progress:envelope:4.5",
+          "forecast_last_enabled": 2.0,
+          "time_basis": "forecast_grid_first_actor_ahead"
+        },
+        "progress_status": "forecast_occupancy_conflict"
+      }
+    ],
+    "new_driving_during_recovery": 0,
+    "exact_saved_history_frames": 33
+  },
+  "semantic_limit": "Before/after names describe proposal objective, not enforced arrival-time constraint; full gates do not certify event achievement."
+}

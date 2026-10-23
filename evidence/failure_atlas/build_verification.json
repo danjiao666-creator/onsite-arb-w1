@@ -1,0 +1,18 @@
+{
+  "scope": "frozen R43; causal prediction reconstruction; no new driving or optimization",
+  "events": 34,
+  "terminal_failures": 31,
+  "arrival_road_anomalies": 3,
+  "frames": 5984,
+  "inputs": {
+    "r43_events.json": "4fe2fd3eaa192bdb94a30d45da424e77dfe0e1b7843810f91cb409884569842e",
+    "r43_geometry.json": "dbb5b8d7ebf6e2a81f41f8b57d7058816487a16361bafe8a2fced84f2d5535a6",
+    "r43_forecasts.json": "6df066e07ba8cb192a307c3b72c2953c22a815051313fefb21d140aeb5053c94"
+  },
+  "outputs": {
+    "R43失败事件回放.html": "ef14a62edbbd1a70a7a99859a875c1acbfca62e4f2b37ae40c020880c578a045",
+    "atlas-data.js": "b82323ea5461877d4add0f5381a5f352a729b18bdbb843d110758de0d9ec2dc4",
+    "app.js": "65e82b0bc220b38612204e9d0e2b27a598e3b9d4982ec53edbde8cf76f553117",
+    "style.css": "efb05f554f907ffdc46905220d9dd9371b265b9707f8454b210957458ef8d6a8"
+  }
+}

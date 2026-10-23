@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "algorithm_accepted": false,
+  "status": "stopped_regression",
+  "source_checks": [
+    {
+      "version": "r43_gap_event_20261022",
+      "protected": 401,
+      "frozen": 42
+    },
+    {
+      "version": "r43_gap_event_v2_20261022",
+      "protected": 451,
+      "frozen": 42
+    }
+  ],
+  "mechanism_checks": 12,
+  "initial_probes": 4,
+  "new_driving_scenes": 3,
+  "submitted_steps": 230,
+  "submitted_new_full_window_steps": 33,
+  "new_arrivals": 0,
+  "new_collisions": 0,
+  "new_body_growth": 0,
+  "max_next_state_error": 0.0,
+  "original_success_control_preserved": "highway_merge_2_1_112",
+  "pending_controls_not_dispatched": [
+    "highway_merge_3_1_107",
+    "2196cutin148",
+    "2lanechange60"
+  ],
+  "failed_at": "highway_merge_3_1_332@3.3",
+  "expected_algorithm_failure_not_tool_retry": true,
+  "raw_tool_errors": 0,
+  "causal_failure_replay_history_frames": 33,
+  "new_recovery_driving_steps": 0,
+  "evidence": {
+    "result.json": "e7cdca15d680f74a1811d857d1a312f1f27211c62ba5f3aa7d92340b71128a71",
+    "probe_result.json": "9a79652f563fbdfc8a42ae0e1eb923cd76f96481de6f215c04b2567ebc71110f",
+    "diagnosis.json": "4bc5ee8ec091eb067f71ee6d1a61d390843fdb3b839a9b6b23ae691c285cd041",
+    "failed_selection_recovery.json": "bf7544948a7fe62a0a58e2ba888d4c3f0ac86a9b705440e49e27095ffb97e5ce",
+    "failed_selection_3_30.json": "ac5c291f949fc967b879c1ce745378d3e26a192061c5cdeca9d65332239c03ec"
+  }
+}

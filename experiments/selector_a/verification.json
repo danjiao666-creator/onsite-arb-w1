@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "algorithm_accepted": false,
+  "status": "stopped_regression",
+  "protected_files_verified": 139,
+  "frozen_candidate_files_verified": 42,
+  "changed_source_files": [
+    "stack/adapters/onsite_unified.py",
+    "stack/core/unified_evaluation.py"
+  ],
+  "new_driving_during_audit": 0,
+  "new_candidate_evaluations_during_audit": 0,
+  "all_331_selected_full_window_gates_passed": true,
+  "all_331_native_next_states_exact": true,
+  "tests": 8,
+  "fixed_probes": 9,
+  "causal_history_frames": 70,
+  "driving_scenes": 4,
+  "simulation_errors": 0,
+  "original_success_control_failed": "highway_merge_2_1_112",
+  "remaining_controls_not_dispatched": 3,
+  "new_arrivals": 2,
+  "new_collisions": 0,
+  "body_growth_scenes": 0,
+  "result_identities": {
+    "contracts.json": "f88e89f42c63862934004f268fea3e16be0456b9fcac9f5b20fb88d5c1854d5d",
+    "fixed_result.json": "9b6631ebe571608a0d3daf6eaeae6587f93a9c4d37e38715f99be0bdad46736d",
+    "driving_result.json": "27edc602648293ac999b5f2604b210d561eb1b5fbebc1bc749e9252d3cdf99c2",
+    "review.json": "9259fde83304160b166dd9038cc766d332b112bb1f6d2154ea1df337decb511a",
+    "saved_diagnosis.json": "10e165e8d12eb9b8c8339feff53b2965fe9ed33a2361f64a184468c70652de2f",
+    "review_verification.json": "d4d0b73ee9e20b119dd874b6008cb4600ffe2e5b607e4c359f88183ad62a001b"
+  }
+}

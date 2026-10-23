@@ -4,3 +4,5 @@
 * whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 candidates/r43/source/stack/core/current_world.py whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
 candidates/r43/runs/*/source/stack/core/current_world.py whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+# A unified diff uses a single space for unchanged blank context lines.
+patches/*.diff -whitespace

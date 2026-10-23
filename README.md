@@ -1,73 +1,47 @@
-# OnSite ARB＋W1：r99 底座与 r43 统一执行候选
+# R43：合流超时与规划可行性审阅
 
-2026-10-10更新：新增 **r43统一执行候选的34文件源码、230场结果、全车身道路审核、31场未到达归因，以及与已上传r99的逐场/逐文件比较**。r43提高净到达数，但有成功损失、新碰撞和时延退化，尚未替换r99。根目录 `stack/` 和原r99归档继续保持原样。
+**希望审阅的不是再加一条规则，而是：现有候选表达、选择目标和滚动规划，为什么不能稳定地在期限内安全完成合流？最小的有效替换应在哪里？**
 
-最新内容从 [版本比较](docs/UPDATE_20261010.md)、[候选架构](docs/UNIFIED_EXECUTION.md)、[候选复现](docs/REPRODUCTION_R43.md) 和 [全部未到达归因](candidates/r43/analysis/nonarrival_attribution_r59/v2/REPORT.md) 开始。
+2026-10-23 整理。底座固定为 [`1dbd050`](https://github.com/danjiao666-creator/onsite-arb-w1/commit/1dbd0507353666c90ec7a9fdc3c752b62e85d001) 的原版 R43，不是后来的 201 到达版本，不包含联合 MPC 工作线。当前文件树撤下 R99、旧基准和无关历史说明；原历史提交不删除。
 
-| 同一原130场 | 已上传r99 | 当前r43候选 |
-|---|---:|---:|
-| 到达／碰撞／超时 | 107／7／16 | 115／3／12 |
-| 逐场完整act时延通过 | 130／130 | 72／130 |
-| 相对r99成功保持 | — | 103／107；新增12到达、丢4成功 |
-| 相对r99新增碰撞 | — | 1：7_916_merge_921 |
+## 先看这三处
 
-场景名单和原始文件哈希一致；r43明确在内存中排序7场反序目标框，XML未改，这部分协议差异不能全部算作策略收益。其余123场为107／7／9→114／3／6。额外100场是追加开发集，结果84／5／11；不能与r99原130混成同分母比较。合计230场199／8／23，仍有4场实际车身地图外伸增长。
+1. [当前问题、证据和请审阅的问题](review/REVIEW_BRIEF.md)：先把事实与假设分开。
+2. [四模块与改动入口](review/CODE_MAP.md)：原 R43、A 轮、最近失败原型分开读。
+3. [证据与回放索引](review/EVIDENCE_INDEX.md)：全部 23 超时，以及 112 / 68 / 332 的真实执行和未提交候选。
 
-```powershell
-python tools/verify_snapshot.py
-python tools/compare_uploaded_versions.py
-python tools/replay_r43.py --help
-```
+## 目前结果
 
-`verify_snapshot.py`校验上传包、原r99身份及候选源码/结果/已包含trace；`compare_uploaded_versions.py`只读证据，输出到忽略目录outputs；以上不启动驾驶。候选生产源码逐字节保留，不混入否定实验。r43只有3场原trace上传，其余哈希和大小保留，详见候选复现说明。
+| 对象 | 已保存的结果 | 不能据此声称 |
+|---|---|---|
+| 原 R43 | 230 场：199 到达、8 碰撞、23 超时；其中 18 个合流超时 | 安全或实时验收完成 |
+| A 轮：完整窗准入与 ETA 排序 | 68 / 332 分别在 6.5 / 6.6 秒到达；原成功 112 变超时；两恢复场峰速约 50.487 / 43.950 m/s | 已得到可接受的稳定修复 |
+| 后续五个有限候选 | 统一速度包络、条件救援、有界速度序列、整体合流及组合；没有新增整场恢复 | 更多候选已解决交通时机 |
+| 最近 gap-event v2 | 112 保持 9.7 秒到达；68 仍超时；332 实际执行 33 步，在 3.3 秒无完整合格候选而中止 | 起点 ETA 合格等于完整可行 |
 
-以下是仍然有效的r99底座说明，架构和学习材料以r99为对象。
+最近原型的 `before/after` 仍是生成目标，**不是已落实的硬站点时刻约束**。332 初始有两条有限窗合格方案，但执行中遇到后方变道的 car1 后失解。此次没有新增算法、驾驶、求解或自动化。
 
-结构化观测 → 周车运动估计与 W1 预测 → 车道图路线及换道时机候选 → 六秒速度候选仲裁 → 两秒实际执行复核 → 路径跟踪与控制 → 官方回放反馈。
-
-## 从这里开始
-
-- [全链条架构说明](docs/ARCHITECTURE.md)：实现、公式、数据流、参数和已知缺口。
-- [学习指南](docs/LEARNING_GUIDE.md)：按具体场景理解路线、轨迹、动作与闭环。
-- [复现与证据说明](docs/REPRODUCTION.md)：校验方法、运行入口和外部依赖。
-- [暂停状态](docs/PAUSED_STATUS.md)：当前成效与未完成问题。
-- [时空占用教学示意](docs/onsite-time-occupancy.html)：下载后用浏览器打开；示意数字是假设值。
-
-## 当前结果
-
-| 指标 | r99 |
-|---|---:|
-| 完整 DEV100＋REG30 场景 | 130 |
-| 到达／碰撞／超时／异常 | 107／7／16／0 |
-| 到达率 | 82.3% |
-| 相对 r96 | 保留全部104成功，新增3到达，无新增碰撞 |
-| `act()` 次数 | 28,659 |
-| 平均／p95／p99 | 5.8206／9.2740／14.9521 ms |
-| 最大调用耗时 | 82.0291 ms |
-| 逐场时延审核 | 130／130通过 |
-
-计时包含完整 `act()`，不含初始化、台架和记录 I/O。逐场通过不代表每次调用均小于周期；记录存在一次超过对应 `dt` 的调用。共享负载诊断不等于独占机器或官方实时认证。结果来自复用官方回放核心的本地闭环台架，不是官方线上比赛成绩，现存失败没有被隐藏。
-
-## 目录与版本身份
+## 文件结构
 
 ```text
-stack/                       与封存 r99 逐文件相同的可导入源码
-docs/                        架构、教学、复现、暂停与历史决策
-tools/verify_snapshot.py      无需仿真的离线完整性校验
-tools/replay_r99.py           外部依赖准备后可用的隔离回放入口
-bench/                       r99 运行归档内的本地台架源码
-baselines/arb_w1_v1/          v1 冻结源码、清单与130场记录
-research/arb_capability_20261007/
-  runs/recovery_pulse_r99_devreg130/     r99封存源码、原始记录和审核
-  runs/dynamic_route_r5_devreg130/       r5参考证据
-  runs/supported_pruned_r96_devreg130/   r96参考证据
-EXPORT_MANIFEST.json          上传包文件哈希与来源
+candidates/r43/source/           原 R43 的 34 个冻结源码
+candidates/r43/runs/             原 230 场结果、身份与选定原始轨迹
+experiments/selector_a/          A 轮源码、结果与四场真实轨迹
+experiments/gap_event_v2/        最近失败原型、三场真实轨迹与失败调用数组
+patches/                        两个原型相对纯 R43 的源码差异
+evidence/                       四模块、全部超时、五候选冲刺的已存证据
+replays/                        自包含 HTML 回放；全部失败回放使用 gzip 压缩
+review/                         审阅问题、代码地图、证据范围和来源
+tools/verify_review.py           标准库离线校验，不导入规划器、不驾驶
+tools/unpack_replay.py           解压全部失败回放到 outputs/
+REVIEW_MANIFEST.json             本次审阅包文件哈希
 ```
-
-正式入口是 `stack.adapters.onsite_close_guard:CloseGuardPlanner`。根目录 `stack/` 是 r99 的精确副本；原工作区尚未切换默认入口。本仓库不包含旧架构的全部开发历史，也不包含第三方工具包、官方场景原始数据、地图缓存、凭据或机器环境。平台和场景的原始身份仍在验证 manifest 中保留；重新跑仿真需按复现文档另行准备。
 
 ```powershell
-python tools/verify_snapshot.py
+python -B tools/verify_review.py
+python -B tools/unpack_replay.py
 ```
 
-原r99归档保留。继续开发应从封存版本复制新候选，保留原成功且不引入新增碰撞，不能用净到达增益抵消回归。本次GitHub更新没有恢复已停止的半小时算法实验。
+解压后用浏览器打开 `outputs/r43_all_failures.html`。其他回放可直接打开：[最近失解](replays/gap_event_v2.html)、[A 轮对照](replays/selector_a.html)、[全部超时](replays/all_timeouts.html)、[五候选冲刺](replays/merge_sprint.html)。GitHub 文件页本身不执行 HTML，需下载仓库后打开。
+
+原始场景、官方平台和地图缓存不在包内；这里提供可独立阅读的代码、保存证据和回放，不声称下载后即可重跑完整仿真。详见[核验与复现边界](review/REPRODUCTION.md)。

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "new_driving": 0,
+  "new_candidate_evaluations": 0,
+  "causal_forecast_reconstruction": true,
+  "forecast_audits": [
+    {
+      "scene": "highway_merge_2_1_112",
+      "old": {
+        "feedback_checks": 480,
+        "max_error": 1.3877787807814457e-17
+      },
+      "new": {
+        "feedback_checks": 480,
+        "max_error": 1.3877787807814457e-17
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_68",
+      "old": {
+        "feedback_checks": 693,
+        "max_error": 2.7755575615628914e-17
+      },
+      "new": {
+        "feedback_checks": 693,
+        "max_error": 2.7755575615628914e-17
+      }
+    },
+    {
+      "scene": "highway_merge_3_1_332",
+      "old": {
+        "feedback_checks": 990,
+        "max_error": 2.7755575615628914e-17
+      },
+      "new": {
+        "feedback_checks": 320,
+        "max_error": 2.7755575615628914e-17
+      }
+    }
+  ],
+  "additional_map_identities": {
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\2ea17459bc056465e56b2c25f35eaf12.pkl": "5db9e53b42aa5cf408da48c881ca7d9b496817070df41d8df39ef12e73bb39f6",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\6717b478a5df607291c1c9fd3dff3d2c.pkl": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10",
+    "E:\\Onsite比赛\\onsite_challenge\\bench\\.cache\\xodr\\277fa1444985ac1ffd6ae6098a81cf61.pkl": "621ca6f3c8aee0231bc1d0d49dc9eb60a0eddceb99bf2cee58d7da30f6d67b10"
+  },
+  "failed_frame_display": "saved exact causal replay, unsubmitted gap candidate and forecast arrays",
+  "output_sha256": "41cb051eb92ceab8e1d9a65f1c242f27299431cfcdf179b5ed29b9e84feaf19e"
+}
